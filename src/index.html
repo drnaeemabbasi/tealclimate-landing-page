@@ -5,26 +5,366 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teal Climate</title>
     <link rel="stylesheet" href="output.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/teal-climate-logo-1.svg"
+      type="image/x-icon"
+    />
+    <script type="module" src="script.js" defer></script>
   </head>
   <body>
     <!-- Navbar -->
     <nav
-      class="bg-tc-light-grey-1 min-h-16 flex justify-between items-center px-4"
+      class="flex min-h-16 items-center justify-between bg-tc-light-grey-1 px-8"
     >
-      <div class="flex justify-center items-center gap-x-1">
+      <div class="flex items-center justify-center gap-x-1">
         <img src="./assets/images/teal-climate-logo-1.svg" />
         <img src="./assets/images/teal-climate-logo-2.svg" />
       </div>
-      <ul class="flex items-center gap-10">
+      <!-- Mobile menu button -->
+      <button class="menu-toggle md:hidden">
+        <svg
+          class="h-6 w-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
+        </svg>
+      </button>
+      <!-- Menu -->
+      <ul
+        class="fixed bottom-0 right-0 top-0 z-10 flex hidden w-1/2 flex-col items-center justify-center gap-10 bg-inherit shadow md:static md:flex md:w-auto md:flex-row md:shadow-none"
+        id="menu"
+      >
+        <li class="menu-toggle absolute left-4 top-4 md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </li>
         <li class="text-tc-dark">Products</li>
         <li class="text-tc-dark">Pricing</li>
         <li class="text-tc-dark">Resources</li>
-        <li
-          class="bg-tc-green hover:opacity-90 text-white py-2 px-6 rounded-md"
-        >
-          Login
+        <li>
+          <button
+            class="w-32 rounded-lg bg-tc-green py-2 text-white hover:opacity-90"
+          >
+            Login
+          </button>
         </li>
       </ul>
     </nav>
+    <!-- Hero -->
+    <header
+      class="flex min-h-[calc(100vh-4rem-4rem)] flex-col items-center justify-center gap-y-14"
+    >
+      <h1
+        class="flex flex-col items-center justify-center text-[30px] font-bold leading-none text-tc-dark-green sm:text-5xl md:text-6xl lg:text-7xl"
+      >
+        <span>Carbon Measurement &</span><span>Reporting Platform</span>
+      </h1>
+      <div>
+        <button
+          type="button"
+          class="mr-4 w-40 rounded-lg border-[2px] border-tc-green bg-tc-green py-2 text-white hover:opacity-90"
+        >
+          Get Started</button
+        ><button
+          type="button"
+          class="w-40 rounded-lg border-[2px] border-tc-green py-2 hover:bg-tc-green hover:text-white"
+        >
+          Request a Demo
+        </button>
+      </div>
+    </header>
+    <!-- Carousel -->
+    <section class="relative h-[50vw]">
+      <div class="relative mx-auto h-full w-[90%] overflow-hidden rounded-lg">
+        <img
+          src="assets/images/carousel-image-1.png"
+          class="carousel-item absolute h-full transition-transform duration-500 ease-in-out"
+        />
+        <img
+          src="assets/images/carousel-image-2.png"
+          class="carousel-item absolute h-full transition-transform duration-500 ease-in-out"
+        />
+        <img
+          src="assets/images/carousel-image-3.png"
+          class="carousel-item absolute h-full transition-transform duration-500 ease-in-out"
+        />
+        <img
+          src="assets/images/carousel-image-4.png"
+          class="carousel-item absolute h-full transition-transform duration-500 ease-in-out"
+        />
+        <img
+          src="assets/images/carousel-image-5.png"
+          class="carousel-item absolute h-full transition-transform duration-500 ease-in-out"
+        />
+      </div>
+      <!-- Carousel indicators -->
+      <div
+        class="carousel-indicator-wrapper absolute -bottom-[2.5vw] mx-auto flex w-full justify-center gap-x-4"
+      >
+        <button
+          type="button"
+          class="carousel-indicator size-[2vw] max-h-5 max-w-5 rounded-full bg-tc-grey"
+        ></button>
+        <button
+          type="button"
+          class="carousel-indicator size-[2vw] max-h-5 max-w-5 rounded-full bg-tc-grey"
+        ></button>
+        <button
+          type="button"
+          class="carousel-indicator size-[2vw] max-h-5 max-w-5 rounded-full bg-tc-grey"
+        ></button>
+        <button
+          type="button"
+          class="carousel-indicator size-[2vw] max-h-5 max-w-5 rounded-full bg-tc-grey"
+        ></button>
+        <button
+          type="button"
+          class="carousel-indicator size-[2vw] max-h-5 max-w-5 rounded-full bg-tc-grey"
+        ></button>
+      </div>
+      <!-- Carousel controls -->
+      <button
+        type="button"
+        class="absolute left-[2%] top-1/2 -translate-y-1/2"
+        id="carousel-control-left"
+      >
+        <svg
+          class="h-auto w-[2vw]"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 6 10"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M5 1 1 5l4 4"
+          />
+        </svg>
+      </button>
+      <button
+        type="button"
+        class="absolute right-[2%] top-1/2 -translate-y-1/2"
+        id="carousel-control-right"
+      >
+        <svg
+          class="h-auto w-[2vw]"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 6 10"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m1 9 4-4-4-4"
+          />
+        </svg>
+      </button>
+    </section>
+    <section class="mt-10 bg-tc-light-grey-1 py-10">
+      <img
+        src="assets/images/teal-climate-logo-1.svg"
+        class="mx-auto w-[80px]"
+      />
+      <h2
+        class="mx-auto mt-8 w-2/3 text-center text-3xl font-bold leading-none text-tc-dark-green"
+      >
+        Introducing our innovative carbon emissions tracker, a powerful tool
+        designed to measure and monitor your carbon footprint.
+      </h2>
+      <p class="mx-auto mt-8 w-2/3 text-center">
+        By providing real-time data and actionable insights, our tool empowers
+        you to make informed decisions that reduce your environmental impact.
+        Together, we can create a cleaner, healthier planet for future
+        generations.
+      </p>
+      <img src="assets/map-graph.svg" class="mt-8" />
+    </section>
+    <section class="flex p-10 px-16">
+      <div class="flex flex-1 flex-col justify-center p-4">
+        <h2 class="text-2xl font-bold text-tc-dark-green">
+          Audit Ready<br />GHG Emission reports for<br />solutions
+        </h2>
+        <ul class="mt-14 flex flex-col gap-y-4">
+          <li class="flex gap-x-3">
+            <img src="assets/green-leaf.svg" /><span
+              >Disclosure Regulations</span
+            >
+          </li>
+          <li class="flex gap-x-3">
+            <img src="assets/green-leaf.svg" /><span>Frame works</span>
+          </li>
+          <li class="flex gap-x-3">
+            <img src="assets/green-leaf.svg" /><span
+              >Investor Requirements</span
+            >
+          </li>
+          <li class="flex gap-x-3">
+            <img src="assets/green-leaf.svg" /><span
+              >Company internal targets solution</span
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="relative flex-1">
+        <img src="assets/images/image-1.png" />
+        <div
+          class="absolute bottom-4 left-1/2 grid w-full -translate-x-1/2 grid-cols-2 grid-rows-2 justify-items-center gap-[2%] px-[2%]"
+        >
+          <img src="assets/images/scope-1.png" class="size-full object-cover" />
+          <img
+            src="assets/images/scope-3.png"
+            class="row-span-2 size-full object-cover"
+          />
+          <img src="assets/images/scope-2.png" class="size-full object-cover" />
+        </div>
+      </div>
+    </section>
+    <section class="bg-tc-light-green">
+      <h2
+        class="mx-auto w-5/12 pt-16 text-center text-3xl font-bold text-tc-dark-green"
+      >
+        Comprehensive carbon accounting for business and institution
+      </h2>
+      <button
+        type="button"
+        class="mx-auto mt-8 block w-40 rounded-lg border-[2px] border-tc-green bg-tc-green py-2 text-white hover:opacity-90"
+      >
+        Explore Plans
+      </button>
+      <img src="assets/dashboard.svg" class="mx-auto mt-8" />
+    </section>
+    <section class="mx-auto grid h-[500px] w-[80%] grid-cols-5 gap-4 py-12">
+      <div
+        class="bg-tc-light-blue relative col-span-3 overflow-hidden rounded-lg"
+      >
+        <img
+          src="assets/images/scope-3.png"
+          class="absolute left-1/2 top-6 -translate-x-1/2"
+        />
+      </div>
+      <div class="col-span-2 rounded-lg bg-tc-light-grey-2 p-6">
+        <h3 class="mb-3 text-xl text-tc-dark-green">
+          Financial Emissions<br />Measurements
+        </h3>
+        <ul class="flex flex-col">
+          <li class="flex items-center gap-x-3">
+            <img src="assets/green-leaf.svg" class="size-5" /><span
+              >Disclosure Regulations</span
+            >
+          </li>
+          <li class="flex items-center gap-x-3">
+            <img src="assets/green-leaf.svg" class="size-5" /><span
+              >Frame works</span
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="col-span-2 rounded-lg bg-tc-light-grey-2 p-6">
+        <h3 class="mb-3 text-xl text-tc-dark-green">Teal Climate</h3>
+        <ul class="flex flex-col">
+          <li class="flex items-center gap-x-3">
+            <img src="assets/green-leaf.svg" class="size-5" /><span
+              >Disclosure Regulations</span
+            >
+          </li>
+          <li class="flex items-center gap-x-3">
+            <img src="assets/green-leaf.svg" class="size-5" /><span
+              >Frame works</span
+            >
+          </li>
+        </ul>
+      </div>
+      <div
+        class="col-span-3 flex items-center justify-center rounded-lg bg-tc-light-green"
+      >
+        <div class="flex items-center justify-center gap-x-1">
+          <img
+            src="./assets/images/teal-climate-logo-1.svg"
+            class="h-auto w-20"
+          />
+          <img
+            src="./assets/images/teal-climate-logo-2.svg"
+            class="h-auto w-40"
+          />
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2 class="text-center text-5xl font-bold text-tc-dark-green">
+        Track Emissions, Save The Planet!
+      </h2>
+    </section>
+    <footer class="mx-auto mt-12 bg-tc-dark-green py-10">
+      <div class="flex px-[10%]">
+        <div class="flex-1">
+          <img
+            src="assets/images/teal-climate-white-logo.png"
+            class="h-auto w-40"
+          />
+          <ul class="mt-3 flex gap-3 text-white">
+            <li>Home</li>
+            <li>Products</li>
+            <li>Pricing</li>
+            <li>Resources</li>
+            <li>About</li>
+          </ul>
+        </div>
+        <div class="flex-1 text-white">
+          <p class="text-lg">
+            Start Tracking Your Emissions Today for a Greener Tomorrow!
+          </p>
+          <ul class="mt-2 flex gap-x-3">
+            <li class="cursor-pointer">
+              <img class="rounded-full border p-2" src="assets/twitter.svg" />
+            </li>
+            <li class="cursor-pointer">
+              <img class="rounded-full border p-2" src="assets/facebook.svg" />
+            </li>
+            <li class="cursor-pointer">
+              <img class="rounded-full border p-2" src="assets/instagram.svg" />
+            </li>
+            <li class="cursor-pointer">
+              <img class="rounded-full border p-2" src="assets/youtube.svg" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="border-top-white mt-3 flex w-full justify-between border-t px-[10%] pt-3 text-white"
+      >
+        <span>© 2024 Teal Climate</span>
+        <div>
+          <span class="mr-5">Terms & Conditions</span
+          ><span>Privacy Policy</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
