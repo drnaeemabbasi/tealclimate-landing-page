@@ -10,6 +10,8 @@
       href="assets/images/teal-climate-logo-1.svg"
       type="image/x-icon"
     />
+    <!-- font awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script type="module" src="script.js" defer></script>
   </head>
   <body>
@@ -40,7 +42,7 @@
       </button>
       <!-- Menu -->
       <ul
-        class="fixed bottom-0 right-0 top-0 z-10 flex hidden w-1/2 flex-col items-center justify-center gap-10 bg-inherit shadow md:static md:flex md:w-auto md:flex-row md:shadow-none"
+        class="fixed bottom-0 right-0 top-0 z-10 flex w-1/2 flex-col items-center justify-center gap-10 bg-inherit shadow md:static md:flex md:w-auto md:flex-row md:shadow-none"
         id="menu"
       >
         <li class="menu-toggle absolute left-4 top-4 md:hidden">
@@ -62,23 +64,21 @@
         <li class="text-tc-dark">Products</li>
         <li class="text-tc-dark">Pricing</li>
         <li class="text-tc-dark">Resources</li>
-        <li>
-          <button
-            class="w-32 rounded-lg bg-tc-green py-2 text-white hover:opacity-90"
-          >
-            Login
-          </button>
-        </li>
       </ul>
+      <button
+      class="w-32 hover:bg-tc-green border border-tc-green text-tc-green hover:text-white duration-300 py-2 rounded-full hover:opacity-90"
+    >
+      Login
+    </button>
     </nav>
     <!-- Hero -->
     <section
       class="flex min-h-[calc(100vh-4rem-4rem)] flex-col items-center justify-center gap-y-14"
     >
       <h1
-        class="flex flex-col items-center justify-center text-[30px] font-bold leading-none text-tc-dark-green sm:text-5xl md:text-6xl lg:text-7xl"
+        class="flex flex-col items-center justify-center text-[30px] font-medium leading-none text-tc-dark-green sm:text-5xl md:text-6xl lg:text-7xl"
       >
-        <span>Carbon Measurement &</span><span>Reporting Platform</span>
+        <span>Carbon <span class="line">Measurement</span> &</span><span>Reporting Platform</span>
       </h1>
       <div>
         <button
@@ -94,109 +94,16 @@
         </button>
       </div>
     </section>
-    <!-- Carousel -->
-    <section class="relative h-[50vw]">
-      <div class="relative mx-auto h-full w-[90%] overflow-hidden rounded-lg">
-        <img
-          src="assets/images/carousel-image-1.png"
-          class="carousel-item absolute h-full transition-transform duration-500 ease-in-out"
-        />
-        <img
-          src="assets/images/carousel-image-2.png"
-          class="carousel-item absolute h-full transition-transform duration-500 ease-in-out"
-        />
-        <img
-          src="assets/images/carousel-image-3.png"
-          class="carousel-item absolute h-full transition-transform duration-500 ease-in-out"
-        />
-        <img
-          src="assets/images/carousel-image-4.png"
-          class="carousel-item absolute h-full transition-transform duration-500 ease-in-out"
-        />
-        <img
-          src="assets/images/carousel-image-5.png"
-          class="carousel-item absolute h-full transition-transform duration-500 ease-in-out"
-        />
-      </div>
-      <!-- Carousel indicators -->
-      <div
-        class="carousel-indicator-wrapper absolute -bottom-[2.5vw] mx-auto flex w-full justify-center gap-x-4"
-      >
-        <button
-          type="button"
-          class="carousel-indicator size-[2vw] max-h-5 max-w-5 rounded-full bg-tc-grey"
-        ></button>
-        <button
-          type="button"
-          class="carousel-indicator size-[2vw] max-h-5 max-w-5 rounded-full bg-tc-grey"
-        ></button>
-        <button
-          type="button"
-          class="carousel-indicator size-[2vw] max-h-5 max-w-5 rounded-full bg-tc-grey"
-        ></button>
-        <button
-          type="button"
-          class="carousel-indicator size-[2vw] max-h-5 max-w-5 rounded-full bg-tc-grey"
-        ></button>
-        <button
-          type="button"
-          class="carousel-indicator size-[2vw] max-h-5 max-w-5 rounded-full bg-tc-grey"
-        ></button>
-      </div>
-      <!-- Carousel controls -->
-      <button
-        type="button"
-        class="absolute left-[2%] top-1/2 -translate-y-1/2"
-        id="carousel-control-left"
-      >
-        <svg
-          class="h-auto w-[2vw]"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 6 10"
-        >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M5 1 1 5l4 4"
-          />
-        </svg>
-      </button>
-      <button
-        type="button"
-        class="absolute right-[2%] top-1/2 -translate-y-1/2"
-        id="carousel-control-right"
-      >
-        <svg
-          class="h-auto w-[2vw]"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 6 10"
-        >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="m1 9 4-4-4-4"
-          />
-        </svg>
-      </button>
-    </section>
     <section class="mt-10 bg-tc-light-grey-1 py-10">
       <img
         src="assets/images/teal-climate-logo-1.svg"
         class="mx-auto w-[80px]"
       />
       <h2
-        class="mx-auto mt-8 w-2/3 text-center text-3xl font-bold leading-none text-tc-dark-green"
+        class="mx-auto mt-8 w-[800px] text-center text-4xl font-medium leading-[48px] text-tc-dark-green"
       >
-        Introducing our innovative carbon emissions tracker, a powerful tool
-        designed to measure and monitor your carbon footprint.
+        An innovative carbon emissions tracker, a powerful tool
+        designed to measure and monitor your <span class="line line-sm">carbon footprint</span>.
       </h2>
       <p class="mx-auto mt-8 w-2/3 text-center">
         By providing real-time data and actionable insights, our tool empowers
@@ -204,12 +111,16 @@
         Together, we can create a cleaner, healthier planet for future
         generations.
       </p>
-      <img src="assets/map-graph.svg" class="mt-8" />
+      <img src="assets/map-graph.svg" class="mt-8 w-[90%] mx-auto" />
     </section>
     <section class="flex p-10 px-16">
       <div class="flex flex-1 flex-col justify-center p-4">
-        <h2 class="text-2xl font-bold text-tc-dark-green">
-          Audit Ready<br />GHG Emission reports for<br />solutions
+        <h2 class="text-4xl font-medium text-tc-dark-green">
+          Audit Ready 
+            <br>
+            <span class="line line-sm">GHG Emission</span>
+          <br />
+          reports for :
         </h2>
         <ul class="mt-14 flex flex-col gap-y-4">
           <li class="flex gap-x-3">
@@ -248,9 +159,9 @@
     </section>
     <section class="bg-tc-light-green">
       <h2
-        class="mx-auto w-5/12 pt-16 text-center text-3xl font-bold text-tc-dark-green"
+        class="mx-auto w-4/12 pt-16 text-center text-4xl font-medium text-tc-dark-green"
       >
-        Comprehensive carbon accounting for business and institution
+        Comprehensive <span class="line line-sm">carbon accounting</span> for business and institution
       </h2>
       <button
         type="button"
@@ -265,8 +176,8 @@
         class="relative col-span-3 overflow-hidden rounded-lg bg-tc-light-blue"
       >
         <img
-          src="assets/images/scope-3.png"
-          class="absolute left-1/2 top-6 -translate-x-1/2"
+          src="assets/scope-3.svg"
+          class="absolute left-1/2  -translate-x-1/2"
         />
       </div>
       <div class="col-span-2 rounded-lg bg-tc-light-grey-2 p-6">
@@ -316,55 +227,40 @@
         </div>
       </div>
     </section>
-    <section>
-      <h2 class="text-center text-5xl font-bold text-tc-dark-green">
-        Track Emissions, Save The Planet!
-      </h2>
-    </section>
-    <footer class="mx-auto mt-12 bg-tc-dark-green py-10">
-      <div class="flex px-[10%]">
+ 
+    <footer class="mx-auto mt-12 bg-tc-dark-green py-10 text-white relative">
+      <div class="custom-shape-divider-top-1726056731">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
+      </div>
+      <div class="flex px-[10%] pt-48 pb-20">
         <div class="flex-1">
-          <img
-            src="assets/images/teal-climate-white-logo.png"
-            class="h-auto w-40"
-          />
-          <ul class="mt-3 flex gap-3 text-white">
+          <img src="assets/images/teal-climate-white-logo.png" class="h-auto w-40" />
+          <ul class="mt-3 flex gap-3">
             <li>Home</li>
             <li>Products</li>
             <li>Pricing</li>
             <li>Resources</li>
-            <li>About</li>
           </ul>
         </div>
-        <div class="flex-1 text-white">
+        <div class="flex-1">
           <p class="text-lg">
             Start Tracking Your Emissions Today for a Greener Tomorrow!
           </p>
-          <ul class="mt-2 flex gap-x-3">
-            <li class="cursor-pointer">
-              <img class="rounded-full border p-2" src="assets/twitter.svg" />
-            </li>
-            <li class="cursor-pointer">
-              <img class="rounded-full border p-2" src="assets/facebook.svg" />
-            </li>
-            <li class="cursor-pointer">
-              <img class="rounded-full border p-2" src="assets/instagram.svg" />
-            </li>
-            <li class="cursor-pointer">
-              <img class="rounded-full border p-2" src="assets/youtube.svg" />
-            </li>
-          </ul>
+          <a href="" class="inline-block border w-9 h-9 text-center leading-8 rounded-full mt-2">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
         </div>
       </div>
-      <div
-        class="border-top-white mt-3 flex w-full justify-between border-t px-[10%] pt-3 text-white"
-      >
+      <div class="border-top-white mt-3 flex justify-between border-t px-[8%] mx-10 pt-3">
         <span>© 2024 Teal Climate</span>
         <div>
-          <span class="mr-5">Terms & Conditions</span
-          ><span>Privacy Policy</span>
+          <span class="mr-5">Terms & Conditions</span>
+          <span>Privacy Policy</span>
         </div>
       </div>
     </footer>
+    
   </body>
 </html>

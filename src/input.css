@@ -1,3 +1,56 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.custom-shape-divider-top-1726056731 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1726056731 svg {
+  position: relative;
+  display: block;
+  width: calc(261% + 1.3px);
+  height: 284px;
+}
+
+.custom-shape-divider-top-1726056731 .shape-fill {
+  fill: #ffffff;
+}
+
+footer {
+  position: relative; /* Ensure footer is positioned relative for the custom shape divider */
+}
+.line {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  --line-height: 12px; /* Default height */
+}
+
+.line::after {
+  z-index: -1;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 97%;
+  height: var(--line-height);
+  background-color: #00cc9c;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+
+/* Example for smaller heading */
+.line-sm {
+  --line-height: 6px; /* Smaller height for smaller headings */
+}
