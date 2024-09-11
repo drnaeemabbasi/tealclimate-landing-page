@@ -1082,15 +1082,13 @@ footer {
   display: block;
   position: absolute;
   bottom: 3px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 97%;
+  width: 100%;
   height: var(--line-height);
   background-color: #00cc9c;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
+  -webkit-transform:;
+  -moz-transform:;
+  -ms-transform:;
+  -o-transform:;
 }
 
 /* Example for smaller heading */
