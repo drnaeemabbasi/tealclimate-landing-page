@@ -2,36 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom Shape Divider */
-.custom-shape-divider-top-1726056731 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
 .custom-shape-divider-top-1726056731 svg {
-  position: relative;
-  display: block;
-  width: calc(300% + 1.3px);
-  height: 284px;
+  width: calc(100% + 1.3px);
+  height: 120px;
 }
-
-.custom-shape-divider-top-1726056731 .shape-fill {
-  fill: #ffffff;
-}
-
-footer {
-  position: relative;
-}
-
 /* Line styling */
 .line {
-  position: relative;
-  display: inline-block;
-  z-index: 1;
   --line-height: 12px; /* Default large line */
 }
 
@@ -71,7 +47,18 @@ footer {
   .mobile-nav.active {
     @apply max-md:h-[170px];
   }
-
+  .custom-shape-divider-top-1726056731{
+    @apply absolute left-0 top-0 w-full overflow-hidden leading-[0]
+  }
+  .custom-shape-divider-top-1726056731 svg{
+    @apply relative block h-[284px] 
+  }
+  .custom-shape-divider-top-1726056731 .shape-fill{
+    @apply fill-white
+  }
+  .line{
+    @apply relative inline-block z-[1]
+  }
   .head1 {
     @apply text-[8vw] sm:text-[6vw];
   }
