@@ -11,176 +11,185 @@
       type="image/x-icon"
     />
     <!-- font awsome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script type="module" src="script.js" defer></script>
   </head>
   <body>
     <!-- Navbar -->
-    <nav
-      class="flex min-h-16 items-center justify-between bg-tc-light-grey-1 px-8"
-    >
-      <div class="flex items-center justify-center gap-x-1">
+    <nav class="flex flex-wrap items-center justify-between px-[3vw] py-8">
+      <a href="" class="flex gap-1">
         <img src="./assets/images/teal-climate-logo-1.svg" />
         <img src="./assets/images/teal-climate-logo-2.svg" />
-      </div>
-      <!-- Mobile menu button -->
-      <button class="menu-toggle md:hidden">
-        <svg
-          class="h-6 w-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+      </a>
+      <svg
+        id="navBtn"
+        class="cursor-pointer md:hidden"
+        width="30px"
+        height="30px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g clip-path="url(#clip0_429_11066)">
           <path
+            d="M3 6.00092H21M3 12.0009H21M3 18.0009H21"
+            stroke="#292929"
+            stroke-width="2.5"
             stroke-linecap="round"
             stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          ></path>
-        </svg>
-      </button>
-      <!-- Menu -->
-      <ul
-        class="fixed bottom-0 right-0 top-0 z-10 flex w-1/2 flex-col items-center justify-center gap-10 bg-inherit shadow md:static md:flex md:w-auto md:flex-row md:shadow-none"
-        id="menu"
-      >
-        <li class="menu-toggle absolute left-4 top-4 md:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M6 18 18 6M6 6l12 12"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_429_11066">
+            <rect
+              width="24"
+              height="24"
+              fill="white"
+              transform="translate(0 0.000915527)"
             />
-          </svg>
-        </li>
-        <li class="text-tc-dark">Products</li>
-        <li class="text-tc-dark">Pricing</li>
-        <li class="text-tc-dark">Resources</li>
-      </ul>
-      <button
-      class="w-32 hover:bg-tc-green border border-tc-green text-tc-green hover:text-white duration-300 py-2 rounded-full hover:opacity-90"
-    >
-      Login
-    </button>
+          </clipPath>
+        </defs>
+      </svg>
+      <div
+        class="mobile-nav left-0 top-[11%] z-10 flex flex-grow overflow-hidden bg-white duration-500 max-md:absolute max-md:h-0 max-md:w-full max-md:flex-col max-md:gap-4 max-md:px-[3vw]"
+      >
+        <ul
+          class="flex gap-3 max-md:flex-col md:mx-auto md:items-center md:gap-10"
+        >
+          <li>
+            <a
+              href=""
+              class="nav-link relative font-semibold duration-300 hover:text-green-700"
+              >Products</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="nav-link relative font-semibold duration-300 hover:text-green-700"
+              >Pricing</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="nav-link relative font-semibold duration-300 hover:text-green-700"
+              >Resources</a
+            >
+          </li>
+        </ul>
+        <a
+          class="w-32 cursor-pointer rounded-full border-2 border-tc-green py-2 text-center font-bold text-black duration-300 hover:bg-tc-green hover:text-white hover:opacity-90"
+        >
+          Login
+        </a>
+      </div>
     </nav>
     <!-- Hero -->
-    <section
-      class="flex min-h-[calc(100vh-4rem-4rem)] flex-col items-center justify-center gap-y-14"
-    >
-      <h1
-        class="flex flex-col items-center justify-center text-[30px] font-medium leading-none text-tc-dark-green sm:text-5xl md:text-6xl lg:text-7xl"
-      >
-        <span>Carbon <span class="line">Measurement</span> &</span><span>Reporting Platform</span>
+
+    <section class="mx-auto mt-12 max-w-[500px] text-center md:max-w-[800px]">
+      <h1 class="head1 font-normal leading-none">
+        Carbon <span class="line">Measurement</span> & Reporting Platform
       </h1>
-      <div>
-        <button
-          type="button"
-          class="mr-4 w-40 rounded-lg border-[2px] border-tc-green bg-tc-green py-2 text-white hover:opacity-90"
+      <div class="mt-10 flex justify-center gap-2">
+        <a href="" class="btn fw-bold bg-tc-green text-white hover:bg-black"
+          >Get Started</a
         >
-          Get Started</button
-        ><button
-          type="button"
-          class="w-40 rounded-lg border-[2px] border-tc-green py-2 hover:bg-tc-green hover:text-white"
+        <a
+          href=""
+          class="btn border-2 border-tc-green hover:bg-tc-green hover:text-white"
+          >Request a Demo</a
         >
-          Request a Demo
-        </button>
       </div>
     </section>
-    <section class="mt-10 bg-tc-light-grey-1 py-10">
+
+    <section
+      class="mx-auto my-16 flex w-[90%] max-w-[700px] flex-col gap-5 font-medium md:my-32 md:text-center"
+    >
       <img
         src="assets/images/teal-climate-logo-1.svg"
         class="mx-auto w-[80px]"
       />
-      <h2
-        class="mx-auto mt-8 w-[800px] text-center text-4xl font-medium leading-[48px] text-tc-dark-green"
-      >
-        An innovative carbon emissions tracker, a powerful tool
-        designed to measure and monitor your <span class="line line-sm">carbon footprint</span>.
+      <h2 class="text-2xl text-tc-dark-green md:leading-[48px] lg:text-4xl">
+        An innovative carbon emissions tracker, a powerful tool designed to
+        measure and monitor your
+        <span class="line line-sm">carbon footprint</span>.
       </h2>
-      <p class="mx-auto mt-8 w-2/3 text-center">
+      <p>
         By providing real-time data and actionable insights, our tool empowers
         you to make informed decisions that reduce your environmental impact.
         Together, we can create a cleaner, healthier planet for future
         generations.
       </p>
-      <img src="assets/map-graph.svg" class="mt-8 w-[90%] mx-auto" />
     </section>
-    <section class="flex p-10 px-16">
-      <div class="flex flex-1 flex-col justify-center p-4">
-        <h2 class="text-4xl font-medium text-tc-dark-green">
-          Audit Ready 
-            <br>
-            <span class="line line-sm">GHG Emission</span>
-          <br />
-          reports for :
+
+    <section
+      class="mx-auto my-10 flex justify-between px-[3vw] max-lg:max-w-[500px] max-lg:flex-col lg:items-center"
+    >
+      <div class="">
+        <h2 class="text-4xl font-medium text-tc-dark-green">Audit Ready</h2>
+        <h2 class="line line-sm text-4xl font-medium text-tc-dark-green">
+          GHG Emission
         </h2>
-        <ul class="mt-14 flex flex-col gap-y-4">
+        <h2 class="text-4xl font-medium text-tc-dark-green">reports for :</h2>
+        <ul class="my-14 flex flex-col gap-y-4">
           <li class="flex gap-x-3">
-            <img src="assets/green-leaf.svg" /><span
-              >Disclosure Regulations</span
-            >
+            <img src="assets/green-leaf.svg" />
+            <span>Disclosure Regulations</span>
           </li>
           <li class="flex gap-x-3">
-            <img src="assets/green-leaf.svg" /><span>Frame works</span>
+            <img src="assets/green-leaf.svg" />
+            <span>Frame works</span>
           </li>
           <li class="flex gap-x-3">
-            <img src="assets/green-leaf.svg" /><span
-              >Investor Requirements</span
-            >
+            <img src="assets/green-leaf.svg" />
+            <span>Investor Requirements</span>
           </li>
           <li class="flex gap-x-3">
-            <img src="assets/green-leaf.svg" /><span
-              >Company internal targets solution</span
-            >
+            <img src="assets/green-leaf.svg" />
+            <span>Company internal targets solution</span>
           </li>
         </ul>
       </div>
-      <div class="relative flex-1">
-        <img src="assets/images/image-1.png" />
-        <div
-          class="absolute bottom-4 left-1/2 grid w-full -translate-x-1/2 grid-cols-2 grid-rows-2 justify-items-center gap-[2%] px-[2%]"
-        >
-          <img src="assets/images/scope-1.png" class="size-full object-cover" />
-          <img
-            src="assets/images/scope-3.png"
-            class="row-span-2 size-full object-cover"
-          />
-          <img src="assets/images/scope-2.png" class="size-full object-cover" />
+      <div
+        class="flex min-h-[580px] max-w-[500px] items-end gap-3 rounded-3xl bg-[url('assets/images/image-1.png')] bg-cover bg-center p-5"
+      >
+        <div class="flex gap-3 max-sm:flex-col">
+          <div class="flex flex-col gap-3">
+            <img src="assets/scope-1.svg" alt="" />
+            <img src="assets/scope-2.svg" alt="" />
+          </div>
+          <img src="assets/scope-3.svg" alt="" />
         </div>
       </div>
     </section>
-    <section class="bg-tc-light-green">
+
+    <section class="my-16 bg-tc-light-green px-[5vw] pt-20 text-center">
       <h2
-        class="mx-auto w-4/12 pt-16 text-center text-4xl font-medium text-tc-dark-green"
+        class="mx-auto max-w-[600px] text-[5vw] font-medium text-tc-dark-green sm:text-4xl md:leading-[48px]"
       >
-        Comprehensive <span class="line line-sm">carbon accounting</span> for business and institution
+        Comprehensive <span class="line line-sm">carbon accounting</span> for
+        business and institution
       </h2>
-      <button
-        type="button"
-        class="mx-auto mt-8 block w-40 rounded-lg border-[2px] border-tc-green bg-tc-green py-2 text-white hover:opacity-90"
-      >
-        Explore Plans
-      </button>
+      <a
+        href=""
+        class="btn my-6 border-2 border-tc-green hover:bg-tc-green hover:text-white"
+        >Explore Plans
+      </a>
+
       <img src="assets/dashboard.svg" class="mx-auto mt-8" />
     </section>
-    <section class="mx-auto grid h-[500px] w-[80%] grid-cols-5 gap-4 py-12">
+
+    <section
+      class="mx-auto mb-16 grid h-[500px] w-[90%] max-w-[1300px] grid-cols-5 gap-4"
+    >
       <div
-        class="relative col-span-3 overflow-hidden rounded-lg bg-tc-light-blue"
+        class="relative col-span-full flex min-h-[300px] justify-center overflow-hidden rounded-lg bg-tc-light-blue pt-10 sm:col-span-3"
       >
-        <img
-          src="assets/scope-3.svg"
-          class="absolute left-1/2  -translate-x-1/2"
-        />
+        <img src="assets/scope-3.svg" class="" />
       </div>
-      <div class="col-span-2 rounded-lg bg-tc-light-grey-2 p-6">
+      <div
+        class="col-span-full rounded-lg bg-tc-light-grey-2 p-6 sm:col-span-2"
+      >
         <h3 class="mb-3 text-xl text-tc-dark-green">
           Financial Emissions<br />Measurements
         </h3>
@@ -197,7 +206,9 @@
           </li>
         </ul>
       </div>
-      <div class="col-span-2 rounded-lg bg-tc-light-grey-2 p-6">
+      <div
+        class="col-span-full rounded-lg bg-tc-light-grey-2 p-6 sm:col-span-2"
+      >
         <h3 class="mb-3 text-xl text-tc-dark-green">Teal Climate</h3>
         <ul class="flex flex-col">
           <li class="flex items-center gap-x-3">
@@ -213,7 +224,7 @@
         </ul>
       </div>
       <div
-        class="col-span-3 flex items-center justify-center rounded-lg bg-tc-light-green"
+        class="col-span-full flex items-center justify-center rounded-lg bg-tc-light-green sm:col-span-3"
       >
         <div class="flex items-center justify-center gap-x-1">
           <img
@@ -227,40 +238,55 @@
         </div>
       </div>
     </section>
- 
-    <footer class="mx-auto mt-12 bg-tc-dark-green py-10 text-white relative">
+
+    <footer class="relative mt-12 bg-tc-dark-green py-10 text-white">
       <div class="custom-shape-divider-top-1726056731">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-      </svg>
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
       </div>
-      <div class="flex px-[10%] pt-48 pb-20">
+      <div class="flex gap-4 px-[10%] pb-20 pt-48 max-sm:flex-col">
         <div class="flex-1">
-          <img src="assets/images/teal-climate-white-logo.png" class="h-auto w-40" />
+          <img
+            src="assets/images/teal-climate-white-logo.png"
+            class="h-auto w-40"
+          />
           <ul class="mt-3 flex gap-3">
-            <li>Home</li>
-            <li>Products</li>
-            <li>Pricing</li>
-            <li>Resources</li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Resources</a></li>
           </ul>
         </div>
         <div class="flex-1">
           <p class="text-lg">
             Start Tracking Your Emissions Today for a Greener Tomorrow!
           </p>
-          <a href="" class="inline-block border w-9 h-9 text-center leading-8 rounded-full mt-2">
-            <i class="fa-brands fa-linkedin-in"></i>
+          <a
+            href=""
+            class="mt-2 flex h-10 w-10 items-center justify-center rounded-full border"
+          >
+            <img src="./assets/linkdin-icon.svg" alt="" />
           </a>
         </div>
       </div>
-      <div class="border-top-white mt-3 flex justify-between border-t px-[8%] mx-10 pt-3">
+      <div
+        class="border-top-white mx-10 mt-3 flex flex-wrap justify-between gap-2 border-t px-[8%] pt-3"
+      >
         <span>© 2024 Teal Climate</span>
-        <div>
+        <div class="flex max-sm:flex-col">
           <span class="mr-5">Terms & Conditions</span>
           <span>Privacy Policy</span>
         </div>
       </div>
     </footer>
-    
   </body>
 </html>

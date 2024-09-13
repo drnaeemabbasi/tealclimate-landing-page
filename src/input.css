@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom Shape Divider */
 .custom-shape-divider-top-1726056731 {
   position: absolute;
   top: 0;
@@ -14,7 +15,7 @@
 .custom-shape-divider-top-1726056731 svg {
   position: relative;
   display: block;
-  width: calc(261% + 1.3px);
+  width: calc(300% + 1.3px);
   height: 284px;
 }
 
@@ -23,13 +24,15 @@
 }
 
 footer {
-  position: relative; /* Ensure footer is positioned relative for the custom shape divider */
+  position: relative;
 }
+
+/* Line styling */
 .line {
   position: relative;
   display: inline-block;
   z-index: 1;
-  --line-height: 12px; /* Default height */
+  --line-height: 12px; /* Default large line */
 }
 
 .line::after {
@@ -41,14 +44,62 @@ footer {
   width: 100%;
   height: var(--line-height);
   background-color: #00cc9c;
-  -webkit-transform:;
-  -moz-transform:;
-  -ms-transform:;
-  -o-transform:;
 }
 
-
-/* Example for smaller heading */
+/* Small line */
 .line-sm {
-  --line-height: 6px; /* Smaller height for smaller headings */
+  --line-height: 6px;
+}
+
+/* Navigation link hover effect */
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  background: #15803d;
+  transition: all 0.4s;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
+/* Responsive Styles */
+@layer utilities {
+  .mobile-nav.active {
+    @apply max-md:h-[170px];
+  }
+
+  .head1 {
+    @apply text-[8vw] sm:text-[6vw];
+  }
+
+  .btn {
+    @apply w-32 text-sm md:text-lg inline-block sm:w-48 py-3 rounded-lg duration-300;
+  }
+}
+
+/* Responsive line behavior */
+@media (min-width: 768px) {
+  .head1 {
+    font-size: clamp(2.5rem, 1.3rem + 3.3333vw, 4.5rem);
+  }
+  .custom-shape-divider-top-1726056731 svg {
+    width: calc(242% + 1.3px);
+    height: 202px;
+    }
+}
+@media (min-width:992px) {
+.custom-shape-divider-top-1726056731 svg {
+width: calc(285% + 1.3px);
+}
+}
+
+@media (max-width: 768px) {
+  .line {
+    --line-height: 6px; /* Small line on small screens */
+  }
+
 }
