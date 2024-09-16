@@ -61,7 +61,7 @@
   }
 
   .btn {
-    @apply w-28  text-xs md:text-lg inline-block sm:w-48 py-3 rounded-lg duration-300;
+    @apply text-xs md:text-lg inline-block w-32 sm:w-40 py-3 rounded-lg duration-300;
   }
 }
 
