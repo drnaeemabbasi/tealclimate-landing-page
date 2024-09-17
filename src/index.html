@@ -13,7 +13,7 @@
     <!-- font awsome cdn -->
     <script type="module" src="script.js" defer></script>
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <!-- Navbar -->
     <nav class="flex flex-wrap items-center justify-between px-[3vw] py-8">
       <a href="" class="flex gap-1">
@@ -91,7 +91,7 @@
 
     <section class="mx-auto mt-12 max-w-[500px] text-center md:max-w-[800px]">
       <h1
-        class="text-[8vw] font-normal leading-none text-green-800 sm:text-[6vw] md:text-[clamp(2.5rem,1.3rem+3.3333vw,4.5rem)]"
+        class="text-[8vw] font-[600] leading-none text-[#025E49] sm:text-[6vw] md:text-[clamp(2.5rem,1.3rem+3.3333vw,4.5rem)]"
       >
         Carbon
         <span class="line relative z-[1] inline-block">Measurement</span> &
@@ -113,18 +113,18 @@
 
     <section
       id="myPhotoSection"
-      class="mx-auto mt-20 h-[1200px] max-w-[1600px] rounded-full bg-slate-400 bg-[url('assets/images/carousel-image-5.png')] bg-cover bg-center max-lg:hidden"
+      class="mx-auto mt-20 h-[1000px] max-w-[1400px] rounded-full bg-slate-400 bg-[url('assets/images/carousel-image-5.png')] bg-cover bg-center max-lg:hidden"
     ></section>
 
     <section
-      class="mx-auto my-16 flex w-[90%] max-w-[700px] flex-col gap-5 font-medium md:my-32 md:text-center"
+      class="mx-auto my-16 flex w-[90%] max-w-[700px] flex-col gap-5 font-medium md:my-32 text-center"
     >
       <img
         src="assets/images/teal-climate-logo-1.svg"
-        class="mx-auto w-[80px]"
+        class="mx-auto w-[80px] mt-16"
       />
       <h2
-        class="text-lg text-tc-dark-green sm:text-xl md:leading-[48px] lg:text-3xl"
+        class="text-xl text-tc-dark-green sm:text-3xl md:leading-[48px] lg:text-4xl"
       >
         An innovative carbon emissions tracker, a powerful tool designed to
         measure and monitor your
@@ -203,7 +203,7 @@
     </section>
 
     <section
-      class="mx-auto mb-16 grid h-[500px] w-[90%] max-w-[1300px] grid-cols-5 gap-4"
+      class="mx-auto mb-16 grid min-h-[500px] w-[90%] max-w-[1300px] grid-cols-5 gap-4"
     >
       <div
         class="relative col-span-full flex min-h-[300px] justify-center overflow-hidden rounded-lg bg-tc-light-blue pt-10 sm:col-span-3"
@@ -247,7 +247,7 @@
         </ul>
       </div>
       <div
-        class="col-span-full flex items-center justify-center rounded-lg bg-tc-light-green sm:col-span-3"
+        class="col-span-full flex items-center justify-center rounded-lg bg-tc-light-green sm:col-span-3 py-8"
       >
         <div class="flex items-center justify-center gap-x-1">
           <img
@@ -264,7 +264,7 @@
 
     <footer class="relative mt-12 bg-tc-dark-green py-10 text-white">
       <div
-        class="custom-shape-divider-top-1726056731 absolute left-0 top-0 w-full overflow-hidden leading-[0]"
+        class="absolute left-0 top-0 w-full overflow-hidden leading-[0]"
       >
         <svg
           class="md:w-[calc(405%+1.3px) relative block h-[284px] lg:w-[calc(285%+1.3px)]"
@@ -279,7 +279,7 @@
           ></path>
         </svg>
       </div>
-      <div class="flex gap-4 px-[10%] pb-20 pt-48 max-sm:flex-col">
+      <div class="flex gap-4 px-[10%] pb-10 md:pb-20  pt-48 max-sm:flex-col">
         <div class="flex-1">
           <img
             src="assets/images/teal-climate-white-logo.png"
@@ -305,11 +305,11 @@
         </div>
       </div>
       <div
-        class="border-top-white mx-10 mt-3 flex flex-wrap justify-between gap-2 border-t px-[8%] pt-3"
+        class="border-top-white  px-6 sm:px-[9%] mx-5 flex flex-wrap justify-between gap-2 border-t  pt-3"
       >
-        <span>© 2024 Teal Climate</span>
-        <div class="flex max-sm:flex-col">
-          <span class="mr-5">Terms & Conditions</span>
+        <span><span class="text-xl">©</span> 2024 Teal Climate</span>
+        <div class="flex max-sm:flex-col gap-y-[7px] md:gap-8">
+          <span>Terms & Conditions</span>
           <span>Privacy Policy</span>
         </div>
       </div>
