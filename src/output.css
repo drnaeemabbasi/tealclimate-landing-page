@@ -566,6 +566,18 @@ video {
   top: 13%;
 }
 
+.top-\[\] {
+  top: ;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
+.top-24 {
+  top: 6rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -648,18 +660,6 @@ video {
   display: grid;
 }
 
-.aspect-auto {
-  aspect-ratio: auto;
-}
-
-.aspect-video {
-  aspect-ratio: 16 / 9;
-}
-
-.aspect-square {
-  aspect-ratio: 1 / 1;
-}
-
 .size-5 {
   width: 1.25rem;
   height: 1.25rem;
@@ -681,36 +681,12 @@ video {
   height: auto;
 }
 
-.h-\[00px\] {
-  height: 00px;
-}
-
-.h-\[100px\] {
-  height: 100px;
-}
-
-.h-\[600px\] {
-  height: 600px;
-}
-
-.h-\[900px\] {
-  height: 900px;
-}
-
 .min-h-\[300px\] {
   min-height: 300px;
 }
 
 .min-h-\[580px\] {
   min-height: 580px;
-}
-
-.min-h-\[200px\] {
-  min-height: 200px;
-}
-
-.min-h-\[500px\] {
-  min-height: 500px;
 }
 
 .w-10 {
@@ -729,10 +705,6 @@ video {
   width: 10rem;
 }
 
-.w-\[1000px\] {
-  width: 1000px;
-}
-
 .w-\[80px\] {
   width: 80px;
 }
@@ -741,20 +713,16 @@ video {
   width: 90%;
 }
 
-.w-\[500px\] {
-  width: 500px;
-}
-
-.min-w-\[500px\] {
-  min-width: 500px;
-}
-
 .max-w-\[1100px\] {
   max-width: 1100px;
 }
 
 .max-w-\[1300px\] {
   max-width: 1300px;
+}
+
+.max-w-\[1800px\] {
+  max-width: 1800px;
 }
 
 .max-w-\[500px\] {
@@ -767,26 +735,6 @@ video {
 
 .max-w-\[700px\] {
   max-width: 700px;
-}
-
-.max-w-\[1000px\] {
-  max-width: 1000px;
-}
-
-.max-w-\[2000px\] {
-  max-width: 2000px;
-}
-
-.max-w-\[3000px\] {
-  max-width: 3000px;
-}
-
-.max-w-\[4000px\] {
-  max-width: 4000px;
-}
-
-.max-w-\[1800px\] {
-  max-width: 1800px;
 }
 
 .flex-1 {
@@ -935,36 +883,17 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'assets\/images\/image-1\.png\'\)\] {
-  background-image: url('assets/images/image-1.png');
-}
-
-.bg-\[url\(\'assets\/images\/\'\)\] {
-  background-image: url('assets/images/');
-}
-
-.bg-\[url\(\'assets\/\'\)\] {
-  background-image: url('assets/');
-}
-
-.bg-\[url\(\'assets\/images\/carousel-image-5\'\)\] {
-  background-image: url('assets/images/carousel-image-5');
-}
-
-.bg-\[url\(\'assets\/images\/image-1\'\)\] {
-  background-image: url('assets/images/image-1');
-}
-
-.bg-\[url\(\'assets\/images\/image-1\.\'\)\] {
-  background-image: url('assets/images/image-1.');
-}
-
-.bg-\[url\(\'assets\/images\/carousel-image-5\.\'\)\] {
-  background-image: url('assets/images/carousel-image-5.');
+.bg-red-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'assets\/images\/carousel-image-5\.png\'\)\] {
   background-image: url('assets/images/carousel-image-5.png');
+}
+
+.bg-\[url\(\'assets\/images\/image-1\.png\'\)\] {
+  background-image: url('assets/images/image-1.png');
 }
 
 .bg-cover {
@@ -1262,6 +1191,10 @@ video {
 }
 
 @media not all and (min-width: 1024px) {
+  .max-lg\:hidden {
+    display: none;
+  }
+
   .max-lg\:flex-col {
     flex-direction: column;
   }
@@ -1371,6 +1304,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:hidden {
+    display: none;
+  }
+
   .lg\:items-center {
     align-items: center;
   }
