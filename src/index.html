@@ -50,31 +50,34 @@
         </defs>
       </svg>
       <div
-        class="mobile-nav left-0 top-24 z-10 flex flex-grow overflow-hidden bg-white duration-500 max-md:absolute max-md:h-0 max-md:w-full max-md:flex-col max-md:gap-4 max-md:px-[3vw]"
+        class="mobile-nav left-0 top-24 z-10 flex flex-grow overflow-hidden bg-white transition-all duration-500 max-md:absolute max-md:h-0 max-md:w-full max-md:flex-col max-md:gap-4 max-md:px-[3vw]"
       >
         <ul
           class="flex gap-3 max-md:flex-col md:mx-auto md:items-center md:gap-10"
         >
           <li>
             <a
-              href=""
-              class="nav-link relative font-semibold duration-300 hover:text-green-700"
-              >Products</a
+              href="#"
+              class="nav-link relative font-semibold duration-300 before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-0 before:bg-green-700 before:transition-all before:duration-300 hover:text-green-700 hover:before:w-full"
             >
+              Products
+            </a>
           </li>
           <li>
             <a
-              href=""
-              class="nav-link relative font-semibold duration-300 hover:text-green-700"
-              >Pricing</a
+              href="#"
+              class="nav-link relative font-semibold duration-300 before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-0 before:bg-green-700 before:transition-all before:duration-300 hover:text-green-700 hover:before:w-full"
             >
+              Pricing
+            </a>
           </li>
           <li>
             <a
-              href=""
-              class="nav-link relative font-semibold duration-300 hover:text-green-700"
-              >Resources</a
+              href="#"
+              class="nav-link relative font-semibold duration-300 before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-0 before:bg-green-700 before:transition-all before:duration-300 hover:text-green-700 hover:before:w-full"
             >
+              Resources
+            </a>
           </li>
         </ul>
         <a
@@ -87,28 +90,32 @@
     <!-- Hero -->
 
     <section class="mx-auto mt-12 max-w-[500px] text-center md:max-w-[800px]">
-      <h1 class="head1 font-normal leading-none text-green-800">
-        Carbon <span class="line">Measurement</span> & Reporting Platform
+      <h1
+        class="text-[8vw] font-normal leading-none text-green-800 sm:text-[6vw] md:text-[clamp(2.5rem,1.3rem+3.3333vw,4.5rem)]"
+      >
+        Carbon
+        <span class="line relative z-[1] inline-block">Measurement</span> &
+        Reporting Platform
       </h1>
       <div class="mt-10 flex justify-center gap-2">
         <a
           href=""
-          class="btn bg-tc-green font-semibold text-white hover:bg-black"
+          class="inline-block w-32 rounded-lg bg-tc-green py-3 text-xs font-semibold text-white duration-300 hover:bg-black sm:w-40 md:text-lg"
           >Get Started</a
         >
         <a
           href=""
-          class="btn border-2 border-tc-green font-semibold hover:bg-tc-green hover:text-white"
+          class="inline-block w-32 rounded-lg border-2 border-tc-green py-3 text-xs font-semibold duration-300 hover:bg-tc-green hover:text-white sm:w-40 md:text-lg"
           >Request a Demo</a
         >
       </div>
     </section>
 
     <section
-    id="myPhotoSection"
-    class="mx-auto max-lg:hidden mt-20 h-[1000px] rounded-full max-w-[1800px] bg-slate-400 bg-[url('assets/images/carousel-image-5.png')] bg-cover bg-center"
-  ></section>
-  
+      id="myPhotoSection"
+      class="mx-auto mt-20 h-[1200px] max-w-[1600px] rounded-full bg-slate-400 bg-[url('assets/images/carousel-image-5.png')] bg-cover bg-center max-lg:hidden"
+    ></section>
+
     <section
       class="mx-auto my-16 flex w-[90%] max-w-[700px] flex-col gap-5 font-medium md:my-32 md:text-center"
     >
@@ -121,7 +128,7 @@
       >
         An innovative carbon emissions tracker, a powerful tool designed to
         measure and monitor your
-        <span class="line line-sm">carbon footprint</span>.
+        <span class="line relative z-[1] inline-block">carbon footprint</span>.
       </h2>
       <p>
         By providing real-time data and actionable insights, our tool empowers
@@ -139,7 +146,7 @@
           Audit Ready
         </h2>
         <h2
-          class="line line-sm text-2xl font-medium text-tc-dark-green md:text-4xl"
+          class="line relative z-[1] inline-block text-2xl font-medium text-tc-dark-green md:text-4xl"
         >
           GHG Emission
         </h2>
@@ -182,12 +189,13 @@
       <h2
         class="mx-auto max-w-[600px] text-[5vw] font-medium text-tc-dark-green sm:text-4xl md:leading-[48px]"
       >
-        Comprehensive <span class="line line-sm">carbon accounting</span> for
-        business and institution
+        Comprehensive
+        <span class="line relative z-[1] inline-block">carbon accounting</span>
+        for business and institution
       </h2>
       <a
         href=""
-        class="btn my-6 border-2 border-tc-green hover:bg-tc-green hover:text-white"
+        class="my-6 inline-block w-32 rounded-lg border-2 border-tc-green py-3 text-xs duration-300 hover:bg-tc-green hover:text-white sm:w-40 md:text-lg"
         >Explore Plans
       </a>
 
@@ -255,8 +263,11 @@
     </section>
 
     <footer class="relative mt-12 bg-tc-dark-green py-10 text-white">
-      <div class="custom-shape-divider-top-1726056731">
+      <div
+        class="custom-shape-divider-top-1726056731 absolute left-0 top-0 w-full overflow-hidden leading-[0]"
+      >
         <svg
+          class="md:w-[calc(405%+1.3px) relative block h-[284px] lg:w-[calc(285%+1.3px)]"
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
@@ -264,7 +275,7 @@
         >
           <path
             d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            class="shape-fill"
+            class="fill-white"
           ></path>
         </svg>
       </div>

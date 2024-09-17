@@ -3,86 +3,10 @@
 @tailwind utilities;
 
 
-/* Line styling */
-.line {
-  --line-height: 12px; /* Default large line */
-}
+.line::after {z-index: -1;content: "";display: block;position: absolute;bottom: 6%;width: 100%;height: 15%;background-color: #00cc9c;}
+.mobile-nav.active{@apply max-md:h-[170px] }
 
-.line::after {
-  z-index: -1;
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 6%;
-  width: 100%;
-  height: var(--line-height);
-  background-color: #00cc9c;
-}
 
-/* Small line */
-.line-sm {
-  --line-height: 6px;
-}
 
-/* Navigation link hover effect */
-.nav-link::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -5px;
-  background: #15803d;
-  transition: all 0.4s;
-}
 
-.nav-link:hover::before {
-  width: 100%;
-}
 
-/* Responsive Styles */
-@layer utilities {
-  .mobile-nav.active {
-    @apply max-md:h-[170px];
-  }
-  .custom-shape-divider-top-1726056731{
-    @apply absolute left-0 top-0 w-full overflow-hidden leading-[0]
-  }
-  .custom-shape-divider-top-1726056731 svg{
-    @apply relative block h-[284px] 
-  }
-  .custom-shape-divider-top-1726056731 .shape-fill{
-    @apply fill-white
-  }
-  .line{
-    @apply relative inline-block z-[1]
-  }
-  .head1 {
-    @apply text-[8vw] sm:text-[6vw];
-  }
-
-  .btn {
-    @apply text-xs md:text-lg inline-block w-32 sm:w-40 py-3 rounded-lg duration-300;
-  }
-}
-
-/* Responsive line behavior */
-@media (min-width: 768px) {
-  .head1 {
-    font-size: clamp(2.5rem, 1.3rem + 3.3333vw, 4.5rem);
-  }
-  .custom-shape-divider-top-1726056731 svg {
-    width: calc(405% + 1.3px);
-    }
-}
-@media (min-width:992px) {
-.custom-shape-divider-top-1726056731 svg {
-width: calc(285% + 1.3px);
-}
-}
-
-@media (max-width: 768px) {
-  .line {
-    --line-height: 6px; /* Small line on small screens */
-  }
-
-}
