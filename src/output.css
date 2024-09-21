@@ -911,12 +911,12 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/src\/assets\/images\/carousel-image-5\.png\'\)\] {
-  background-image: url('/src/assets/images/carousel-image-5.png');
+.bg-\[url\(\'\.\/assets\/images\/carousel-image-5\.png\'\)\] {
+  background-image: url('./assets/images/carousel-image-5.png');
 }
 
-.bg-\[url\(\'\/src\/assets\/images\/image-1\.png\'\)\] {
-  background-image: url('/src/assets/images/image-1.png');
+.bg-\[url\(\'\.\/assets\/images\/image-1\.png\'\)\] {
+  background-image: url('./assets/images/image-1.png');
 }
 
 .bg-cover {
