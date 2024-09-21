@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teal Climate</title>
+    <link rel="stylesheet" href="/src/output.css" />
+    <link
+      rel="shortcut icon"
+      href="/src/assets/images/teal-climate-logo-1.svg"
+      type="image/x-icon"
+    />
+    <!-- font awsome cdn -->
+    <script type="module" src="/src/script.js" defer></script>
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- Navbar -->
+    <nav class="flex flex-wrap items-center justify-between px-[3vw] py-8">
+      <a href="" class="flex gap-1">
+        <img src="/src/assets/images/teal-climate-logo-1.svg" />
+        <img src="/src/assets/images/teal-climate-logo-2.svg" />
+      </a>
+      <svg
+        id="navBtn"
+        class="cursor-pointer md:hidden"
+        width="30px"
+        height="30px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g clip-path="url(#clip0_429_11066)">
+          <path
+            d="M3 6.00092H21M3 12.0009H21M3 18.0009H21"
+            stroke="#292929"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_429_11066">
+            <rect
+              width="24"
+              height="24"
+              fill="white"
+              transform="translate(0 0.000915527)"
+            />
+          </clipPath>
+        </defs>
+      </svg>
+      <div
+        class="mobile-nav left-0 top-24 z-10 flex flex-grow overflow-hidden bg-white transition-all duration-500 max-md:absolute max-md:h-0 max-md:w-full max-md:flex-col max-md:gap-4 max-md:px-[3vw]"
+      >
+        <ul
+          class="flex gap-3 max-md:flex-col md:mx-auto md:items-center md:gap-10"
+        >
+          <li>
+            <a
+              href="#"
+              class="nav-link relative font-semibold duration-300 before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-0 before:bg-green-700 before:transition-all before:duration-300 hover:text-green-700 hover:before:w-full"
+            >
+              Products
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="nav-link relative font-semibold duration-300 before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-0 before:bg-green-700 before:transition-all before:duration-300 hover:text-green-700 hover:before:w-full"
+            >
+              Pricing
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="nav-link relative font-semibold duration-300 before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-0 before:bg-green-700 before:transition-all before:duration-300 hover:text-green-700 hover:before:w-full"
+            >
+              Resources
+            </a>
+          </li>
+        </ul>
+        <a
+          class="w-24 cursor-pointer rounded-full border-2 border-tc-green py-1 text-center font-semibold text-black duration-300 hover:bg-tc-green hover:text-white hover:opacity-90 sm:w-32 sm:py-2"
+        >
+          Login
+        </a>
+      </div>
+    </nav>
+    <!-- Hero -->
+
+    <section class="mx-auto mt-12 max-w-[500px] text-center md:max-w-[800px]">
+      <h1
+        class="text-[8vw] font-[600] leading-none text-[#025E49] sm:text-[6vw] md:text-[clamp(2.5rem,1.3rem+3.3333vw,4.5rem)]"
+      >
+        Carbon
+        <span class="line relative z-[1] inline-block">Measurement</span> &
+        Reporting Platform
+      </h1>
+      <div class="mt-10 flex justify-center gap-2">
+        <a
+          href=""
+          class="inline-block w-32 rounded-lg bg-tc-green py-3 text-xs font-semibold text-white duration-300 hover:bg-black sm:w-40 md:text-lg"
+          >Get Started</a
+        >
+        <a
+          href=""
+          class="inline-block w-32 rounded-lg border-2 border-tc-green py-3 text-xs font-semibold duration-300 hover:bg-tc-green hover:text-white sm:w-40 md:text-lg"
+          >Request a Demo</a
+        >
+      </div>
+    </section>
+
+    <section
+      id="myPhotoSection"
+      class="mx-auto mt-20 h-[1000px] max-w-[1400px] rounded-full bg-slate-400 bg-[url('/src/assets/images/carousel-image-5.png')] bg-cover bg-center max-lg:hidden"
+    ></section>
+
+    <section
+      class="mx-auto my-16 flex w-[90%] max-w-[700px] flex-col gap-5 text-center font-medium md:my-32"
+    >
+      <img
+        src="/src/assets/images/teal-climate-logo-1.svg"
+        class="mx-auto mt-16 w-[80px]"
+      />
+      <h2
+        class="text-xl text-tc-dark-green sm:text-3xl md:leading-[48px] lg:text-4xl"
+      >
+        An innovative carbon emissions tracker, a powerful tool designed to
+        measure and monitor your
+        <span class="line relative z-[1] inline-block">carbon footprint</span>.
+      </h2>
+      <p>
+        By providing real-time data and actionable insights, our tool empowers
+        you to make informed decisions that reduce your environmental impact.
+        Together, we can create a cleaner, healthier planet for future
+        generations.
+      </p>
+    </section>
+
+    <section
+      class="mx-auto my-10 flex max-w-[1100px] items-center justify-between px-[3vw] max-lg:flex-col lg:items-center"
+    >
+      <div class="">
+        <h2 class="text-2xl font-medium text-tc-dark-green md:text-4xl">
+          Audit Ready
+        </h2>
+        <h2
+          class="line relative z-[1] inline-block text-2xl font-medium text-tc-dark-green md:text-4xl"
+        >
+          GHG Emission
+        </h2>
+        <h2 class="text-2xl font-medium text-tc-dark-green md:text-4xl">
+          reports for :
+        </h2>
+        <ul class="my-14 flex flex-col gap-y-4">
+          <li class="flex gap-x-3">
+            <img src="/src/assets/green-leaf.svg" />
+            <span>Disclosure Regulations</span>
+          </li>
+          <li class="flex gap-x-3">
+            <img src="/src/assets/green-leaf.svg" />
+            <span>Frame works</span>
+          </li>
+          <li class="flex gap-x-3">
+            <img src="/src/assets/green-leaf.svg" />
+            <span>Investor Requirements</span>
+          </li>
+          <li class="flex gap-x-3">
+            <img src="/src/assets/green-leaf.svg" />
+            <span>Company internal targets solution</span>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="flex min-h-[580px] max-w-[500px] items-end gap-3 rounded-3xl bg-[url('/src/assets/images/image-1.png')] bg-cover bg-center p-5"
+      >
+        <div class="flex gap-3 max-sm:flex-col">
+          <div class="flex flex-col gap-3">
+            <img src="/src/assets/scope-1.svg" alt="" />
+            <img src="/src/assets/scope-2.svg" alt="" />
+          </div>
+          <img src="/src/assets/scope-3.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="my-16 bg-tc-light-green px-[5vw] pt-20 text-center">
+      <h2
+        class="mx-auto max-w-[600px] text-[5vw] font-medium text-tc-dark-green sm:text-4xl md:leading-[48px]"
+      >
+        Comprehensive
+        <span class="line relative z-[1] inline-block">carbon accounting</span>
+        for business and institution
+      </h2>
+      <a
+        href=""
+        class="my-6 inline-block w-32 rounded-lg border-2 border-tc-green py-3 text-xs duration-300 hover:bg-tc-green hover:text-white sm:w-40 md:text-lg"
+        >Explore Plans
+      </a>
+
+      <img src="/src/assets/dashboard.svg" class="mx-auto mt-8" />
+    </section>
+
+    <section
+      class="mx-auto mb-16 grid min-h-[500px] w-[90%] max-w-[1300px] grid-cols-5 gap-4"
+    >
+      <div
+        class="relative col-span-full flex min-h-[300px] justify-center overflow-hidden rounded-lg bg-tc-light-blue pt-10 sm:col-span-3"
+      >
+        <img src="/src/assets/scope-4.svg" class="" />
+      </div>
+      <div
+        class="col-span-full rounded-lg bg-tc-light-grey-2 p-6 sm:col-span-2"
+      >
+        <h3 class="mb-3 text-xl text-tc-dark-green">
+          Financial Emissions<br />Measurements
+        </h3>
+        <ul class="flex flex-col">
+          <li class="flex items-center gap-x-3">
+            <img src="/src/assets/green-leaf.svg" class="size-5" /><span
+              >Disclosure Regulations</span
+            >
+          </li>
+          <li class="flex items-center gap-x-3">
+            <img src="/src/assets/green-leaf.svg" class="size-5" /><span
+              >Frame works</span
+            >
+          </li>
+        </ul>
+      </div>
+      <div
+        class="col-span-full rounded-lg bg-tc-light-grey-2 p-6 sm:col-span-2"
+      >
+        <h3 class="mb-3 text-xl text-tc-dark-green">Teal Climate</h3>
+        <ul class="flex flex-col">
+          <li class="flex items-center gap-x-3">
+            <img src="/src/assets/green-leaf.svg" class="size-5" /><span
+              >Disclosure Regulations</span
+            >
+          </li>
+          <li class="flex items-center gap-x-3">
+            <img src="/src/assets/green-leaf.svg" class="size-5" /><span
+              >Frame works</span
+            >
+          </li>
+        </ul>
+      </div>
+      <div
+        class="col-span-full flex items-center justify-center rounded-lg bg-tc-light-green py-8 sm:col-span-3"
+      >
+        <div class="flex items-center justify-center gap-x-1">
+          <img
+            src="/src/assets/images/teal-climate-logo-1.svg"
+            class="h-auto w-20"
+          />
+          <img
+            src="/src/assets/images/teal-climate-logo-2.svg"
+            class="h-auto w-40"
+          />
+        </div>
+      </div>
+    </section>
+
+    <footer class="relative mt-12 bg-tc-dark-green py-10 text-white">
+      <div class="absolute left-0 top-0 w-full overflow-hidden leading-[0]">
+        <svg
+          class="md:w-[calc(405%+1.3px) relative block h-[284px] lg:w-[calc(285%+1.3px)]"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="fill-white"
+          ></path>
+        </svg>
+      </div>
+      <div class="flex gap-4 px-[10%] pb-10 pt-48 max-sm:flex-col md:pb-20">
+        <div class="flex-1">
+          <img
+            src="/src/assets/images/teal-climate-white-logo.png"
+            class="h-auto w-40"
+          />
+          <ul class="mt-3 flex gap-3">
+            <li><a href="">Home</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Resources</a></li>
+          </ul>
+        </div>
+        <div class="flex-1">
+          <p class="text-lg">
+            Start Tracking Your Emissions Today for a Greener Tomorrow!
+          </p>
+          <a
+            href=""
+            class="mt-2 flex h-10 w-10 items-center justify-center rounded-full border"
+          >
+            <img src="/src/assets/linkdin-icon.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <div
+        class="border-top-white mx-5 flex flex-wrap justify-between gap-2 border-t px-6 pt-3 sm:px-[9%]"
+      >
+        <span><span class="text-xl">©</span> 2024 Teal Climate</span>
+        <div class="flex gap-y-[7px] max-sm:flex-col md:gap-8">
+          <span>Terms & Conditions</span>
+          <span>Privacy Policy</span>
+        </div>
+      </div>
+    </footer>
+    <!-- gsap cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- scroll trgier cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
