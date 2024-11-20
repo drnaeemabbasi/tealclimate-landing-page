@@ -4,7 +4,9 @@
 
 
 .line::after {z-index: -1;content: "";display: block;position: absolute;bottom: 6%;width: 100%;height: 15%;background-color: #00cc9c;}
-.mobile-nav.active{@apply max-md:h-[170px] }
+.mobile-nav.active{@apply max-md:h-[200px] }
+
+
 
 
 
