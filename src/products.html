@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="flex flex-wrap items-center justify-between px-[3vw] py-8">
+    <nav class="flex flex-wrap items-center justify-between px-[3vw] py-4">
       <a href="" class="flex gap-1">
         <img src="./assets/images/teal-climate-logo-1.svg" />
         <img src="./assets/images/teal-climate-logo-2.svg" />
@@ -50,15 +50,15 @@
         </defs>
       </svg>
       <div
-        class="mobile-nav left-0 top-24 z-10 flex flex-grow overflow-hidden bg-white transition-all duration-500 max-md:absolute max-md:h-0 max-md:w-full max-md:flex-col max-md:gap-4 max-md:px-[3vw]"
+        class="mobile-nav left-0 top-[8.5%]  z-10 flex flex-grow overflow-hidden bg-white transition-all duration-500 max-md:absolute max-md:h-0 max-md:w-full max-md:flex-col max-md:gap-4 max-md:px-[3vw]"
       >
         <ul
-          class="flex gap-3 max-md:flex-col md:mx-auto md:items-center md:gap-10"
+          class="flex gap-1 max-md:flex-col md:mx-auto md:items-center lg:gap-10"
         >
           <li>
             <a
               href="./index.html"
-              class="block w-32 rounded-lg py-2 text-center font-semibold transition-all duration-300 hover:bg-tc-green hover:text-white"
+              class="block w-32 rounded-lg py-2 text-center font-semibold transition-all duration-300 hover:bg-tc-blue hover:text-white"
             >
               Home
             </a>
@@ -66,7 +66,7 @@
           <li>
             <a
               href="#"
-              class="fofont-semibold block w-32 rounded-lg bg-tc-green py-2 text-center text-white"
+              class="fofont-semibold block w-32 rounded-lg bg-tc-blue py-2 text-center text-white"
             >
               Products
             </a>
@@ -74,14 +74,15 @@
           <li>
             <a
               href="./pricing.html"
-              class="block w-32 rounded-lg py-2 text-center font-semibold transition-all duration-300 hover:bg-tc-green hover:text-white"
+              class="block w-32 rounded-lg py-2 text-center font-semibold transition-all duration-300 hover:bg-tc-blue hover:text-white"
             >
               Pricing
             </a>
           </li>
         </ul>
-            <a href="https://carbon.tealclimate.com/login"
-          class="w-24 cursor-pointer rounded-full border-2 border-tc-green py-1 text-center font-semibold text-black duration-300 hover:bg-tc-green hover:text-white hover:opacity-90 sm:w-32 sm:py-2"
+        <a
+          href="https://carbon.tealclimate.com/login"
+          class="w-24 cursor-pointer rounded-full border-2 border-tc-blue py-1 text-center font-semibold text-black duration-300 hover:bg-tc-blue hover:text-white hover:opacity-90 sm:w-32 sm:py-2"
         >
           Login
         </a>
@@ -90,151 +91,160 @@
 
     <section class="mx-auto mt-12 max-w-[500px] text-center md:max-w-[800px]">
       <h1
-        class="text-[8vw] font-[600] leading-none text-[#025E49] sm:text-[6vw] md:text-[clamp(2.5rem,1.3rem+3.3333vw,4.5rem)]"
+        class="text-[8vw] font-[600] leading-none sm:text-[6vw] md:text-[clamp(2.5rem,1.3rem+3.3333vw,4.5rem)]"
       >
         Carbon
         <span class="line relative z-[1] inline-block">Measurement</span> &
         Reporting Platform
       </h1>
       <div class="mt-10 flex justify-center gap-2">
-      <a
+        <a
           href="https://carbon.tealclimate.com"
           target="_blank"
-          class="inline-block w-32 rounded-lg bg-tc-green py-3 text-xs font-semibold text-white duration-300 hover:bg-black sm:w-40 md:text-lg"
+          class="inline-block w-32 rounded-lg bg-tc-blue py-3 text-xs font-semibold text-white duration-300 hover:bg-black sm:w-40 md:text-lg"
           >Get Started</a
         >
         <a
           href="./request_demo.html"
-          class="inline-block w-32 rounded-lg border-2 border-tc-green py-3 text-xs font-semibold duration-300 hover:bg-tc-green hover:text-white sm:w-40 md:text-lg"
+          class="inline-block w-32 rounded-lg border-2 border-tc-blue py-3 text-xs font-semibold duration-300 hover:bg-tc-blue hover:text-white sm:w-40 md:text-lg"
           >Request a Demo</a
         >
       </div>
     </section>
 
     <section
-      class="mx-auto my-20 w-[90%] max-w-[1150px] overflow-hidden rounded-lg shadow-lg "
+      class="mx-auto my-20 w-[90%] max-w-[1150px] overflow-hidden rounded-lg shadow-lg"
     >
-   
-      <div class="flex flex-wrap py-3 text-sm font-semibold gap-y-10">
-        <div class="flex-1 gap-4 basis-[320px] ">
-          <h1 class="flex-1 py-3  bg-tc-blue text-white ps-2 sm:ps-10 text-xl">Operational Emissions</h1>
-          <div class="flex flex-col gap-4 px-2 sm:ps-10 mt-3 text-xs sm:text-sm">
-          <div class="flex items-center gap-4 ">
-            <div
-              class="flex h-8 w-9 items-center  justify-center rounded-md bg-tc-green"
-            >
-              <img src="./assets/analyitcs-icon.svg" alt="" />
+      <div class="flex flex-wrap gap-y-10 py-3 text-sm font-semibold">
+        <div class="flex-1 basis-[320px] gap-4">
+          <h1 class="flex-1 bg-tc-blue py-3 ps-2 text-xl text-white sm:ps-10">
+            Operational Emissions
+          </h1>
+          <div
+            class="mt-3 flex flex-col gap-4 px-2 text-xs sm:ps-10 sm:text-sm"
+          >
+            <div class="flex items-center gap-4">
+              <div
+                class="flex h-8 w-9 items-center justify-center rounded-md bg-tc-blue"
+              >
+                <img src="./assets/analyitcs-icon.svg" alt="" />
+              </div>
+              <h1>Carbon Accounting and Analytics</h1>
             </div>
-            <h1>Carbon Accounting and Analytics</h1>
-          </div>
 
-          <div class="flex items-center gap-4">
-            <div
-              class="flex h-8 w-9 items-center justify-center rounded-md bg-tc-green"
-            >
-              <img src="./assets/support-icon.svg" alt="" />
+            <div class="flex items-center gap-4">
+              <div
+                class="flex h-8 w-9 items-center justify-center rounded-md bg-tc-blue"
+              >
+                <img src="./assets/support-icon.svg" alt="" />
+              </div>
+              <h1>Support Regulatory Reporting</h1>
             </div>
-            <h1>Support Regulatory Reporting</h1>
-          </div>
 
-          <div class="flex items-center gap-4">
-            <div
-              class="flex h-8 w-9 items-center justify-center rounded-md bg-tc-green"
-            >
-              <img src="./assets/stackholder-icon.svg" alt="" />
+            <div class="flex items-center gap-4">
+              <div
+                class="flex h-8 w-9 items-center justify-center rounded-md bg-tc-blue"
+              >
+                <img src="./assets/stackholder-icon.svg" alt="" />
+              </div>
+              <h1>Stakeholder Emission Reporting</h1>
             </div>
-            <h1>Stakeholder Emission Reporting</h1>
-          </div>
 
-          <div class="flex items-center gap-4">
-            <div
-              class="flex h-8 w-9 items-center justify-center rounded-md bg-tc-green"
-            >
-              <img src="./assets/strategy-icon.svg" alt="" />
+            <div class="flex items-center gap-4">
+              <div
+                class="flex h-8 w-9 items-center justify-center rounded-md bg-tc-blue"
+              >
+                <img src="./assets/strategy-icon.svg" alt="" />
+              </div>
+              <h1>Decarbonization Strategy</h1>
             </div>
-            <h1>Decarbonization Strategy</h1>
-          </div>
 
-          <div class="flex items-center gap-4">
-            <div
-              class="flex h-8 w-9 items-center justify-center rounded-md bg-tc-green"
-            >
-              <img src="./assets/engagemnet-icon.svg" alt="" />
+            <div class="flex items-center gap-4">
+              <div
+                class="flex h-8 w-9 items-center justify-center rounded-md bg-tc-blue"
+              >
+                <img src="./assets/engagemnet-icon.svg" alt="" />
+              </div>
+              <h1>Scope 3 Supplier Engagement</h1>
             </div>
-            <h1>Scope 3 Supplier Engagement</h1>
-          </div>
 
-          <div class="flex items-center gap-4">
-            <div
-              class="flex h-8 w-9 shrink-0 items-center justify-center rounded-md bg-tc-green"
-            >
-              <img src="./assets/building-icon.svg"  />
+            <div class="flex items-center gap-4">
+              <div
+                class="flex h-8 w-9 shrink-0 items-center justify-center rounded-md bg-tc-blue"
+              >
+                <img src="./assets/building-icon.svg" />
+              </div>
+              <h1>
+                Real Estate Carbon Accounting for Owners, Operators, and Lenders
+              </h1>
             </div>
-            <h1>
-              Real Estate Carbon Accounting for Owners, Operators, and Lenders
-            </h1>
-          </div>
           </div>
         </div>
         <div class="flex-1 basis-[320px]">
-        <h1 class="flex-1 border-l py-3  bg-tc-blue text-white ps-2 sm:ps-10 text-xl">Financed Emissions</h1>
-          <div class="flex flex-col gap-4 mt-3 px-2 sm:ps-10 text-xs sm:text-sm">
-        <div class="flex items-center gap-4">
-            <div
-              class="flex h-8 w-9 items-center justify-center rounded-md bg-tc-green"
-            >
-              <img src="./assets/analyitcs-icon.svg" alt="" />
+          <h1
+            class="flex-1 border-l bg-tc-blue py-3 ps-2 text-xl text-white sm:ps-10"
+          >
+            Financed Emissions
+          </h1>
+          <div
+            class="mt-3 flex flex-col gap-4 px-2 text-xs sm:ps-10 sm:text-sm"
+          >
+            <div class="flex items-center gap-4">
+              <div
+                class="flex h-8 w-9 items-center justify-center rounded-md bg-tc-blue"
+              >
+                <img src="./assets/analyitcs-icon.svg" alt="" />
+              </div>
+              <h1>Carbon Accounting and Analytics</h1>
             </div>
-            <h1>Carbon Accounting and Analytics</h1>
-          </div>
 
-          <div class="flex items-center gap-4">
-            <div
-              class="flex h-8 w-9 items-center justify-center rounded-md bg-tc-green"
-            >
-              <img src="./assets/estimation-icon.svg" alt="" />
+            <div class="flex items-center gap-4">
+              <div
+                class="flex h-8 w-9 items-center justify-center rounded-md bg-tc-blue"
+              >
+                <img src="./assets/estimation-icon.svg" alt="" />
+              </div>
+              <h1>Data Estimation Support</h1>
             </div>
-            <h1>Data Estimation Support</h1>
-          </div>
 
-          <div class="flex items-center gap-4">
-            <div
-              class="flex h-8 w-9 items-center justify-center rounded-md bg-tc-green"
-            >
-              <img src="./assets/invester-icon.svg" alt="" />
+            <div class="flex items-center gap-4">
+              <div
+                class="flex h-8 w-9 items-center justify-center rounded-md bg-tc-blue"
+              >
+                <img src="./assets/invester-icon.svg" alt="" />
+              </div>
+              <h1>Support Investor Reporting</h1>
             </div>
-            <h1>Support Investor Reporting</h1>
-          </div>
 
-          <div class="flex items-center gap-4">
-            <div
-              class="flex h-8 w-9 items-center justify-center rounded-md bg-tc-green"
-            >
-              <img src="./assets/strategy-icon.svg" alt="" />
+            <div class="flex items-center gap-4">
+              <div
+                class="flex h-8 w-9 items-center justify-center rounded-md bg-tc-blue"
+              >
+                <img src="./assets/strategy-icon.svg" alt="" />
+              </div>
+              <h1>Decarbonization Strategy</h1>
             </div>
-            <h1>Decarbonization Strategy</h1>
-          </div>
 
-          <div class="flex items-center gap-4">
-            <div
-              class="flex h-8 w-9 items-center justify-center rounded-md bg-tc-green"
-            >
-              <img src="./assets/portfolioEnagemnent-icon.svg" alt="" />
+            <div class="flex items-center gap-4">
+              <div
+                class="flex h-8 w-9 items-center justify-center rounded-md bg-tc-blue"
+              >
+                <img src="./assets/portfolioEnagemnent-icon.svg" alt="" />
+              </div>
+              <h1>Portfolio Company Engagement</h1>
             </div>
-            <h1>Portfolio Company Engagement</h1>
-          </div>
 
-          <div class="flex items-center gap-4">
-            <div
-              class="flex h-8 w-9 shrink-0 items-center justify-center rounded-md bg-tc-green"
-            >
-              <img src="./assets/building-icon.svg" alt="" />
+            <div class="flex items-center gap-4">
+              <div
+                class="flex h-8 w-9 shrink-0 items-center justify-center rounded-md bg-tc-blue"
+              >
+                <img src="./assets/building-icon.svg" alt="" />
+              </div>
+              <h1>
+                Real Estate Carbon Accounting for Owners, Operators, and Lenders
+              </h1>
             </div>
-            <h1>
-              Real Estate Carbon Accounting for Owners, Operators, and Lenders
-            </h1>
           </div>
-        </div>
         </div>
       </div>
     </section>
@@ -250,7 +260,8 @@
           Make smarter, data-driven decisions to reduce your carbon footprint
           and drive sustainability forward.
         </p>
-        <a href="./request_demo.html"
+        <a
+          href="./request_demo.html"
           class="rounded-lg bg-white px-3 py-3 text-sm font-semibold text-gray-800 shadow-md transition hover:bg-gray-100 sm:px-6 sm:text-lg"
         >
           Schedule a demo
@@ -264,7 +275,7 @@
       </div>
     </section>
 
-    <footer class="relative mt-12 bg-tc-dark-green py-10 text-white">
+    <footer class="relative mt-12 bg-tc-blue py-10 text-white">
       <div class="absolute left-0 top-0 w-full overflow-hidden leading-[0]">
         <svg
           class="md:w-[calc(405%+1.3px) relative block h-[284px] lg:w-[calc(285%+1.3px)]"
@@ -365,8 +376,8 @@
       >
         <span><span class="text-xl">©</span> 2024 Teal Climate</span>
         <div class="flex gap-y-[7px] max-sm:flex-col md:gap-8">
-          <span>Terms & Conditions</span>
-          <span>Privacy Policy</span>
+          <a href="./terms&condition.html">Terms & Conditions</a>
+          <a href="./privicy&policy.html">Privacy Policy</a>
         </div>
       </div>
     </footer>
