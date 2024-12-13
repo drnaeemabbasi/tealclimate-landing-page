@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teal Climate</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/teal-climate-logo-1.svg"
+      type="image/x-icon"
+    />
+    <!-- font awsome cdn -->
+    <script type="module" src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+ <nav class="flex flex-wrap items-center justify-between px-[3vw] py-4">
+      <a href="./index.html" class="flex gap-1">
+        <img src="./assets/images/teal-climate-logo-1.svg" />
+        <img src="./assets/images/teal-climate-logo-2.svg" />
+      </a>
+      <svg
+        id="navBtn"
+        class="cursor-pointer md:hidden"
+        width="30px"
+        height="30px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g clip-path="url(#clip0_429_11066)">
+          <path
+            d="M3 6.00092H21M3 12.0009H21M3 18.0009H21"
+            stroke="#292929"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_429_11066">
+            <rect
+              width="24"
+              height="24"
+              fill="white"
+              transform="translate(0 0.000915527)"
+            />
+          </clipPath>
+        </defs>
+      </svg>
+      <div
+        class="mobile-nav left-0 top-[8.5%] z-20 flex flex-grow overflow-hidden bg-white transition-all duration-500 max-md:absolute max-md:h-0 max-md:w-full max-md:flex-col max-md:gap-4 max-md:px-[3vw]"
+      >
+        <ul
+          class="flex gap-2 max-md:flex-col md:mx-auto md:items-center "
+        >
+          <li>
+            <a
+              href="./index.html"
+              class="font-semibold hover:bg-tc-blue max-w-32 md:w-[10vmax]  block hover:text-white text-center py-2 rounded-lg duration-300 transition-all"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="./products.html"
+              class="font-semibold hover:bg-tc-blue max-w-32 md:w-[10vmax]  block hover:text-white text-center py-2 rounded-lg duration-300 transition-all"
+            >
+              Products
+            </a>
+          </li>
+          <li>
+            <a
+              href="./pricing.html"
+              class="font-semibold hover:bg-tc-blue max-w-32 md:w-[10vmax]  block hover:text-white text-center py-2 rounded-lg duration-300 transition-all"
+            >
+              Pricing
+            </a>
+          </li>
+          <li>
+            <a
+              href="./contact.html"
+              class="font-semibold hover:bg-tc-blue max-w-32 md:w-[10vmax]  block hover:text-white text-center py-2 rounded-lg duration-300 transition-all"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+        <div class="flex gap-2">
+          <a href="https://carbon.tealclimate.com/signup"
+            class="w-[10vmax] cursor-pointer rounded-full border-2 border-tc-blue py-1 text-center font-semibold text-black duration-300 hover:bg-tc-blue hover:text-white hover:opacity-90 max-w-32 "
+          >
+            Sign up
+          </a>
+          <a href="https://carbon.tealclimate.com/login"
+            class="w-[10vmax] cursor-pointer rounded-full border-2 border-tc-blue py-1 text-center font-semibold text-black duration-300 hover:bg-tc-blue hover:text-white hover:opacity-90 max-w-32"
+          >
+            Login
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="mx-auto mt-12 w-[90%] max-w-[500px] text-center md:max-w-[800px]"
+    >
+      <div class="font-bold">
+        <h1
+          class="line relative z-[1] mb-20 inline-block text-2xl leading-none sm:text-5xl"
+        >
+          Security
+        </h1>
+      </div>
+    </section>
+
+    <section
+      class="mx-auto my-16 w-[90%] max-w-[1400px] border border-gray-300 bg-white p-5 shadow-xl max-lg:flex-col sm:p-10 xl:p-20"
+    >
+      <h1 class="text-xl font-bold">Last updated: 26-Oct-24</h1>
+      <div
+        class="my-6 space-y-6 border border-gray-300 p-2 text-gray-800 sm:p-10 h-screen overflow-auto"
+      >
+        <h1 class="text-xl font-bold sm:text-2xl">Overview</h1>
+        <p>
+          From inception, Teal Climate recognized the need to have security
+          architected throughout the Teal Climate, climate management & account
+          platform (CMAP) and our supporting services. Our customers share data
+          to calculate their carbon footprint and expect their data to be kept
+          secure and confidential. To that end, we have invested heavily in our
+          platform to enable enterprise-grade security features and processes.
+          With this, Teal Climate's security posture is guided and maintained by
+          four (4) security principles as described further on this page:
+        </p>
+        <ol class="ml-[2vmax] flex list-decimal flex-col gap-3 font-bold">
+          <li>
+            Provision and manage users with the principle of least privilege
+          </li>
+          <li>Architect and develop for security and privacy</li>
+          <li>Train and educate on security repeatedly</li>
+          <li>Align and comply with industry security standards</li>
+        </ol>
+        <p>
+          For further information of Teal Climate's security and privacy
+          controls or to request copies of Teal Climate's audit reports and
+          certifications, please visit
+          <a href="" class="text-blue-500 underline"
+            >Teal Climate's trust page</a
+          >.
+        </p>
+        <h1 class="text-xl font-bold sm:text-2xl">
+          Shared security responsibility model (SSRM)
+        </h1>
+        <p>
+          As a software as a service (SaaS) application hosted in amazon web
+          services (AWS), we maintain a list of security responsibilities that
+          are shared between AWS, Teal Climate, and Teal Climate’s customers. At
+          a summary level those responsibilities are:
+        </p>
+        <ol class="ml-[2vmax] flex list-disc flex-col gap-3">
+          <li>
+            AWS is responsible for the physical data centers, networking,
+            perimeter security, hardware configurations, and availability of the
+            platform-as-a-service (PaaS) services provided to Teal Climate for
+            use in the CMAP
+          </li>
+          <li>
+            Teal Climate is responsible for security configurations including
+            but not limited to data encryption at rest and in transit, network
+            and firewall restrictions, and application, database, container, and
+            infrastructure security.
+          </li>
+          <li>
+            Teal Climate's customers are responsible for the proper use of and
+            security access configurations in the CMAP. Other responsibilities
+            include but are not limited to user setup and management, user
+            access reviews, data quality, data classification standards,
+            third-party integration setup, and, as applicable, the single
+            sign-on (SSO) setup.
+          </li>
+        </ol>
+        <h1 class="text-xl font-bold sm:text-2xl">
+          Principle 1: provision and manage users with the principle of least
+          privilege
+        </h1>
+        <ol class="ml-[2vmax] flex list-disc flex-col gap-3">
+          <li>
+            The security principle of "least privilege" is utilized across all
+            Teal Climate systems. Access to platform code and data depends on
+            the resource’s role, and production access by employees is
+            particularly controlled and restricted.
+          </li>
+          <li>
+            Teal Climate utilizes privileged access management (PAM) to manage
+            and audit access to production environments. Using PAM, developers
+            must request access to a production environment and the request must
+            be approved by Teal Climate’s engineering leadership. Once access is
+            granted, the access duration is limited to a specific duration and
+            activity logs are available for later review.
+          </li>
+          <li>
+            Teal Climate reviews Teal Climate personnel access to all systems at
+            least quarterly.
+          </li>
+          <li>
+            Customers are responsible for reviewing access to their Teal Climate
+            account following their own access review policies and procedures.
+            Teal Climate resources with direct access to customer accounts are
+            always shown in Teal Climate user manager screen, so customers have
+            a full view of all users with access to their data.
+          </li>
+        </ol>
+        <h1 class="text-xl font-bold sm:text-2xl">
+          Principle 2: architect and develop for security and privacy
+          Architecture
+        </h1>
+        <ol class="ml-[2vmax] flex list-disc flex-col gap-3">
+          <li>
+            The Teal Climate CMAP consists of a multi-tier, multi-tenant SaaS
+            application hosted in AWS and is architected into four distinct
+            tiers or layers: the highly protected database tier, API tier,
+            front-end tier, and web browser (which is managed by the customer).
+          </li>
+          <li>
+            Web application firewalls, security groups, access control lists,
+            and other security detection and control mechanisms are deployed
+            between layers to provide multiple layers of protection between the
+            internet and database tier.
+          </li>
+        </ol>
+        <h1 class="text-xl font-bold sm:text-2xl">Authentication</h1>
+        <ol class="ml-[2vmax] flex list-disc flex-col gap-3">
+          <li>
+            Teal Climate supports identity provider (IdP) initiated SSO via the
+            SAML protocol with IdPs such as okta, Microsoft, and ping.
+          </li>
+          <li>
+            If SSO is not utilized, and username and password authentication is
+            chosen instead, Teal Climate supports multi-factor authentication,
+            and IP allows listing to enhance access control to the CMAP. In this
+            configuration, passwords are hashed with bcrypt and salted.
+          </li>
+        </ol>
+        <h1 class="text-xl font-bold sm:text-2xl">Data storage and backup</h1>
+        <ol class="ml-[2vmax] flex list-disc flex-col gap-3">
+          <li class="text-red-600">
+            Teal Climate's multi-tenant architecture concurrently stores data in
+            AWS us-east 2 (Ohio), us-east 1 (Virginia), EU-west 1 (Ireland), and
+            AP-Northeast 1 (Tokyo). Note: if you have specific data residency
+            needs, please ask your Teal Climate sales representative about Teal
+            Climate's single tenant architecture model.
+          </li>
+          <li>
+            Data within the Teal Climate platform is backed up continuously and
+            can be restored to any point in the last 72 hours.
+          </li>
+          <li>
+            Additionally, backups are taken each day and maintained for at least
+            a year.
+          </li>
+          <li>
+            Backups will always be encrypted using advanced encryption standard
+            (AES) 256-bit encryption and are stored in secure, geographically
+            dispersed AWS s3 buckets.
+          </li>
+        </ol>
+        <h1 class="text-xl font-bold sm:text-2xl">Encryption</h1>
+        <ol class="ml-[2vmax] flex list-disc flex-col gap-3">
+          <li>
+            Teal Climate utilizes encryption at rest using advanced encryption
+            standard (AES) 256 and encryption in transit via TLS 1.2 or above.
+            Teal Climate also utilizes perfect forward secrecy (PFS) ciphers for
+            data transmission outside the CMAP.
+          </li>
+          <li>
+            Teal Climate's multi-tenant architecture utilizes AWS managed
+            encryption keys. <b>Note:</b> if you require customer managed
+            encryption keys, please ask your Teal Climate sales representative
+            about Teal Climate's single tenant architecture model.
+          </li>
+        </ol>
+        <h1 class="text-xl font-bold sm:text-2xl">Monitoring & logging</h1>
+        <ol class="ml-[2vmax] flex list-disc flex-col gap-3">
+          <li>
+            Teal Climate maintains monitoring and logging for each level of the
+            platform's architecture, including databases, containers, load
+            balancers, firewalls, and other application components.
+          </li>
+          <li>
+            Teal Climate maintains all log information for at least one year for
+            security reviews.
+          </li>
+          <li>
+            If a security event is identified to be a threat, Teal Climate
+            engineering and information security teams are notified immediately
+            to triage, classify, contain, and remediate the security event or
+            incident, including details such as the time of the event and impact
+            to the platform.
+          </li>
+        </ol>
+        <h1 class="text-xl font-bold sm:text-2xl">Physical security</h1>
+        <ol class="ml-[2vmax] flex list-disc flex-col gap-3">
+          <li>
+            Teal Climate is hosted in amazon web services (AWS), and AWS data
+            centers maintain several physical security controls to protect Teal
+            Climate and customer data. Teal Climate reviews and validates AWS
+            security controls at least annually to affirm they are operating
+            effectively. Please navigate the
+            <a
+              href="https://aws.amazon.com/compliance/data-center/controls/"
+              class="text-blue-500 underline"
+              >AWS compliance</a
+            >
+            page for further information on its data center controls.
+          </li>
+        </ol>
+        <h1 class="text-xl font-bold sm:text-2xl">
+          Secure development lifecycle (SDLC)
+        </h1>
+        <ol class="ml-[2vmax] flex list-disc flex-col gap-3">
+          <li>
+            Teal Climate implements automated and manual review processes to
+            ensure quality and security assurance in our software development
+            processes starting from product design and feature creation through
+            deployment to production.
+          </li>
+          <li>
+            Static application security testing (SAST) of the platform's
+            containers, software packages, and code is conducted with each
+            software build.
+          </li>
+        </ol>
+        <h1 class="text-xl font-bold sm:text-2xl">Vulnerability management</h1>
+        <ol class="ml-[2vmax] flex list-disc flex-col gap-3">
+          <li>
+            Teal Climate is vulnerability tested and secured through several
+            threat management processes, including:
+          </li>
+          <li>External network vulnerability scanning is conducted monthly.</li>
+          <li>
+            Penetration testing is conducted at least quarterly by a third-party
+            vendor, including the following testing types:
+          </li>
+          <li>External network</li>
+          <li>Api</li>
+          <li>Gray box application</li>
+        </ol>
+        <h1 class="text-xl font-bold sm:text-2xl">
+          Network & system hardening standards
+        </h1>
+        <ol class="ml-[2vmax] flex list-disc flex-col gap-3">
+          <li>
+            Teal Climate implements its application infrastructure and network
+            configurations with guidance from industry-leading security
+            standards such as NIST cybersecurity and CIS level 2 frameworks.
+          </li>
+          <li>
+            Teal Climate maintains and executes security baseline requirements
+            for each layer of the platform architecture.
+          </li>
+        </ol>
+        <h1 class="text-xl font-bold sm:text-2xl">
+          Principle 3: train and educate on security repeatedly
+        </h1>
+        <ol class="ml-[2vmax] flex list-disc flex-col gap-3">
+          <li>
+            All Teal Climate employees and contractors undergo security
+            awareness and data privacy training upon hire and annually
+            thereafter.
+          </li>
+          <li>
+            All Teal Climate employees and contractors undergo criminal
+            background checks before starting at Teal Climate.
+          </li>
+          <li>
+            All Teal Climate engineering personnel undergo secure development +
+            OWASP 10 training upon hire and annually thereafter.
+          </li>
+          <li>
+            Informal security awareness training is conducted every two weeks
+            during Teal Climate all company meetings.
+          </li>
+        </ol>
+        <h1 class="text-xl font-bold sm:text-2xl">
+          Principle 4: align and comply with industry security & privacy
+          standards Security compliance
+        </h1>
+        <ol class="ml-[2vmax] flex list-disc flex-col gap-3">
+          <li>
+            Teal Climate maintains a robust information security management
+            system (ISMS) that a third-party auditor audits annually to maintain
+            compliance with the following industry-standard security frameworks:
+          </li>
+          <li>
+            <b>SOC 1 type ii:</b> an attestation that provides an external
+            auditor’s validation that Teal Climate maintains appropriate
+            controls around the climate management and accounting platform
+            (CMAP) for customer financial reporting purposes (specific to carbon
+            accounting). Teal Climate received a clean, unqualified audit report
+            with no exceptions.
+          </li>
+          <li>
+            <b>SOC 2 type ii:</b> an attestation that provides an external
+            auditor’s validation that Teal Climate's security controls were in
+            place and effective for the report’s coverage period as related to
+            the American institute of certified public accountants (AICPA) trust
+            service principles. Teal Climate was audited against the security,
+            availability, and confidentiality trust service principles and
+            received a clean, unqualified audit report with no exceptions.
+          </li>
+          <li>
+            ISO 27001: a certification that provides external auditor validation
+            that an effective information security management system (ISMS) has
+            been established to identify and manage information risks through a
+            comprehensive set of company-wide processes and security controls,
+            including procedures and controls that continually improve the ISMS.
+            To access our ISO 27001 certification, please enter our registrant
+            name, “Teal Climate” in the link
+            <a
+              href="www.coalfirecertification.com"
+              class="text-blue-500 underline"
+              >here</a
+            >.
+          </li>
+          <li>
+            ISO 27017: a certification that provides external auditor validation
+            that Teal Climate's ISMS include controls for the secure management
+            of Teal Climate's cloud infrastructure as well as cloud service
+            security for users of the Teal Climate CMAP. To access our ISO 27017
+            certification, please enter our registrant name, “Teal Climate” in
+            the link
+            <a
+              href="www.coalfirecertification.com"
+              class="text-blue-500 underline"
+              >here</a
+            >. Note: ISO 27017 is an extension of the ISO 27001 security
+            framework, and as such, Teal Climate's ISO 27017 certification is
+            included in Teal Climate's ISO 27001 certificate.
+          </li>
+          <li>
+            CSA star level 2 gold: a certification that provides external
+            auditor validation that Teal Climate’s security controls are
+            implemented according to the cloud security alliance (CSA) consensus
+            assessment initiative questionnaire (CAIQ). To access our CSA star
+            certificate and CAIQ, please navigate the CSA registry in the link
+            <a href="" class="text-blue-500 underline">here</a>.
+          </li>
+        </ol>
+        <h1 class="text-xl font-bold sm:text-2xl">Privacy compliance</h1>
+        <ol class="ml-[2vmax] flex list-disc flex-col gap-3">
+          <li>
+            Teal Climate is prepared to comply with obligations applicable to it
+            according to global data protection laws, including GDPR and CCPA.
+            Please see our
+            <a href="./privicy&policy.html" class="text-blue-500 underline"
+              >privacy policy</a
+            >
+            for further information on your data privacy rights and how we
+            comply with these regulations.
+          </li>
+          <li>
+            Since personally identifiable information (PII) is not required for
+            carbon accounting calculations, Teal Climate stores and processes
+            very limited PII. Only users’ first name, last name, business email
+            address, and IP address are stored to support authentication,
+            logging, and audit requirements.
+          </li>
+          <li>
+            Further to the shared data security responsibility principles, Teal
+            Climate specifically requests that customers do not upload other PII
+            to the CMAP.
+          </li>
+        </ol>
+      </div>
+      <h1 class="text-xl font-bold">End of terms and conditions</h1>
+    </section>
+
+   <footer class="relative mt-12 bg-tc-blue pt-10  text-white">
+      <div class="absolute left-0 top-0 w-full overflow-hidden leading-[0]">
+        <svg
+          class="md:w-[calc(405%+1.3px) relative block h-[284px] lg:w-[calc(285%+1.3px)]"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="fill-white"
+          ></path>
+        </svg>
+      </div>
+      <div class="px-[5vw] pt-48 pb-14">
+      <div class="flex justify-between flex-wrap gap-x-5 gap-y-10">
+        <div class="text-lg sm:text-xl lg:text-2xl w-[450px]">
+          <img
+            src="assets/images/teal-climate-white-logo.png"
+            class="h-auto w-60"
+          />
+          <p class="mt-2">
+            Start Tracking Your Emissions Today for a
+            Greener Tomorrow!
+          </p>
+        </div>
+        <div class="flex flex-wrap gap-x-20 gap-y-8">
+        <div class="">
+          <h1 class="relative font-bold">
+            About<span
+              class="absolute bottom-[-10px] left-0 h-[3px] w-8 bg-white"
+            ></span>
+          </h1>
+          <ul class="mt-6 flex flex-col gap-2">
+            <li><a href="">What we offer</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Blogs</a></li>
+          </ul>
+        </div>
+        <div class="">
+          <h1 class="relative font-bold">
+            Resources<span
+              class="absolute bottom-[-10px] left-0 h-[3px] w-8 bg-white"
+            ></span>
+          </h1>
+          <ul class="mt-6 flex flex-col gap-2">
+            <li><a href="">Documentation</a></li>
+            <li><a href="./faqs.html">FAQ</a></li>
+            <li><a href="">Product Roadmap</a></li>
+            <li><a href="">Help Center</a></li>
+          </ul>
+        </div>
+        <div class="">
+          <h1 class="relative font-bold">
+            Contact Info<span
+              class="absolute bottom-[-10px] left-0 h-[3px] w-8 bg-white"
+            ></span>
+          </h1>
+          <div class="mt-6 flex flex-col gap-2">
+            <p>Address: 550 Brealey Dr, Peterborough,</p>
+            <p>ON K9K 2R7</p>
+            <p>Contact: +1 (438) 826-6497</p>
+            <p>Email: info@tealclimate.com</p>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="flex gap-2  sm:gap-5 mt-6">
+     <div class="w-12 h-12 rounded-full border flex items-center justify-center">
+      <img src="./assets/twiter-icon.svg" alt="" >
+     </div>
+     <div class="w-12 h-12 rounded-full border flex items-center justify-center">
+      <img src="./assets/fb-icon.svg" alt="" >
+     </div>
+     <div class="w-12 h-12 rounded-full border flex items-center justify-center">
+      <img src="./assets/insta-icon.svg">
+     </div>
+     <div class="w-12 h-12 rounded-full border flex items-center justify-center">
+      <img src="./assets/youtube-icon.svg" >
+     </div>
+     <div class="w-12 h-12 rounded-full border flex items-center justify-center">
+      <img src="./assets/linkdin-icon.svg" >
+     </div>
+      </div>
+    </div>
+      <div
+        class="border-top-white  flex flex-wrap justify-between gap-2 border-t px-6 py-3 sm:px-[9%]"
+      >
+        <span><span class="text-xl">©</span> 2024 Teal Climate</span>
+        <div class="flex gap-y-[7px] max-sm:flex-col md:gap-8">
+          <a href="./terms&condition.html">Terms & Conditions</a>
+          <a href="./privicy&policy.html">Privacy Policy</a>
+          <a href="./security.html">Security</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

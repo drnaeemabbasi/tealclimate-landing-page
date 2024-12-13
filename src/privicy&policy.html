@@ -13,51 +13,93 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="flex flex-wrap items-center justify-between px-[3vw] py-4">
-    <a href="" class="flex gap-1">
-      <img src="./assets/images/teal-climate-logo-1.svg" />
-      <img src="./assets/images/teal-climate-logo-2.svg" />
-    </a>
-    <svg id="navBtn" class="cursor-pointer md:hidden" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
-      xmlns="http://www.w3.org/2000/svg">
-      <g clip-path="url(#clip0_429_11066)">
-        <path d="M3 6.00092H21M3 12.0009H21M3 18.0009H21" stroke="#292929" stroke-width="2.5" stroke-linecap="round"
-          stroke-linejoin="round" />
-      </g>
-      <defs>
-        <clipPath id="clip0_429_11066">
-          <rect width="24" height="24" fill="white" transform="translate(0 0.000915527)" />
-        </clipPath>
-      </defs>
-    </svg>
-    <div
-      class="mobile-nav left-0 top-[8.5%]  z-10 flex flex-grow overflow-hidden bg-white transition-all duration-500 max-md:absolute max-md:h-0 max-md:w-full max-md:flex-col max-md:gap-4 max-md:px-[3vw]">
-      <ul class="flex gap-1 max-md:flex-col md:mx-auto md:items-center lg:gap-10">
-        <li>
-          <a href="./index.html"
-            class="block w-32 rounded-lg py-2 text-center font-bold transition-all duration-300 hover:bg-tc-blue hover:text-white">
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="./products.html"
-            class="block w-32 rounded-lg py-2 text-center font-bold transition-all duration-300 hover:bg-tc-blue hover:text-white">
-            Products
-          </a>
-        </li>
-        <li>
-          <a href="./pricing.html"
-            class="block w-32 rounded-lg py-2 text-center font-bold transition-all duration-300 hover:bg-tc-blue hover:text-white">
-            Pricing
-          </a>
-        </li>
-      </ul>
-      <a href="https://carbon.tealclimate.com/login"
-        class="w-24 cursor-pointer rounded-full border-2 border-tc-blue py-1 text-center font-bold text-black duration-300 hover:bg-tc-blue hover:text-white hover:opacity-90 sm:w-32 sm:py-2">
-        Login
+ <nav class="flex flex-wrap items-center justify-between px-[3vw] py-4">
+      <a href="./index.html" class="flex gap-1">
+        <img src="./assets/images/teal-climate-logo-1.svg" />
+        <img src="./assets/images/teal-climate-logo-2.svg" />
       </a>
-    </div>
-  </nav>
+      <svg
+        id="navBtn"
+        class="cursor-pointer md:hidden"
+        width="30px"
+        height="30px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g clip-path="url(#clip0_429_11066)">
+          <path
+            d="M3 6.00092H21M3 12.0009H21M3 18.0009H21"
+            stroke="#292929"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_429_11066">
+            <rect
+              width="24"
+              height="24"
+              fill="white"
+              transform="translate(0 0.000915527)"
+            />
+          </clipPath>
+        </defs>
+      </svg>
+      <div
+        class="mobile-nav left-0 top-[8.5%] z-20 flex flex-grow overflow-hidden bg-white transition-all duration-500 max-md:absolute max-md:h-0 max-md:w-full max-md:flex-col max-md:gap-4 max-md:px-[3vw]"
+      >
+        <ul
+          class="flex gap-2 max-md:flex-col md:mx-auto md:items-center "
+        >
+          <li>
+            <a
+              href="./index.html"
+              class="font-semibold hover:bg-tc-blue max-w-32 md:w-[10vmax]  block hover:text-white text-center py-2 rounded-lg duration-300 transition-all"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="./products.html"
+              class="font-semibold hover:bg-tc-blue max-w-32 md:w-[10vmax]  block hover:text-white text-center py-2 rounded-lg duration-300 transition-all"
+            >
+              Products
+            </a>
+          </li>
+          <li>
+            <a
+              href="./pricing.html"
+              class="font-semibold hover:bg-tc-blue max-w-32 md:w-[10vmax]  block hover:text-white text-center py-2 rounded-lg duration-300 transition-all"
+            >
+              Pricing
+            </a>
+          </li>
+          <li>
+            <a
+              href="./contact.html"
+              class="font-semibold hover:bg-tc-blue max-w-32 md:w-[10vmax]  block hover:text-white text-center py-2 rounded-lg duration-300 transition-all"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+        <div class="flex gap-2">
+          <a href="https://carbon.tealclimate.com/signup"
+            class="w-[10vmax] cursor-pointer rounded-full border-2 border-tc-blue py-1 text-center font-semibold text-black duration-300 hover:bg-tc-blue hover:text-white hover:opacity-90 max-w-32 "
+          >
+            Sign up
+          </a>
+          <a href="https://carbon.tealclimate.com/login"
+            class="w-[10vmax] cursor-pointer rounded-full border-2 border-tc-blue py-1 text-center font-semibold text-black duration-300 hover:bg-tc-blue hover:text-white hover:opacity-90 max-w-32"
+          >
+            Login
+          </a>
+        </div>
+      </div>
+    </nav>
 
   <section class="mx-auto mt-12 w-[90%] max-w-[500px] text-center md:max-w-[800px]">
     <div class="font-bold">
@@ -70,7 +112,7 @@
   <section
     class="mx-auto my-16 w-[90%] max-w-[1400px] border border-gray-300 bg-white p-5 shadow-xl max-lg:flex-col sm:p-10 xl:p-20">
     <h1 class="text-xl font-bold">Last updated: 22-Nov-24</h1>
-    <div class="my-6 space-y-6 border border-gray-300 p-2 text-gray-800 sm:p-10 max-md:text-[15px]">
+    <div class="my-6 space-y-6 border border-gray-300 p-2 text-gray-800 sm:p-10 max-md:text-[15px] h-screen overflow-auto text-sm">
       <h1 class="text-xl md:text-3xl font-bold">Purpose</h1>
       <p>This privacy policy is designed to help you understand how Teal Climate, its brands, affiliates, and
         subsidiaries (“Teal Climate”, “we”, “us”, or “our”) collects, uses, processes, and discloses your personal
@@ -89,22 +131,22 @@
       <div>
         <h1 class="text-xl md:text-3xl font-bold">Table of contents</h1>
         <ol class="list-decimal ml-[2vmax] md:text-xl flex flex-col gap-2 mt-5 text-blue-500 underline  font-semibold">
-          <li><a href="">Scope</a></li>
-          <li><a href="">Personal Information We Collect</a></li>
-          <li><a href="">How We Use Your Information</a></li>
-          <li><a href="">Disclosures of Personal Information</a></li>
-          <li><a href="">Your Privacy Choices and Rights</a></li>
-          <li><a href="">Retention of Personal Information</a></li>
-          <li><a href="">Security of Your Information</a></li>
-          <li><a href="">International Data Transfers</a></li>
-          <li><a href="">Children’s Information</a></li>
-          <li><a href="">Third Party Websites / Applications</a></li>
-          <li><a href="">Supervisory Authority</a></li>
-          <li><a href="">Contact Us</a></li>
-          <li><a href="">Supplemental Notice for California Residents</a></li>
+          <li><a href="#scope">Scope</a></li>
+          <li><a href="#sec2">Personal Information We Collect</a></li>
+          <li><a href="#sec3">How We Use Your Information</a></li>
+          <li><a href="#sec4">Disclosures of Personal Information</a></li>
+          <li><a href="#sec5">Your Privacy Choices and Rights</a></li>
+          <li><a href="#sec6">Retention of Personal Information</a></li>
+          <li><a href="#sec7">Security of Your Information</a></li>
+          <li><a href="#sec8">International Data Transfers</a></li>
+          <li><a href="#sec9">Children’s Information</a></li>
+          <li><a href="#sec10">Third Party Websites / Applications</a></li>
+          <li><a href="#sec11">Supervisory Authority</a></li>
+          <li><a href="#sec12">Contact Us</a></li>
+          <li><a href="#sec13">Supplemental Notice for California Residents</a></li>
         </ol>
       </div>
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-4" id="scope">
         <h1 class="text-xl md:text-3xl font-bold">Scope</h1>
         <p>This Privacy Policy applies to personal information processed by Persefoni in the course of our business, as
           collected from our websites (the <b>“Site”</b>), applications, and our related online and offline offerings
@@ -122,7 +164,7 @@
           applicable law. You understand and agree that you will be deemed to have accepted the updated Privacy Policy
           if you continue to use our Services after the new Privacy Policy takes effect.</p>
       </div>
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-4" id="sec2">
         <h1 class="text-xl md:text-3xl font-bold">Personal information we collect</h1>
         <p>When you use our services, we collect the following categories of personal information</p>
         <h1 class="font-bold">Information you provide to us directly</h1>
@@ -203,7 +245,7 @@
           social networking service or a third-party login service, we may collect information about you from that third
           party that you have made available via your privacy settings.</p>
       </div>
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-4" id="sec3">
         <h1 class="text-xl md:text-3xl font-bold">How we use your information</h1>
         <p>We use your personal information for a variety of business purposes, including to provide our services, for
           administrative purposes, and to market our products and services. If you are from a region that requires a
@@ -337,7 +379,7 @@
         <p><b>Other purposes.</b> Teal Climate may use personal information for other purposes that are clearly
           disclosed to you at the time you provide personal information.</p>
       </div>
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-4" id="sec4">
         <h1 class="text-xl md:text-3xl font-bold">Disclosures of personal information</h1>
         <p><b>Service providers.</b> We may share any personal information we collect about you with our third-party
           service providers. The types of service providers to whom we entrust personal information generally include
@@ -385,7 +427,7 @@
           another provider, then your information may be sold or transferred as part of such a transaction as permitted
           by law and/or contract.</p>
       </div>
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-4" id="sec5">
         <h1 class="text-xl md:text-3xl font-bold">Your privacy choices and rights</h1>
         <p><b>General.</b> You may have the right to object to or opt out of certain uses of your personal information.
           Where you have consented to the processing of your personal information, you may withdraw that consent at any
@@ -401,7 +443,10 @@
           that cookie-based opt-outs are not effective on mobile applications. However, you may opt-out of personalized
           advertisements on some mobile applications by following the instructions for <a
             href="https://support.google.com/googleplay/android-developer/answer/6048248?hl=en"
-            class="text-blue-500 underline">Android</a> and <a href="https://support.apple.com/en-us/105131"
+            target="_blank"
+            class="text-blue-500 underline">Android</a> and 
+            <a href="https://support.apple.com/en-us/105131"
+            target="_blank"
             class="text-blue-500 underline">iOS</a>.</p>
         <p>The online advertising industry also provides websites from which you may opt-out of receiving targeted ads
           from advertisers that Participate in self-regulatory programs. You can access these, and also learn more about
@@ -434,20 +479,20 @@
         <p>We will process such requests in accordance with applicable laws. To protect your privacy, Teal Climate will
           take steps to verify your identity before fulfilling your request.</p>
       </div>
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-4" id="sec6">
         <h1 class="text-xl md:text-3xl font-bold">Retention of personal information</h1>
         <p>We retain the personal information we receive as described in this privacy policy for as long as you use our
           services or as necessary to fulfill the purpose(s) for which it was collected, provide our services, resolve
           disputes, establish legal defenses, conduct audits, pursue legitimate business purposes, enforce our
           agreements, and comply with applicable laws.</p>
       </div>
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-4" id="sec7">
         <h1 class="text-xl md:text-3xl font-bold">Security of your information</h1>
         <p>We take steps to ensure that your information is treated securely and in accordance with this privacy policy.
           Unfortunately, the internet cannot be guaranteed to be 100% secure, and we cannot ensure or warrant the
           security of any information you provide to us.</p>
       </div>
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-4" id="sec8">
         <h1 class="text-xl md:text-3xl font-bold">International data transfers </h1>
         <p>All information processed by us may be transferred, processed, and stored anywhere in the world, including,
           but not limited to, the United States or other countries, which may have data protection laws that are
@@ -463,7 +508,7 @@
           please contact us as set forth below. </p>
 
       </div>
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-4" id="sec9">
         <h1 class="text-xl md:text-3xl font-bold">Children's information </h1>
         <p>Children's information
           The services are not directed to children under 13 (or other age as required by local law), and we do not
@@ -473,7 +518,7 @@
           delete such information.
         </p>
       </div>
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-4" id="sec10">
         <h1 class="text-xl md:text-3xl font-bold">Third party websites / applications </h1>
         <p>The services may contain links to other websites/applications and other websites/applications may reference
           or link to our services. These third-party services are not controlled by us. We encourage our users to read
@@ -482,117 +527,244 @@
           Visiting these other websites or applications is at your own risk.
         </p>
       </div>
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-4" id="sec11">
         <h1 class="text-xl md:text-3xl font-bold">Supervisory authority</h1>
         <p>If you are in the European economic area, you have the right to lodge a complaint with a supervisory
           authority if you believe our processing of your personal information violates applicable law.
         </p>
       </div>
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-4" id="sec12">
         <h1 class="text-xl md:text-3xl font-bold">Contact us</h1>
         <p>If you have any questions about our privacy practices or this privacy policy, please contact us at:</p>
         <h1 class="font-bold text-lg">Teal Climate.</h1>
       </div>
-<div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-4" id="sec13">
         <h1 class="text-xl md:text-3xl font-bold">Supplemental notice for California residents</h1>
-        <p>This supplemental notice for California residents provides additional information for California residents and describes our information practices pursuant to applicable California privacy laws, including the California consumer privacy act (“CCPA”). To the extent you are a California resident, and we collect “personal information” subject to the CCPA, the following applies. This section does not address or apply to our handling of publicly available information or personal information that is otherwise exempt from the CCPA.</p>
-      <h1 class="font-bold">Categories of personal information collected and disclosed</h1>
-      <p>The following list identifies the categories of personal information we may collect about you (and may have collected in the prior 12 months), as defined by the CCPA, as well as the categories of third parties to whom we may disclose this information for a business or commercial purpose. Depending on how you use the services, we may collect and disclose the following categories of personal information:</p>
-      <p><b>Identifiers, </b>such as full name, email address, phone number, username, alias, IP address, unique personal identifier, online identifier, city, and state, or other similar identifiers. The third parties to whom we may disclose this information for a business or commercial purpose include:</p>
-       <ol class="list-disc ml-[2vmax] flex flex-col gap-3">
+        <p>This supplemental notice for California residents provides additional information for California residents
+          and describes our information practices pursuant to applicable California privacy laws, including the
+          California consumer privacy act (“CCPA”). To the extent you are a California resident, and we collect
+          “personal information” subject to the CCPA, the following applies. This section does not address or apply to
+          our handling of publicly available information or personal information that is otherwise exempt from the CCPA.
+        </p>
+        <h1 class="font-bold">Categories of personal information collected and disclosed</h1>
+        <p>The following list identifies the categories of personal information we may collect about you (and may have
+          collected in the prior 12 months), as defined by the CCPA, as well as the categories of third parties to whom
+          we may disclose this information for a business or commercial purpose. Depending on how you use the services,
+          we may collect and disclose the following categories of personal information:</p>
+        <p><b>Identifiers</b> ,such as full name, email address, phone number, username, alias, IP address, unique
+          personal identifier, online identifier, city, and state, or other similar identifiers. The third parties to
+          whom we may disclose this information for a business or commercial purpose include:</p>
+        <ol class="list-disc ml-[2vmax] flex flex-col gap-3">
           <li>Advisors and agents. </li>
-          <li>Business partners.  </li>
+          <li>Business partners. </li>
           <li>Affiliates and subsidiaries. </li>
           <li>Regulators, government entities, and law enforcement. </li>
           <li>Advertising partners. </li>
           <li>Data analytics providers. </li>
           <li>Others as required by law. </li>
         </ol>
+        <p><b>Internet or other electronic network activity</b>, which includes, but is not limited to, browsing
+          history, clickstream data, search history, and information regarding interactions with our site and the
+          services, advertisements, or emails, including other usage data related to your use of any of our services or
+          other similar online services. The third parties to whom we may disclose this information for a business or
+          commercial purpose include:</p>
+        <ol class="list-disc ml-[2vmax] flex flex-col gap-3">
+          <li>Affiliates and subsidiaries</li>
+          <li>Regulators, government entities, and law enforcement </li>
+          <li>Advertising partners</li>
+          <li>Data analytics providers</li>
+          <li>Social networks</li>
+          <li>Others as required by law</li>
+        </ol>
+        <p><b>Location data</b>, such as general location information about a particular individual or device. The third
+          parties to whom we may disclose this information for a business or commercial purpose include:</p>
+        <ol class="list-disc ml-[2vmax] flex flex-col gap-3">
+          <li>Affiliates and subsidiaries</li>
+          <li>Regulators, government entities, and law enforcement</li>
+          <li>Data analytics providers</li>
+          <li>Others as required by law</li>
+        </ol>
+        <p><b>Audio, electronic, visual, or similar information</b>, which includes, but is not limited to, information
+          collected via call recordings if you are interacting with us in a customer service capacity or if you call us
+          on a recorded line, recorded meetings and webinars, videos, photographs, and user profile images. The third
+          parties to whom we may disclose this information for a business or commercial purpose include:</p>
+        <ol class="list-disc ml-[2vmax] flex flex-col gap-3">
+          <li>Advisors and agents</li>
+          <li>Affiliates and subsidiaries</li>
+          <li>Business partners</li>
+          <li>Regulators, government entities, and law enforcement</li>
+          <li>Others as required by law</li>
+        </ol>
+        <p><b>Professional or employment-related information</b>, such as job title, company name, business email,
+          business phone number, business location, and other similar professional-related information. The third
+          parties to whom we may disclose this information for a business or commercial purpose include:</p>
+        <ol class="list-disc ml-[2vmax] flex flex-col gap-3">
+          <li>Advisors and agents</li>
+          <li>Affiliates and subsidiaries</li>
+          <li>Business partners</li>
+          <li>Regulators, government entities, and law enforcement</li>
+          <li>Others as required by law</li>
+        </ol>
+        <p><b>Protected classifications</b>, which we may collect in limited circumstances, such as gender, age, and
+          date of birth. The third parties to whom we may disclose this information for a business or commercial purpose
+          include:</p>
+        <ol class="list-disc ml-[2vmax] flex flex-col gap-3">
+          <li>Advisors and agents</li>
+          <li>Affiliates and subsidiaries</li>
+          <li>Regulators, government entities, and law enforcement</li>
+          <li>Others as required by law</li>
+        </ol>
+        <p><b>Inferences</b>, such as inferences drawn from other personal information about a consumer reflecting the
+          consumer’s preferences, characteristics, behaviors, attitudes, abilities, and aptitudes. The third parties to
+          whom we may disclose this information for a business or commercial purpose include:</p>
+        <ol class="list-disc ml-[2vmax] flex flex-col gap-3">
+          <li>Affiliates and subsidiaries</li>
+          <li>Business partners</li>
+          <li>Regulators, government entities, and law enforcement</li>
+          <li>Advertising partners</li>
+          <li>Data analytics providers</li>
+          <li>Others as required by law</li>
+        </ol>
+        <p><b>Sources of personal information.</b> We generally collect personal information from the following categories of sources: directly or indirectly from you; affiliates and subsidiaries; business partners; vendors and service providers; internet service providers; operating systems and platforms; social media platforms; and marketing, advertising, and data analytics providers.</p>
+        <p><b>Purposes of collection, use, and disclosure.</b> As described above in section 3. How we use your information and section 4. Disclosures of personal information, in general, we may collect, use, disclose, and otherwise process personal information for the following business or commercial purposes and as otherwise directed or consented to by you:</p>
+         <ol class="list-disc ml-[2vmax] flex flex-col gap-3">
+          <li>To perform a contract with you</li>
+          <li>To comply with our legal obligations</li>
+          <li>For our legitimate interests</li>
+          <li>To provide the services or information requested</li>
+          <li>For administrative purposes</li>
+          <li>For marketing and advertising</li>
+          <li>To create de-identified and/or aggregated information</li>
+          <li>To share content with your friends or colleagues</li>
+          <li>To protect us or others</li>
+          <li>In the case of a merger, sale, or other asset transfers</li>
+          <li>Other purposes clearly disclosed to you at the time you provide your personal information</li>
+        </ol>
+        <p><b>Sensitive personal information.</b> We do not collect, use, or disclose “sensitive personal information” beyond the purposes authorized by the CCPA. </p>
+        <p><b>Retention.</b> We retain the personal information we receive as described in this privacy policy for as long as you use our services or as necessary to fulfill the purpose(s) for which it was collected, provide our services, resolve disputes, establish legal defenses, conduct audits, pursue legitimate business purposes, enforce our agreements, and comply with applicable laws. In some cases, rather than delete your personal information, we may de-identify or aggregate it and use it in compliance with the CCPA.</p>
+        <p><b>Sales and sharing of personal information.</b> The CCPA defines “sale” as disclosing or making available personal information to a third-party in exchange for monetary or other valuable consideration, and “sharing” includes disclosing or making available personal information to a third-party for purposes of cross-context behavioral advertising. While we do not disclose personal information to third parties in exchange for monetary compensation, we may “sell” or “share” the following categories of personal information: identifiers, internet and network activity information, and commercial information. We may disclose these categories to third-party advertising networks, analytics providers, and social networks for purposes of marketing and advertising and to improve and measure our ad campaigns. We do not sell or share sensitive personal information, nor do we sell or share personal information about individuals we know are under age sixteen (16).</p>
+        <p><b>Privacy rights for California residents.</b> The CCPA provides California residents with specific rights regarding personal information. Subject to certain conditions and exceptions, California residents have the following rights with respect to their personal information:</p>
+          <ol class="list-disc ml-[2vmax] flex flex-col gap-3">
+          <li><b>Right to know.</b> You have the right to request: (i) the categories or personal information we collected about you; (ii) the categories of sources from which the personal information is collected; (iii) our business or commercial purposes for collecting, selling, or sharing personal information; (iv) the categories of third parties to whom we have disclosed personal information; and (v) a copy of the specific pieces of personal information we have collected about you.</li>
+        <li><b>Right to delete.</b> You have the right to request we delete personal information we have collected from you.</li>  
+      <li><b>Right to correct.</b> You have the right to request that we correct inaccuracies in your personal information.</li>  
+      <li><b>Right to opt-out of sales and sharing.</b> You have the right to opt-out of “sales” and “sharing” of your personal information, as those terms are defined under the CCPA.</li>
+      <li><b>Right to limit use and disclosure.</b> You have the right to limit the use and disclose of your sensitive personal information. We do not use or disclose sensitive personal information beyond the purposes authorized by the CCPA; thus, this right is not available to California residents.</li>
+      <li><b>Right to non-discrimination.</b> You have the right not to be subjected to discriminatory treatment for exercising any of the rights described in this section.</li>
+      </ol>
+      <p><b>Submitting privacy requests.</b> California residents may exercise their CCPA privacy rights as set forth below:</p>
+      <ol class="list-disc ml-[2vmax] flex flex-col gap-3">
+         <li><b>Right to know, delete, and correct.</b> California residents may submit CCPA request to access/know, delete, and correct their personal information by emailing us at <a href="./contact.html" class="text-blue-500 underline">Info@tealclimate.com</a> or by contacting us as set forth in the “contact us” section below.</li>
+     <li><b>Authorized agent.</b> Only you, or someone legally authorized to act on your behalf, may make a verifiable consumer request related to your personal information. You may also make a verifiable consumer request on behalf of your minor child. To authorize an agent, provide written authorization signed by you and your designated agent and contact us as set forth in <a href="./contact.html" class="text-blue-500 underline">“contact us”</a> below for additional instructions.</li>
+     <li><b>Verification.</b> To protect your privacy, we will take steps to reasonably verify your identity before fulfilling your request. These steps may involve asking you to provide sufficient information that allows us to reasonably verify you are the person about whom we collected personal information or an authorized representative, or to answer questions regarding your account and use of our services. In some cases, we may request additional information to verify your identity, or where necessary to process your request. If we are unable to verify your identity after a good faith attempt, we may deny the request and, if so, will explain the basis for the denial.</li>
+    <li><b>Right to opt-out of sales and sharing.</b> To exercise your right to opt-out of the “sale” or “sharing” of your personal information, you may do so via our <a href="" class="text-blue-500 underline">cookie preference manager</a>. We will apply you opt out based upon the personal information in our records that is linked or reasonably linkable to the information provided in your request.</li>   
+    </ol>
+    <p>In addition, if we detect that your browser or device is transmitting an opt-out preference signal, such as the “global privacy control” or “GPC” signal, we will opt that browser or device out of cookies that result in a “sale” or “sharing” of your personal information. If you come to our site or use our services from a different device or from a different browser on the same device, you will need to opt-out, or use an opt-out preference signal, for that browser and/or device as well. More information about GPC is available at: <a href="https://globalprivacycontrol.org/" target="_blank" class="text-blue-500 underline">https://globalprivacycontrol.org/</a>. </p>
+    <p>If you have any questions about our privacy practices or this privacy policy, please contact us as noted above in <b>section 12. Contact us</b>.</p>
       </div>
     </div>
     <h1 class="text-xl font-bold">End of privacy and policy</h1>
     </div>
   </section>
 
-  <footer class="relative mt-12 bg-tc-blue py-10 text-white">
-    <div class="absolute left-0 top-0 w-full overflow-hidden leading-[0]">
-      <svg class="md:w-[calc(405%+1.3px) relative block h-[284px] lg:w-[calc(285%+1.3px)]" data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path
-          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-          class="fill-white"></path>
-      </svg>
-    </div>
-    <div class="px-[5vw] pb-14 pt-48">
-      <div class="flex flex-wrap justify-between gap-x-5 gap-y-10">
-        <div class="w-[450px] text-lg sm:text-xl lg:text-2xl">
-          <img src="assets/images/teal-climate-white-logo.png" class="h-auto w-60" />
+ <footer class="relative mt-12 bg-tc-blue pt-10  text-white">
+      <div class="absolute left-0 top-0 w-full overflow-hidden leading-[0]">
+        <svg
+          class="md:w-[calc(405%+1.3px) relative block h-[284px] lg:w-[calc(285%+1.3px)]"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="fill-white"
+          ></path>
+        </svg>
+      </div>
+      <div class="px-[5vw] pt-48 pb-14">
+      <div class="flex justify-between flex-wrap gap-x-5 gap-y-10">
+        <div class="text-lg sm:text-xl lg:text-2xl w-[450px]">
+          <img
+            src="assets/images/teal-climate-white-logo.png"
+            class="h-auto w-60"
+          />
           <p class="mt-2">
-            Start Tracking Your Emissions Today for a Greener Tomorrow!
+            Start Tracking Your Emissions Today for a
+            Greener Tomorrow!
           </p>
         </div>
         <div class="flex flex-wrap gap-x-20 gap-y-8">
-          <div class="">
-            <h1 class="relative font-bold">
-              About<span class="absolute bottom-[-10px] left-0 h-[3px] w-8 bg-white"></span>
-            </h1>
-            <ul class="mt-6 flex flex-col gap-2">
-              <li><a href="">What we offer</a></li>
-              <li><a href="">Features</a></li>
-              <li><a href="">Pricing</a></li>
-              <li><a href="">Blogs</a></li>
-            </ul>
+        <div class="">
+          <h1 class="relative font-bold">
+            About<span
+              class="absolute bottom-[-10px] left-0 h-[3px] w-8 bg-white"
+            ></span>
+          </h1>
+          <ul class="mt-6 flex flex-col gap-2">
+            <li><a href="">What we offer</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Blogs</a></li>
+          </ul>
+        </div>
+        <div class="">
+          <h1 class="relative font-bold">
+            Resources<span
+              class="absolute bottom-[-10px] left-0 h-[3px] w-8 bg-white"
+            ></span>
+          </h1>
+          <ul class="mt-6 flex flex-col gap-2">
+            <li><a href="">Documentation</a></li>
+            <li><a href="./faqs.html">FAQ</a></li>
+            <li><a href="">Product Roadmap</a></li>
+            <li><a href="">Help Center</a></li>
+          </ul>
+        </div>
+        <div class="">
+          <h1 class="relative font-bold">
+            Contact Info<span
+              class="absolute bottom-[-10px] left-0 h-[3px] w-8 bg-white"
+            ></span>
+          </h1>
+          <div class="mt-6 flex flex-col gap-2">
+            <p>Address: 550 Brealey Dr, Peterborough,</p>
+            <p>ON K9K 2R7</p>
+            <p>Contact: +1 (438) 826-6497</p>
+            <p>Email: info@tealclimate.com</p>
           </div>
-          <div class="">
-            <h1 class="relative font-bold">
-              Resources<span class="absolute bottom-[-10px] left-0 h-[3px] w-8 bg-white"></span>
-            </h1>
-            <ul class="mt-6 flex flex-col gap-2">
-              <li><a href="">Documentation</a></li>
-              <li><a href="">FAQ</a></li>
-              <li><a href="">Product Roadmap</a></li>
-              <li><a href="">Help Center</a></li>
-            </ul>
-          </div>
-          <div class="">
-            <h1 class="relative font-bold">
-              Contact Info<span class="absolute bottom-[-10px] left-0 h-[3px] w-8 bg-white"></span>
-            </h1>
-            <div class="mt-6 flex flex-col gap-2">
-              <p>Address: 550 Brealey Dr, Peterborough,</p>
-              <p>ON K9K 2R7</p>
-              <p>Contact: +1 (438) 826-6497</p>
-              <p>Email: info@tealclimate.com</p>
-            </div>
-          </div>
+        </div>
         </div>
       </div>
-      <div class="mt-6 flex gap-2 sm:gap-5">
-        <div class="flex h-12 w-12 items-center justify-center rounded-full border">
-          <img src="./assets/twiter-icon.svg" alt="" />
-        </div>
-        <div class="flex h-12 w-12 items-center justify-center rounded-full border">
-          <img src="./assets/fb-icon.svg" alt="" />
-        </div>
-        <div class="flex h-12 w-12 items-center justify-center rounded-full border">
-          <img src="./assets/insta-icon.svg" />
-        </div>
-        <div class="flex h-12 w-12 items-center justify-center rounded-full border">
-          <img src="./assets/youtube-icon.svg" />
-        </div>
-        <div class="flex h-12 w-12 items-center justify-center rounded-full border">
-          <img src="./assets/linkdin-icon.svg" />
-        </div>
+      <div class="flex gap-2  sm:gap-5 mt-6">
+     <div class="w-12 h-12 rounded-full border flex items-center justify-center">
+      <img src="./assets/twiter-icon.svg" alt="" >
+     </div>
+     <div class="w-12 h-12 rounded-full border flex items-center justify-center">
+      <img src="./assets/fb-icon.svg" alt="" >
+     </div>
+     <div class="w-12 h-12 rounded-full border flex items-center justify-center">
+      <img src="./assets/insta-icon.svg">
+     </div>
+     <div class="w-12 h-12 rounded-full border flex items-center justify-center">
+      <img src="./assets/youtube-icon.svg" >
+     </div>
+     <div class="w-12 h-12 rounded-full border flex items-center justify-center">
+      <img src="./assets/linkdin-icon.svg" >
+     </div>
       </div>
     </div>
-    <div class="border-top-white mx-5 flex flex-wrap justify-between gap-2 border-t px-6 py-3 sm:px-[9%]">
-      <span><span class="text-xl">©</span> 2024 Teal Climate</span>
-      <div class="flex gap-y-[7px] max-sm:flex-col md:gap-8">
-        <a href="./terms&condition.html">Terms & Conditions</a>
-        <a href="#">Privacy Policy</a>
+      <div
+        class="border-top-white  flex flex-wrap justify-between gap-2 border-t px-6 py-3 sm:px-[9%]"
+      >
+        <span><span class="text-xl">©</span> 2024 Teal Climate</span>
+        <div class="flex gap-y-[7px] max-sm:flex-col md:gap-8">
+          <a href="./terms&condition.html">Terms & Conditions</a>
+          <a href="./privicy&policy.html">Privacy Policy</a>
+          <a href="./security.html">Security</a>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 </body>
 
 </html>
