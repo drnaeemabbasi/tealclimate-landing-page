@@ -10,7 +10,7 @@
   content: "";
 }
 .mobile-nav.active {
-  @apply max-md:h-[250px];
+  @apply max-md:h-[265px];
 }
 
 .faq-title {
