@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="./src/output.css" />
     <link
       rel="shortcut icon"
-      href="assets/images/teal-climate-logo-1.svg"
+      href="./src/assets/images/teal-climate-logo-1.svg"
       type="image/x-icon"
     />
     <script type="module" src="./src/script.js" defer></script>
   </head>
-  <body >
+  <body>
     <!-- Navbar -->
     <nav class="flex flex-wrap items-center justify-between px-[3vw] py-4">
       <a href="/" class="flex gap-1">
@@ -51,13 +51,11 @@
       <div
         class="mobile-nav left-0 top-[8.5%] z-20 flex flex-grow overflow-hidden bg-white transition-all duration-500 max-md:absolute max-md:h-0 max-md:w-full max-md:flex-col max-md:gap-4 max-md:px-[3vw]"
       >
-        <ul
-          class="flex gap-2 max-md:flex-col md:mx-auto md:items-center "
-        >
+        <ul class="flex gap-2 max-md:flex-col md:mx-auto md:items-center">
           <li>
             <a
               href="/"
-              class="font-semibold bg-tc-blue max-w-32 md:w-[10vmax]  block text-white text-center py-2 rounded-lg"
+              class="block max-w-32 rounded-lg bg-tc-blue py-2 text-center font-semibold text-white md:w-[10vmax]"
             >
               Home
             </a>
@@ -65,7 +63,7 @@
           <li>
             <a
               href="././src/products.html"
-              class="font-semibold hover:bg-tc-blue max-w-32 md:w-[10vmax]  block hover:text-white text-center py-2 rounded-lg duration-300 transition-all"
+              class="block max-w-32 rounded-lg py-2 text-center font-semibold transition-all duration-300 hover:bg-tc-blue hover:text-white md:w-[10vmax]"
             >
               Products
             </a>
@@ -73,7 +71,7 @@
           <li>
             <a
               href="../src//pricing.html"
-              class="font-semibold hover:bg-tc-blue max-w-32 md:w-[10vmax]  block hover:text-white text-center py-2 rounded-lg duration-300 transition-all"
+              class="block max-w-32 rounded-lg py-2 text-center font-semibold transition-all duration-300 hover:bg-tc-blue hover:text-white md:w-[10vmax]"
             >
               Pricing
             </a>
@@ -81,129 +79,228 @@
           <li>
             <a
               href="../src//contact.html"
-              class="font-semibold hover:bg-tc-blue max-w-32 md:w-[10vmax]  block hover:text-white text-center py-2 rounded-lg duration-300 transition-all"
+              class="block max-w-32 rounded-lg py-2 text-center font-semibold transition-all duration-300 hover:bg-tc-blue hover:text-white md:w-[10vmax]"
             >
               Contact
             </a>
           </li>
         </ul>
         <div class="flex gap-2">
-          <a href="https://carbon.tealclimate.com/signup"
-            class="w-[10vmax] cursor-pointer rounded-full border-2 border-tc-blue py-1 text-center font-semibold text-black duration-300 hover:bg-tc-blue hover:text-white hover:opacity-90 max-w-32 "
-          >
-            Sign up
-          </a>
-          <a href="https://carbon.tealclimate.com/login"
-            class="w-[10vmax] cursor-pointer rounded-full border-2 border-tc-blue py-1 text-center font-semibold text-black duration-300 hover:bg-tc-blue hover:text-white hover:opacity-90 max-w-32"
+          <a
+          target="_blank"
+            href="https://carbon.tealclimate.com/login"
+            class="w-[10vmax] max-w-32 cursor-pointer rounded-lg border-2 border-tc-blue bg-tc-blue py-1 text-center font-semibold text-white duration-300 hover:bg-transparent hover:text-black hover:opacity-90"
           >
             Login
+          </a>
+          <a
+          target="_blank"
+            href="https://carbon.tealclimate.com/signup"
+            class="w-[10vmax] max-w-32 cursor-pointer rounded-lg border-2 border-tc-blue py-1 text-center font-semibold text-black duration-300 hover:bg-tc-blue hover:text-white hover:opacity-90"
+          >
+            Sign up
           </a>
         </div>
       </div>
     </nav>
 
-  
-  
-<section class="max-md:h-[400px] h-[450px] flex items-center relative bg-cover bg-no-repeat" style="background-image: url('././src/assets/images/hero-img.webp'); background-position: 0 70%;">
-  <!-- Gradient Overlay -->
-  <div class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/40"></div>
-
-  <div class="container relative z-10">
-    <h1 class="text-white text-[5vw] sm:text-[3vw] lg:text-[2.2vmax] font-bold leading-[1.2]">
-      Empower your business with <br> comprehensive climate solutions
-    </h1>
-    <a
-      href="././src/contact.html"
-      class="rounded-lg bg-tc-light-blue px-6 py-3 text-sm font-semibold text-gray-800 shadow-md transition hover:bg-gray-100 sm:px-10 inline-block max-md:mt-7 mt-14 sm:text-lg"
+    <section
+      class="relative flex h-[450px] items-center bg-cover bg-no-repeat max-md:h-[400px]"
+      style="
+        background-image: url(&quot;././src/assets/images/hero-img.webp&quot;);
+        background-position: 0 70%;
+      "
     >
-      Contact us
-    </a>
-  </div>
-</section>
+      <!-- Gradient Overlay -->
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/40"
+      ></div>
 
+      <div class="container relative z-10">
+        <h1
+          class="text-[5vw] font-bold leading-[1.2] text-white sm:text-[3vw] lg:text-[2.2vmax]"
+        >
+          Empower your business with <br />
+          comprehensive climate solutions
+        </h1>
+        <a
+          href="././src/contact.html"
+          class="mt-14 inline-block rounded-lg bg-tc-light-blue px-6 py-3 text-sm font-semibold text-gray-800 shadow-md transition hover:bg-gray-100 max-md:mt-7 sm:px-10 sm:text-lg"
+        >
+          Contact us
+        </a>
+      </div>
+    </section>
 
+    <section class="container my-16">
+      <h1 class="text-2xl font-bold">
+        Driving Sustainability Through Strategic planning
+      </h1>
+      <div
+        class="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:gap-10"
+      >
+        <div
+          class="card rounded-xl border border-b-[10px] border-zinc-300 border-b-tc-blue p-8"
+        >
+          <img src="./src/assets/reduction.svg" alt="" />
+          <h1 class="my-4 font-bold">
+            Carbon footprint <br />
+            calculations
+          </h1>
+          <p class="max-md:text-sm">
+            Track and calculate scope 1, 2, 3, and beyond for comprehensive
+            emissions management.
+          </p>
+        </div>
+        <div
+          class="card rounded-xl border border-b-[10px] border-zinc-300 border-b-tc-blue p-8"
+        >
+          <img src="./src/assets/reduction2.svg" alt="" />
+          <h1 class="my-4 font-bold">
+            Global regulatory <br />
+            standards
+          </h1>
+          <p class="max-md:text-sm">
+            Align your reporting with CDP, TCFD, SBTI, CSRD, SECR, and other
+            global standards.
+          </p>
+        </div>
+        <div
+          class="card rounded-xl border border-b-[10px] border-zinc-300 border-b-tc-blue p-8"
+        >
+          <img src="./src/assets/reduction3.svg" alt="" />
+          <h1 class="my-4 font-bold">
+            Set targets to <br />
+            achieve net zero
+          </h1>
+          <p class="max-md:text-sm">
+            Set science-based targets and create actionable roadmap for
+            emissions reduction.
+          </p>
+        </div>
+        <div
+          class="card rounded-xl border border-b-[10px] border-zinc-300 border-b-tc-blue p-8"
+        >
+          <img src="./src/assets/reduction4.svg" alt="" />
+          <h1 class="my-4 font-bold">
+            Track progress and <br />
+            performance
+          </h1>
+          <p class="max-md:text-sm">
+            Leverage real-time tracking tools to measure progress and refine
+            your strategies.
+          </p>
+        </div>
+        <div
+          class="card rounded-xl border border-b-[10px] border-zinc-300 border-b-tc-blue p-8"
+        >
+          <img src="./src/assets/reduction5.svg" alt="" />
+          <h1 class="my-4 font-bold">
+            Drive leadership <br />
+            in sustainability
+          </h1>
+          <p class="max-md:text-sm">
+            Position your organization as a global leader in climate action and
+            transparency.
+          </p>
+        </div>
+        <div
+          class="card rounded-xl border border-b-[10px] border-zinc-300 border-b-tc-blue p-8"
+        >
+          <img src="./src/assets/reduction6.svg" alt="" />
+          <h1 class="my-4 font-bold">
+            Engage and inspire <br />
+            stakeholders
+          </h1>
+          <p class="max-md:text-sm">
+            Communicate your climate efforts with clarity to build trust and
+            drive collaboration.
+          </p>
+        </div>
+      </div>
+    </section>
 
-<section class="container my-16">
-  <h1 class="font-bold text-2xl">Driving Sustainability Through Strategy and Improvement</h1>
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 xl:gap-10 mt-10">
-    <div class="card border border-zinc-300 p-8 border-b-[10px] border-b-tc-blue rounded-xl">
-      <img src="././src/assets/reduction.svg" alt="">
-      <h1 class="font-bold my-4">Carbon footprint <br> calculations</h1>
-      <p class="sm:leading-7 text-sm">Track and calculate scope 1, 2, 3, and beyond for comprehensive emissions management.</p>
-    </div>
-    <div class="card border border-zinc-300 p-8 border-b-[10px] border-b-tc-blue rounded-xl">
-      <img src="././src/assets/reduction2.svg" alt="">
-      <h1 class="font-bold my-4">Global regulatory <br> standards</h1>
-      <p class="sm:leading-7 text-sm">Align your reporting with CDP, TCFD, SBTI, CSRD, SECR, and other global standards.</p>
-    </div>
-    <div class="card border border-zinc-300 p-8 border-b-[10px] border-b-tc-blue rounded-xl">
-      <img src="././src/assets/reduction3.svg" alt="">
-      <h1 class="font-bold my-4">Set targets to <br> achieve net zero</h1>
-      <p class="sm:leading-7 text-sm">Set science-based targets and create actionable roadmaps for emissions reductions.</p>
-    </div>
-    <div class="card border border-zinc-300 p-8 border-b-[10px] border-b-tc-blue rounded-xl">
-      <img src="././src/assets/reduction4.svg" alt="">
-      <h1 class="font-bold my-4">Track progress and <br> performance</h1>
-      <p class="sm:leading-7 text-sm">Leverage real-time tracking tools to measure progress and refine your strategies.</p>
-    </div>
-    <div class="card border border-zinc-300 p-8 border-b-[10px] border-b-tc-blue rounded-xl">
-      <img src="././src/assets/reduction5.svg" alt="">
-      <h1 class="font-bold my-4">Drive leadership <br> in sustainability</h1>
-      <p class="sm:leading-7 text-sm">Position your organization as a global leader in climate action and transparency.</p>
-    </div>
-    <div class="card border border-zinc-300 p-8 border-b-[10px] border-b-tc-blue rounded-xl">
-      <img src="././src/assets/reduction6.svg" alt="">
-      <h1 class="font-bold my-4">Engage and inspire <br> stakeholders</h1>
-      <p class="sm:leading-7 text-sm">Communicate your climate efforts with clarity to build trust and drive collaboration.</p>
-    </div>
-  </div>
-</section>
-
-
-
-<section class="container text-center my-16">
-  <h1 class="font-semibold  sm:text-xl lg:text-[25px] sm:leading-loose">Close the Gap Between Ambition and Action with Teal Climate <br class="max-md:hidden"> Beyond Just Compliance</h1>
-  <p class="max-w-[601px] w-full mx-auto text-sm mt-5 mb-7">Sustainability isn’t just about meeting regulations—it’s about driving real impact. While many businesses commit to ambitious net-zero targets, achieving them requires more than promises. Teal Climate empowers you to turn ambition into action</p>
-  <a
+    <section class="bg-tc-light-green">
+      <section class="container my-16 pt-20 text-center">
+        <h1 class="font-semibold sm:text-xl sm:leading-loose lg:text-[25px]">
+          Close the Gap Between Ambition and Action with Teal Climate
+          <br class="max-md:hidden" />
+          Beyond Compliance
+        </h1>
+        <p class="mx-auto mb-7 mt-5 w-full max-w-[601px] max-md:text-sm">
+          Sustainability isn’t just about meeting regulations—it’s about driving
+          real impact. While many businesses commit to ambitious net-zero
+          targets, achieving them requires more than promises. Teal Climate
+          empowers you to turn ambition into action
+        </p>
+        <a
           href="https://carbon.tealclimate.com/signup"
           target="_blank"
-          class="rounded-lg  px-6 py-2  font-semibold shadow-md transition hover:bg-tc-blue border-2 border-tc-blue sm:px-10  inline-block hover:text-white"
+          class="inline-block rounded-lg border-2 border-tc-blue px-6 py-2 font-semibold shadow-md transition hover:bg-tc-blue hover:text-white sm:px-10"
         >
           Get Started
         </a>
-        <img src="././src/assets/dasboard.svg" class="w-full mt-5" alt="">
-</section>
+        <img src="././src/assets/dasboard.svg" class="mt-5 w-full" alt="" />
+      </section>
+    </section>
 
-<section class="bg-tc-light-blue">
-  <div class="container flex flex-wrap py-8 gap-y-7 gap-x-14">
-    <div class="card basis-[250px] flex-grow">
-      <img src="././src/assets/growth1.svg" alt="">
-      <h1 class="font-bold my-3 text-lg">Scalable Solutions</h1>
-      <p class="text-sm sm:leading-6">Our platform offers industry-specific tools to implement renewable energy, engage supply chains, and educate teams, enabling businesses of all sizes to scale their sustainability initiatives effectively.</p>
-    </div>
-    <div class="card basis-[250px] flex-grow">
-      <img src="././src/assets/bussiness.svg" alt="">
-      <h1 class="font-bold my-3 text-lg">Finance Emissions Management</h1>
-      <p class="text-sm sm:leading-6">Teal Climate specializes in managing financed emissions, helping organizations accurately measure and address the climate impact of investments, loans, and other financial activities to align with global standards.</p>
-    </div>
-    <div class="card basis-[250px] flex-grow">
-      <img src="././src/assets/transparency.svg" alt="">
-      <h1 class="font-bold my-3 text-lg">Complete Transparency</h1>
-      <p class="text-sm sm:leading-6">We prioritize accountability by delivering solutions that provide full transparency and traceability for all climate action initiatives, empowering organizations to confidently share progress with stakeholders.</p>
-    </div>
-  </div>
-  </section>
+    <section class="bg-tc-light-blue">
+      <div class="container flex flex-wrap gap-x-14 gap-y-7 py-8">
+        <div class="card flex-grow basis-[250px]">
+          <img src="././src/assets/growth1.svg" alt="" />
+          <h1 class="my-3 text-lg font-bold">Scalable Solutions</h1>
+          <p class="max-md:text-sm sm:leading-6">
+            Our platform offers industry-specific tools to implement renewable
+            energy, engage supply chains, and educate teams, enabling businesses
+            of all sizes to scale their sustainability initiatives effectively.
+          </p>
+        </div>
+        <div class="card flex-grow basis-[250px]">
+          <img src="././src/assets/bussiness.svg" alt="" />
+          <h1 class="my-3 text-lg font-bold">Finance Emissions Management</h1>
+          <p class="max-md:text-sm sm:leading-6">
+            Teal Climate specializes in managing financed emissions, helping
+            organizations accurately measure the climate impact of investments,
+            loans, and other financial activities to align with global
+            standards.
+          </p>
+        </div>
+        <div class="card flex-grow basis-[250px]">
+          <img src="././src/assets/transparency.svg" alt="" />
+          <h1 class="my-3 text-lg font-bold">Complete Transparency</h1>
+          <p class="max-md:text-sm sm:leading-6">
+            We prioritize accountability by delivering solutions that provide
+            full transparency and traceability for all climate action
+            initiatives, empowering organizations to confidently share progress
+            with stakeholders.
+          </p>
+        </div>
+      </div>
+    </section>
 
-<section class="container my-16 flex flex-wrap justify-center  items-center gap-16">
-  <img src="././src/assets/report.svg" alt="" class="w-[200px] xl:w-[316px] flex-grow max-w-[316px] ">
-  <div class="w-[250px] lg:w-[416px] flex-grow max-w-[416px]">
-    <h1 class="font-bold mb-5 ">Adapt to Evolving Regulations and Market Conditions</h1>
-    <p class="text-sm lg:text-[16px] leading-relaxed">Stay ahead of regulatory changes and market dynamics with a flexible platform that evolves with global standards, enabling your business to remain compliant and competitive in an ever-changing sustainability landscape.</p>
-</div>
-</section>
+    <section
+      class="container my-16 flex flex-wrap items-center justify-center gap-16"
+    >
+      <img
+        src="././src/assets/report.svg"
+        alt=""
+        class="w-[200px] max-w-[316px] flex-grow xl:w-[316px]"
+      />
+      <div class="w-[250px] max-w-[416px] flex-grow lg:w-[416px]">
+        <h1 class="mb-5 font-bold">
+          Adapt to Evolving Regulations and Market Conditions
+        </h1>
+        <p class="max-md:text-sm leading-relaxed">
+          Stay ahead of regulatory changes and market dynamics with a flexible
+          platform that evolves with global standards, enabling your business to
+          remain compliant and competitive in an ever-changing sustainability
+          landscape.
+        </p>
+      </div>
+    </section>
 
- <section
-      class="mx-auto flex w-[90%] max-w-6xl flex-col items-center rounded-3xl bg-[#E0F2FF] px-3 py-8 shadow-lg min-[500px]:px-12 md:flex-row mt-16"
+    <section
+      class="mx-auto mt-16 flex w-[90%] max-w-6xl flex-col items-center rounded-3xl bg-[#E0F2FF] px-3 py-8 shadow-lg min-[500px]:px-12 md:flex-row"
     >
       <div class="text-left md:w-1/2 md:pr-8">
         <h2 class="mb-4 text-2xl font-bold text-gray-800 sm:text-3xl">
@@ -228,7 +325,7 @@
       </div>
     </section>
 
-     <footer class="relative mt-12 bg-tc-blue pt-10  text-white">
+    <footer class="relative mt-12 bg-tc-blue pt-10 text-white">
       <div class="absolute left-0 top-0 w-full overflow-hidden leading-[0]">
         <svg
           class="md:w-[calc(405%+1.3px) relative block h-[284px] lg:w-[calc(285%+1.3px)]"
@@ -243,62 +340,58 @@
           ></path>
         </svg>
       </div>
-      <div class="px-[5vw] pt-48 pb-14">
-      <div class="flex justify-between flex-wrap gap-x-5 gap-y-10">
-        <div class="text-lg sm:text-xl lg:text-2xl w-[450px]">
-          <img
-            src="./src/assets/images/teal-climate-white-logo.png"
-            class="h-auto w-60"
-          />
-          <p class="mt-2">
-            Start Tracking Your Emissions Today for a
-            Greener Tomorrow!
-          </p>
-        </div>
-        <div class="flex flex-wrap gap-x-20 gap-y-8">
-        <div class="">
-          <h1 class="relative font-bold">
-            About<span
-              class="absolute bottom-[-10px] left-0 h-[3px] w-8 bg-white"
-            ></span>
-          </h1>
-          <ul class="mt-6 flex flex-col gap-2">
-            <li><a href="">What we offer</a></li>
-            <li><a href="">Features</a></li>
-            <li><a href="">Pricing</a></li>
-            <li><a href="">Blogs</a></li>
-          </ul>
-        </div>
-        <div class="">
-          <h1 class="relative font-bold">
-            Resources<span
-              class="absolute bottom-[-10px] left-0 h-[3px] w-8 bg-white"
-            ></span>
-          </h1>
-          <ul class="mt-6 flex flex-col gap-2">
-            <li><a href="">Documentation</a></li>
-            <li><a href="././src/faqs.html">FAQ</a></li>
-            <li><a href="">Product Roadmap</a></li>
-            <li><a href="">Help Center</a></li>
-          </ul>
-        </div>
-        <div class="">
-          <h1 class="relative font-bold">
-            Contact Info<span
-              class="absolute bottom-[-10px] left-0 h-[3px] w-8 bg-white"
-            ></span>
-          </h1>
-          <div class="mt-6 flex flex-col gap-2">
-            <p>Address: 550 Brealey Dr, Peterborough,</p>
-            <p>ON K9K 2R7</p>
-            <p>Contact: +1 (438) 826-6497</p>
-            <p>Email: info@tealclimate.com</p>
+      <div class="px-[5vw] pb-14 pt-48">
+        <div class="flex flex-wrap justify-between gap-x-5 gap-y-10">
+          <div class="w-[450px] text-lg sm:text-xl lg:text-2xl">
+            <div class="flex items-center gap-2">
+              <img src="./src/assets/logo.svg" alt="" />
+              <img src="./src/assets/tealclimate-icon.svg" alt="" />
+            </div>
+            <p class="mt-2">
+              Start Tracking Your Emissions Today for a Greener Tomorrow!
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-x-20 gap-y-8">
+            <div class="">
+              <h1 class="relative font-bold">
+                Quick Links<span
+                  class="absolute bottom-[-10px] left-0 h-[3px] w-8 bg-white"
+                ></span>
+              </h1>
+              <ul class="mt-6 flex flex-col gap-2">
+                <li><a href="/">Home</a></li>
+                <li><a href="./src/products.html">Products</a></li>
+                <li><a href="./src/pricing.html">Pricing</a></li>
+                <li><a href="./src/contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="">
+              <h1 class="relative font-bold">
+                Resources<span
+                  class="absolute bottom-[-10px] left-0 h-[3px] w-8 bg-white"
+                ></span>
+              </h1>
+              <ul class="mt-6 flex flex-col gap-2">
+                <li><a href="././src/faqs.html">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="">
+              <h1 class="relative font-bold">
+                Contact Info<span
+                  class="absolute bottom-[-10px] left-0 h-[3px] w-8 bg-white"
+                ></span>
+              </h1>
+              <div class="mt-6 flex flex-col gap-2">
+                <p>Address: 550 Brealey Dr, Peterborough,</p>
+                <p>ON K9K 2R7</p>
+                <p>Contact: +1 (438) 826-6497</p>
+                <p>Email: info@tealclimate.com</p>
+              </div>
+            </div>
           </div>
         </div>
-        </div>
-      </div>
-      <div class="flex gap-2  sm:gap-5 mt-6">
-     <div class="w-12 h-12 rounded-full border flex items-center justify-center">
+        <div class="mt-6 flex gap-2 sm:gap-5">
+          <!-- <div class="w-12 h-12 rounded-full border flex items-center justify-center">
       <img src="././src/assets/twiter-icon.svg" alt="" >
      </div>
      <div class="w-12 h-12 rounded-full border flex items-center justify-center">
@@ -309,14 +402,19 @@
      </div>
      <div class="w-12 h-12 rounded-full border flex items-center justify-center">
       <img src="././src/assets/youtube-icon.svg" >
-     </div>
-     <div class="w-12 h-12 rounded-full border flex items-center justify-center">
-      <img src="././src/assets/linkdin-icon.svg" >
-     </div>
+     </div> -->
+          <a
+            target="_blank"
+            href="
+https://ca.linkedin.com/company/teal-climate?trk=public_profile_experience-item_profile-section-card_subtitle-click"
+            class="flex h-12 w-12 items-center justify-center rounded-full border"
+          >
+            <img src="././src/assets/linkdin-icon.svg" />
+          </a>
+        </div>
       </div>
-    </div>
       <div
-        class="border-top-white  flex flex-wrap justify-between gap-2 border-t px-6 py-3 sm:px-[9%]"
+        class="border-top-white flex flex-wrap justify-between gap-2 border-t px-6 py-3 sm:px-[9%]"
       >
         <span><span class="text-xl">©</span> 2024 Teal Climate</span>
         <div class="flex gap-y-[7px] max-sm:flex-col md:gap-8">

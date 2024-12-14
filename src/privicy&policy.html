@@ -13,93 +13,69 @@
 
 <body>
   <!-- Navbar -->
- <nav class="flex flex-wrap items-center justify-between px-[3vw] py-4">
-      <a href="/" class="flex gap-1">
-        <img src="./assets/images/teal-climate-logo-1.svg" />
-        <img src="./assets/images/teal-climate-logo-2.svg" />
-      </a>
-      <svg
-        id="navBtn"
-        class="cursor-pointer md:hidden"
-        width="30px"
-        height="30px"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g clip-path="url(#clip0_429_11066)">
-          <path
-            d="M3 6.00092H21M3 12.0009H21M3 18.0009H21"
-            stroke="#292929"
-            stroke-width="2.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </g>
-        <defs>
-          <clipPath id="clip0_429_11066">
-            <rect
-              width="24"
-              height="24"
-              fill="white"
-              transform="translate(0 0.000915527)"
-            />
-          </clipPath>
-        </defs>
-      </svg>
-      <div
-        class="mobile-nav left-0 top-[8.5%] z-20 flex flex-grow overflow-hidden bg-white transition-all duration-500 max-md:absolute max-md:h-0 max-md:w-full max-md:flex-col max-md:gap-4 max-md:px-[3vw]"
-      >
-        <ul
-          class="flex gap-2 max-md:flex-col md:mx-auto md:items-center "
-        >
-          <li>
-            <a
-              href="/"
-              class="font-semibold hover:bg-tc-blue max-w-32 md:w-[10vmax]  block hover:text-white text-center py-2 rounded-lg duration-300 transition-all"
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href="./products.html"
-              class="font-semibold hover:bg-tc-blue max-w-32 md:w-[10vmax]  block hover:text-white text-center py-2 rounded-lg duration-300 transition-all"
-            >
-              Products
-            </a>
-          </li>
-          <li>
-            <a
-              href="./pricing.html"
-              class="font-semibold hover:bg-tc-blue max-w-32 md:w-[10vmax]  block hover:text-white text-center py-2 rounded-lg duration-300 transition-all"
-            >
-              Pricing
-            </a>
-          </li>
-          <li>
-            <a
-              href="./contact.html"
-              class="font-semibold hover:bg-tc-blue max-w-32 md:w-[10vmax]  block hover:text-white text-center py-2 rounded-lg duration-300 transition-all"
-            >
-              Contact
-            </a>
-          </li>
-        </ul>
-        <div class="flex gap-2">
-          <a href="https://carbon.tealclimate.com/signup"
-            class="w-[10vmax] cursor-pointer rounded-full border-2 border-tc-blue py-1 text-center font-semibold text-black duration-300 hover:bg-tc-blue hover:text-white hover:opacity-90 max-w-32 "
-          >
-            Sign up
+  <nav class="flex flex-wrap items-center justify-between px-[3vw] py-4">
+    <a href="/" class="flex gap-1">
+      <img src="./assets/images/teal-climate-logo-1.svg" />
+      <img src="./assets/images/teal-climate-logo-2.svg" />
+    </a>
+    <svg id="navBtn" class="cursor-pointer md:hidden" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0_429_11066)">
+        <path d="M3 6.00092H21M3 12.0009H21M3 18.0009H21" stroke="#292929" stroke-width="2.5" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </g>
+      <defs>
+        <clipPath id="clip0_429_11066">
+          <rect width="24" height="24" fill="white" transform="translate(0 0.000915527)" />
+        </clipPath>
+      </defs>
+    </svg>
+    <div
+      class="mobile-nav left-0 top-[8.5%] z-20 flex flex-grow overflow-hidden bg-white transition-all duration-500 max-md:absolute max-md:h-0 max-md:w-full max-md:flex-col max-md:gap-4 max-md:px-[3vw]">
+      <ul class="flex gap-2 max-md:flex-col md:mx-auto md:items-center ">
+        <li>
+          <a href="/"
+            class="font-semibold hover:bg-tc-blue max-w-32 md:w-[10vmax]  block hover:text-white text-center py-2 rounded-lg duration-300 transition-all">
+            Home
           </a>
-          <a href="https://carbon.tealclimate.com/login"
-            class="w-[10vmax] cursor-pointer rounded-full border-2 border-tc-blue py-1 text-center font-semibold text-black duration-300 hover:bg-tc-blue hover:text-white hover:opacity-90 max-w-32"
+        </li>
+        <li>
+          <a href="./products.html"
+            class="font-semibold hover:bg-tc-blue max-w-32 md:w-[10vmax]  block hover:text-white text-center py-2 rounded-lg duration-300 transition-all">
+            Products
+          </a>
+        </li>
+        <li>
+          <a href="./pricing.html"
+            class="font-semibold hover:bg-tc-blue max-w-32 md:w-[10vmax]  block hover:text-white text-center py-2 rounded-lg duration-300 transition-all">
+            Pricing
+          </a>
+        </li>
+        <li>
+          <a href="./contact.html"
+            class="font-semibold hover:bg-tc-blue max-w-32 md:w-[10vmax]  block hover:text-white text-center py-2 rounded-lg duration-300 transition-all">
+            Contact
+          </a>
+        </li>
+      </ul>
+    <div class="flex gap-2">
+          <a
+          target="_blank"
+            href="https://carbon.tealclimate.com/login"
+            class="w-[10vmax] max-w-32 cursor-pointer rounded-lg border-2 border-tc-blue bg-tc-blue py-1 text-center font-semibold text-white duration-300 hover:bg-transparent hover:text-black hover:opacity-90"
           >
             Login
           </a>
+          <a
+          target="_blank"
+            href="https://carbon.tealclimate.com/signup"
+            class="w-[10vmax] max-w-32 cursor-pointer rounded-lg border-2 border-tc-blue py-1 text-center font-semibold text-black duration-300 hover:bg-tc-blue hover:text-white hover:opacity-90"
+          >
+            Sign up
+          </a>
         </div>
-      </div>
-    </nav>
+    </div>
+  </nav>
 
   <section class="mx-auto mt-12 w-[90%] max-w-[500px] text-center md:max-w-[800px]">
     <div class="font-bold">
@@ -112,7 +88,8 @@
   <section
     class="mx-auto my-16 w-[90%] max-w-[1400px] border border-gray-300 bg-white p-5 shadow-xl max-lg:flex-col sm:p-10 xl:p-20">
     <h1 class="text-xl font-bold">Last updated: 22-Nov-24</h1>
-    <div class="my-6 space-y-6 border border-gray-300 p-2 text-gray-800 sm:p-10 max-md:text-[15px] h-screen overflow-auto text-sm">
+    <div
+      class="my-6 space-y-6 border border-gray-300 p-2 text-gray-800 sm:p-10 max-md:text-[15px] h-screen overflow-auto text-sm">
       <h1 class="text-xl md:text-3xl font-bold">Purpose</h1>
       <p>This privacy policy is designed to help you understand how Teal Climate, its brands, affiliates, and
         subsidiaries (“Teal Climate”, “we”, “us”, or “our”) collects, uses, processes, and discloses your personal
@@ -442,12 +419,10 @@
           on your device or remove them by adjusting your preferences as your browser or device permits. Please note
           that cookie-based opt-outs are not effective on mobile applications. However, you may opt-out of personalized
           advertisements on some mobile applications by following the instructions for <a
-            href="https://support.google.com/googleplay/android-developer/answer/6048248?hl=en"
-            target="_blank"
-            class="text-blue-500 underline">Android</a> and 
-            <a href="https://support.apple.com/en-us/105131"
-            target="_blank"
-            class="text-blue-500 underline">iOS</a>.</p>
+            href="https://support.google.com/googleplay/android-developer/answer/6048248?hl=en" target="_blank"
+            class="text-blue-500 underline">Android</a> and
+          <a href="https://support.apple.com/en-us/105131" target="_blank" class="text-blue-500 underline">iOS</a>.
+        </p>
         <p>The online advertising industry also provides websites from which you may opt-out of receiving targeted ads
           from advertisers that Participate in self-regulatory programs. You can access these, and also learn more about
           targeted advertising and consumer choice and privacy, at <a href="https://thenai.org/opt-out/"
@@ -625,9 +600,15 @@
           <li>Data analytics providers</li>
           <li>Others as required by law</li>
         </ol>
-        <p><b>Sources of personal information.</b> We generally collect personal information from the following categories of sources: directly or indirectly from you; affiliates and subsidiaries; business partners; vendors and service providers; internet service providers; operating systems and platforms; social media platforms; and marketing, advertising, and data analytics providers.</p>
-        <p><b>Purposes of collection, use, and disclosure.</b> As described above in section 3. How we use your information and section 4. Disclosures of personal information, in general, we may collect, use, disclose, and otherwise process personal information for the following business or commercial purposes and as otherwise directed or consented to by you:</p>
-         <ol class="list-disc ml-[2vmax] flex flex-col gap-3">
+        <p><b>Sources of personal information.</b> We generally collect personal information from the following
+          categories of sources: directly or indirectly from you; affiliates and subsidiaries; business partners;
+          vendors and service providers; internet service providers; operating systems and platforms; social media
+          platforms; and marketing, advertising, and data analytics providers.</p>
+        <p><b>Purposes of collection, use, and disclosure.</b> As described above in section 3. How we use your
+          information and section 4. Disclosures of personal information, in general, we may collect, use, disclose, and
+          otherwise process personal information for the following business or commercial purposes and as otherwise
+          directed or consented to by you:</p>
+        <ol class="list-disc ml-[2vmax] flex flex-col gap-3">
           <li>To perform a contract with you</li>
           <li>To comply with our legal obligations</li>
           <li>For our legitimate interests</li>
@@ -640,131 +621,166 @@
           <li>In the case of a merger, sale, or other asset transfers</li>
           <li>Other purposes clearly disclosed to you at the time you provide your personal information</li>
         </ol>
-        <p><b>Sensitive personal information.</b> We do not collect, use, or disclose “sensitive personal information” beyond the purposes authorized by the CCPA. </p>
-        <p><b>Retention.</b> We retain the personal information we receive as described in this privacy policy for as long as you use our services or as necessary to fulfill the purpose(s) for which it was collected, provide our services, resolve disputes, establish legal defenses, conduct audits, pursue legitimate business purposes, enforce our agreements, and comply with applicable laws. In some cases, rather than delete your personal information, we may de-identify or aggregate it and use it in compliance with the CCPA.</p>
-        <p><b>Sales and sharing of personal information.</b> The CCPA defines “sale” as disclosing or making available personal information to a third-party in exchange for monetary or other valuable consideration, and “sharing” includes disclosing or making available personal information to a third-party for purposes of cross-context behavioral advertising. While we do not disclose personal information to third parties in exchange for monetary compensation, we may “sell” or “share” the following categories of personal information: identifiers, internet and network activity information, and commercial information. We may disclose these categories to third-party advertising networks, analytics providers, and social networks for purposes of marketing and advertising and to improve and measure our ad campaigns. We do not sell or share sensitive personal information, nor do we sell or share personal information about individuals we know are under age sixteen (16).</p>
-        <p><b>Privacy rights for California residents.</b> The CCPA provides California residents with specific rights regarding personal information. Subject to certain conditions and exceptions, California residents have the following rights with respect to their personal information:</p>
-          <ol class="list-disc ml-[2vmax] flex flex-col gap-3">
-          <li><b>Right to know.</b> You have the right to request: (i) the categories or personal information we collected about you; (ii) the categories of sources from which the personal information is collected; (iii) our business or commercial purposes for collecting, selling, or sharing personal information; (iv) the categories of third parties to whom we have disclosed personal information; and (v) a copy of the specific pieces of personal information we have collected about you.</li>
-        <li><b>Right to delete.</b> You have the right to request we delete personal information we have collected from you.</li>  
-      <li><b>Right to correct.</b> You have the right to request that we correct inaccuracies in your personal information.</li>  
-      <li><b>Right to opt-out of sales and sharing.</b> You have the right to opt-out of “sales” and “sharing” of your personal information, as those terms are defined under the CCPA.</li>
-      <li><b>Right to limit use and disclosure.</b> You have the right to limit the use and disclose of your sensitive personal information. We do not use or disclose sensitive personal information beyond the purposes authorized by the CCPA; thus, this right is not available to California residents.</li>
-      <li><b>Right to non-discrimination.</b> You have the right not to be subjected to discriminatory treatment for exercising any of the rights described in this section.</li>
-      </ol>
-      <p><b>Submitting privacy requests.</b> California residents may exercise their CCPA privacy rights as set forth below:</p>
-      <ol class="list-disc ml-[2vmax] flex flex-col gap-3">
-         <li><b>Right to know, delete, and correct.</b> California residents may submit CCPA request to access/know, delete, and correct their personal information by emailing us at <a href="./contact.html" class="text-blue-500 underline">Info@tealclimate.com</a> or by contacting us as set forth in the “contact us” section below.</li>
-     <li><b>Authorized agent.</b> Only you, or someone legally authorized to act on your behalf, may make a verifiable consumer request related to your personal information. You may also make a verifiable consumer request on behalf of your minor child. To authorize an agent, provide written authorization signed by you and your designated agent and contact us as set forth in <a href="./contact.html" class="text-blue-500 underline">“contact us”</a> below for additional instructions.</li>
-     <li><b>Verification.</b> To protect your privacy, we will take steps to reasonably verify your identity before fulfilling your request. These steps may involve asking you to provide sufficient information that allows us to reasonably verify you are the person about whom we collected personal information or an authorized representative, or to answer questions regarding your account and use of our services. In some cases, we may request additional information to verify your identity, or where necessary to process your request. If we are unable to verify your identity after a good faith attempt, we may deny the request and, if so, will explain the basis for the denial.</li>
-    <li><b>Right to opt-out of sales and sharing.</b> To exercise your right to opt-out of the “sale” or “sharing” of your personal information, you may do so via our <a href="" class="text-blue-500 underline">cookie preference manager</a>. We will apply you opt out based upon the personal information in our records that is linked or reasonably linkable to the information provided in your request.</li>   
-    </ol>
-    <p>In addition, if we detect that your browser or device is transmitting an opt-out preference signal, such as the “global privacy control” or “GPC” signal, we will opt that browser or device out of cookies that result in a “sale” or “sharing” of your personal information. If you come to our site or use our services from a different device or from a different browser on the same device, you will need to opt-out, or use an opt-out preference signal, for that browser and/or device as well. More information about GPC is available at: <a href="https://globalprivacycontrol.org/" target="_blank" class="text-blue-500 underline">https://globalprivacycontrol.org/</a>. </p>
-    <p>If you have any questions about our privacy practices or this privacy policy, please contact us as noted above in <b>section 12. Contact us</b>.</p>
+        <p><b>Sensitive personal information.</b> We do not collect, use, or disclose “sensitive personal information”
+          beyond the purposes authorized by the CCPA. </p>
+        <p><b>Retention.</b> We retain the personal information we receive as described in this privacy policy for as
+          long as you use our services or as necessary to fulfill the purpose(s) for which it was collected, provide our
+          services, resolve disputes, establish legal defenses, conduct audits, pursue legitimate business purposes,
+          enforce our agreements, and comply with applicable laws. In some cases, rather than delete your personal
+          information, we may de-identify or aggregate it and use it in compliance with the CCPA.</p>
+        <p><b>Sales and sharing of personal information.</b> The CCPA defines “sale” as disclosing or making available
+          personal information to a third-party in exchange for monetary or other valuable consideration, and “sharing”
+          includes disclosing or making available personal information to a third-party for purposes of cross-context
+          behavioral advertising. While we do not disclose personal information to third parties in exchange for
+          monetary compensation, we may “sell” or “share” the following categories of personal information: identifiers,
+          internet and network activity information, and commercial information. We may disclose these categories to
+          third-party advertising networks, analytics providers, and social networks for purposes of marketing and
+          advertising and to improve and measure our ad campaigns. We do not sell or share sensitive personal
+          information, nor do we sell or share personal information about individuals we know are under age sixteen
+          (16).</p>
+        <p><b>Privacy rights for California residents.</b> The CCPA provides California residents with specific rights
+          regarding personal information. Subject to certain conditions and exceptions, California residents have the
+          following rights with respect to their personal information:</p>
+        <ol class="list-disc ml-[2vmax] flex flex-col gap-3">
+          <li><b>Right to know.</b> You have the right to request: (i) the categories or personal information we
+            collected about you; (ii) the categories of sources from which the personal information is collected; (iii)
+            our business or commercial purposes for collecting, selling, or sharing personal information; (iv) the
+            categories of third parties to whom we have disclosed personal information; and (v) a copy of the specific
+            pieces of personal information we have collected about you.</li>
+          <li><b>Right to delete.</b> You have the right to request we delete personal information we have collected
+            from you.</li>
+          <li><b>Right to correct.</b> You have the right to request that we correct inaccuracies in your personal
+            information.</li>
+          <li><b>Right to opt-out of sales and sharing.</b> You have the right to opt-out of “sales” and “sharing” of
+            your personal information, as those terms are defined under the CCPA.</li>
+          <li><b>Right to limit use and disclosure.</b> You have the right to limit the use and disclose of your
+            sensitive personal information. We do not use or disclose sensitive personal information beyond the purposes
+            authorized by the CCPA; thus, this right is not available to California residents.</li>
+          <li><b>Right to non-discrimination.</b> You have the right not to be subjected to discriminatory treatment for
+            exercising any of the rights described in this section.</li>
+        </ol>
+        <p><b>Submitting privacy requests.</b> California residents may exercise their CCPA privacy rights as set forth
+          below:</p>
+        <ol class="list-disc ml-[2vmax] flex flex-col gap-3">
+          <li><b>Right to know, delete, and correct.</b> California residents may submit CCPA request to access/know,
+            delete, and correct their personal information by emailing us at <a href="./contact.html"
+              class="text-blue-500 underline">Info@tealclimate.com</a> or by contacting us as set forth in the “contact
+            us” section below.</li>
+          <li><b>Authorized agent.</b> Only you, or someone legally authorized to act on your behalf, may make a
+            verifiable consumer request related to your personal information. You may also make a verifiable consumer
+            request on behalf of your minor child. To authorize an agent, provide written authorization signed by you
+            and your designated agent and contact us as set forth in <a href="./contact.html"
+              class="text-blue-500 underline">“contact us”</a> below for additional instructions.</li>
+          <li><b>Verification.</b> To protect your privacy, we will take steps to reasonably verify your identity before
+            fulfilling your request. These steps may involve asking you to provide sufficient information that allows us
+            to reasonably verify you are the person about whom we collected personal information or an authorized
+            representative, or to answer questions regarding your account and use of our services. In some cases, we may
+            request additional information to verify your identity, or where necessary to process your request. If we
+            are unable to verify your identity after a good faith attempt, we may deny the request and, if so, will
+            explain the basis for the denial.</li>
+          <li><b>Right to opt-out of sales and sharing.</b> To exercise your right to opt-out of the “sale” or “sharing”
+            of your personal information, you may do so via our <a href="" class="text-blue-500 underline">cookie
+              preference manager</a>. We will apply you opt out based upon the personal information in our records that
+            is linked or reasonably linkable to the information provided in your request.</li>
+        </ol>
+        <p>In addition, if we detect that your browser or device is transmitting an opt-out preference signal, such as
+          the “global privacy control” or “GPC” signal, we will opt that browser or device out of cookies that result in
+          a “sale” or “sharing” of your personal information. If you come to our site or use our services from a
+          different device or from a different browser on the same device, you will need to opt-out, or use an opt-out
+          preference signal, for that browser and/or device as well. More information about GPC is available at: <a
+            href="https://globalprivacycontrol.org/" target="_blank"
+            class="text-blue-500 underline">https://globalprivacycontrol.org/</a>. </p>
+        <p>If you have any questions about our privacy practices or this privacy policy, please contact us as noted
+          above in <b>section 12. Contact us</b>.</p>
       </div>
     </div>
     <h1 class="text-xl font-bold">End of privacy and policy</h1>
     </div>
   </section>
 
- <footer class="relative mt-12 bg-tc-blue pt-10  text-white">
-      <div class="absolute left-0 top-0 w-full overflow-hidden leading-[0]">
-        <svg
-          class="md:w-[calc(405%+1.3px) relative block h-[284px] lg:w-[calc(285%+1.3px)]"
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            class="fill-white"
-          ></path>
-        </svg>
-      </div>
-      <div class="px-[5vw] pt-48 pb-14">
+  <footer class="relative mt-12 bg-tc-blue pt-10  text-white">
+    <div class="absolute left-0 top-0 w-full overflow-hidden leading-[0]">
+      <svg class="md:w-[calc(405%+1.3px) relative block h-[284px] lg:w-[calc(285%+1.3px)]" data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+          class="fill-white"></path>
+      </svg>
+    </div>
+    <div class="px-[5vw] pt-48 pb-14">
       <div class="flex justify-between flex-wrap gap-x-5 gap-y-10">
         <div class="text-lg sm:text-xl lg:text-2xl w-[450px]">
-          <img
-            src="assets/images/teal-climate-white-logo.png"
-            class="h-auto w-60"
-          />
+          <div class="flex gap-2 items-center">
+            <img src="./assets/logo.svg" alt="">
+            <img src="./assets/tealclimate-icon.svg" alt="">
+          </div>
           <p class="mt-2">
             Start Tracking Your Emissions Today for a
             Greener Tomorrow!
           </p>
         </div>
         <div class="flex flex-wrap gap-x-20 gap-y-8">
-        <div class="">
-          <h1 class="relative font-bold">
-            About<span
-              class="absolute bottom-[-10px] left-0 h-[3px] w-8 bg-white"
-            ></span>
-          </h1>
-          <ul class="mt-6 flex flex-col gap-2">
-            <li><a href="">What we offer</a></li>
-            <li><a href="">Features</a></li>
-            <li><a href="">Pricing</a></li>
-            <li><a href="">Blogs</a></li>
-          </ul>
-        </div>
-        <div class="">
-          <h1 class="relative font-bold">
-            Resources<span
-              class="absolute bottom-[-10px] left-0 h-[3px] w-8 bg-white"
-            ></span>
-          </h1>
-          <ul class="mt-6 flex flex-col gap-2">
-            <li><a href="">Documentation</a></li>
-            <li><a href="./faqs.html">FAQ</a></li>
-            <li><a href="">Product Roadmap</a></li>
-            <li><a href="">Help Center</a></li>
-          </ul>
-        </div>
-        <div class="">
-          <h1 class="relative font-bold">
-            Contact Info<span
-              class="absolute bottom-[-10px] left-0 h-[3px] w-8 bg-white"
-            ></span>
-          </h1>
-          <div class="mt-6 flex flex-col gap-2">
-            <p>Address: 550 Brealey Dr, Peterborough,</p>
-            <p>ON K9K 2R7</p>
-            <p>Contact: +1 (438) 826-6497</p>
-            <p>Email: info@tealclimate.com</p>
+          <div class="">
+            <h1 class="relative font-bold">
+              Quick Links<span class="absolute bottom-[-10px] left-0 h-[3px] w-8 bg-white"></span>
+            </h1>
+            <ul class="mt-6 flex flex-col gap-2">
+              <li><a href="/">Home</a></li>
+              <li><a href="./src/products.html">Products</a></li>
+              <li><a href="./src/pricing.html">Pricing</a></li>
+              <li><a href="./src/contact.html">Contact</a></li>
+            </ul>
           </div>
-        </div>
+          <div class="">
+            <h1 class="relative font-bold">
+              Resources<span class="absolute bottom-[-10px] left-0 h-[3px] w-8 bg-white"></span>
+            </h1>
+            <ul class="mt-6 flex flex-col gap-2">
+              <li><a href="././src/faqs.html">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <h1 class="relative font-bold">
+              Contact Info<span class="absolute bottom-[-10px] left-0 h-[3px] w-8 bg-white"></span>
+            </h1>
+            <div class="mt-6 flex flex-col gap-2">
+              <p>Address: 550 Brealey Dr, Peterborough,</p>
+              <p>ON K9K 2R7</p>
+              <p>Contact: +1 (438) 826-6497</p>
+              <p>Email: info@tealclimate.com</p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="flex gap-2  sm:gap-5 mt-6">
-     <div class="w-12 h-12 rounded-full border flex items-center justify-center">
-      <img src="./assets/twiter-icon.svg" alt="" >
+        <!-- <div class="w-12 h-12 rounded-full border flex items-center justify-center">
+      <img src="././src/assets/twiter-icon.svg" alt="" >
      </div>
      <div class="w-12 h-12 rounded-full border flex items-center justify-center">
-      <img src="./assets/fb-icon.svg" alt="" >
+      <img src="././src/assets/fb-icon.svg" alt="" >
      </div>
      <div class="w-12 h-12 rounded-full border flex items-center justify-center">
-      <img src="./assets/insta-icon.svg">
+      <img src="././src/assets/insta-icon.svg">
      </div>
      <div class="w-12 h-12 rounded-full border flex items-center justify-center">
-      <img src="./assets/youtube-icon.svg" >
-     </div>
-     <div class="w-12 h-12 rounded-full border flex items-center justify-center">
-      <img src="./assets/linkdin-icon.svg" >
-     </div>
+      <img src="././src/assets/youtube-icon.svg" >
+     </div> -->
+        <a target="_blank" href="
+https://ca.linkedin.com/company/teal-climate?trk=public_profile_experience-item_profile-section-card_subtitle-click"
+          class="w-12 h-12 rounded-full border flex items-center justify-center">
+          <img src="./assets/linkdin-icon.svg">
+        </a>
       </div>
     </div>
-      <div
-        class="border-top-white  flex flex-wrap justify-between gap-2 border-t px-6 py-3 sm:px-[9%]"
-      >
-        <span><span class="text-xl">©</span> 2024 Teal Climate</span>
-        <div class="flex gap-y-[7px] max-sm:flex-col md:gap-8">
-          <a href="./terms&condition.html">Terms & Conditions</a>
-          <a href="./privicy&policy.html">Privacy Policy</a>
-          <a href="./security.html">Security</a>
-        </div>
+    <div class="border-top-white  flex flex-wrap justify-between gap-2 border-t px-6 py-3 sm:px-[9%]">
+      <span><span class="text-xl">©</span> 2024 Teal Climate</span>
+      <div class="flex gap-y-[7px] max-sm:flex-col md:gap-8">
+        <a href="././src/terms&condition.html">Terms & Conditions</a>
+        <a href="././src/privicy&policy.html">Privacy Policy</a>
+        <a href="././src/security.html">Security</a>
       </div>
-    </footer>
+    </div>
+  </footer>
 </body>
 
 </html>

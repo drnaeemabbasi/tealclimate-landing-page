@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- Navbar -->
-  <nav class="flex flex-wrap items-center justify-between px-[3vw] py-4">
+    <nav class="flex flex-wrap items-center justify-between px-[3vw] py-4">
       <a href="/" class="flex gap-1">
         <img src="./assets/images/teal-climate-logo-1.svg" />
         <img src="./assets/images/teal-climate-logo-2.svg" />
@@ -52,13 +52,11 @@
       <div
         class="mobile-nav left-0 top-[8.5%] z-20 flex flex-grow overflow-hidden bg-white transition-all duration-500 max-md:absolute max-md:h-0 max-md:w-full max-md:flex-col max-md:gap-4 max-md:px-[3vw]"
       >
-        <ul
-          class="flex gap-2 max-md:flex-col md:mx-auto md:items-center "
-        >
+        <ul class="flex gap-2 max-md:flex-col md:mx-auto md:items-center">
           <li>
             <a
               href="/"
-              class="font-semibold hover:bg-tc-blue max-w-32 md:w-[10vmax]  block hover:text-white text-center py-2 rounded-lg duration-300 transition-all"
+              class="block max-w-32 rounded-lg py-2 text-center font-semibold transition-all duration-300 hover:bg-tc-blue hover:text-white md:w-[10vmax]"
             >
               Home
             </a>
@@ -66,7 +64,7 @@
           <li>
             <a
               href=""
-              class="font-semibold bg-tc-blue max-w-32 md:w-[10vmax]  block text-white text-center py-2 rounded-lg"
+              class="block max-w-32 rounded-lg bg-tc-blue py-2 text-center font-semibold text-white md:w-[10vmax]"
             >
               Products
             </a>
@@ -74,7 +72,7 @@
           <li>
             <a
               href="./pricing.html"
-              class="font-semibold hover:bg-tc-blue max-w-32 md:w-[10vmax]  block hover:text-white text-center py-2 rounded-lg duration-300 transition-all"
+              class="block max-w-32 rounded-lg py-2 text-center font-semibold transition-all duration-300 hover:bg-tc-blue hover:text-white md:w-[10vmax]"
             >
               Pricing
             </a>
@@ -82,22 +80,26 @@
           <li>
             <a
               href="./contact.html"
-              class="font-semibold hover:bg-tc-blue max-w-32 md:w-[10vmax]  block hover:text-white text-center py-2 rounded-lg duration-300 transition-all"
+              class="block max-w-32 rounded-lg py-2 text-center font-semibold transition-all duration-300 hover:bg-tc-blue hover:text-white md:w-[10vmax]"
             >
               Contact
             </a>
           </li>
         </ul>
-        <div class="flex gap-2">
-          <a href="https://carbon.tealclimate.com/signup"
-            class="w-[10vmax] cursor-pointer rounded-full border-2 border-tc-blue py-1 text-center font-semibold text-black duration-300 hover:bg-tc-blue hover:text-white hover:opacity-90 max-w-32 "
-          >
-            Sign up
-          </a>
-          <a href="https://carbon.tealclimate.com/login"
-            class="w-[10vmax] cursor-pointer rounded-full border-2 border-tc-blue py-1 text-center font-semibold text-black duration-300 hover:bg-tc-blue hover:text-white hover:opacity-90 max-w-32"
+       <div class="flex gap-2">
+          <a
+          target="_blank"
+            href="https://carbon.tealclimate.com/login"
+            class="w-[10vmax] max-w-32 cursor-pointer rounded-lg border-2 border-tc-blue bg-tc-blue py-1 text-center font-semibold text-white duration-300 hover:bg-transparent hover:text-black hover:opacity-90"
           >
             Login
+          </a>
+          <a
+          target="_blank"
+            href="https://carbon.tealclimate.com/signup"
+            class="w-[10vmax] max-w-32 cursor-pointer rounded-lg border-2 border-tc-blue py-1 text-center font-semibold text-black duration-300 hover:bg-tc-blue hover:text-white hover:opacity-90"
+          >
+            Sign up
           </a>
         </div>
       </div>
@@ -289,7 +291,7 @@
       </div>
     </section>
 
-   <footer class="relative mt-12 bg-tc-blue pt-10  text-white">
+    <footer class="relative mt-12 bg-tc-blue pt-10 text-white">
       <div class="absolute left-0 top-0 w-full overflow-hidden leading-[0]">
         <svg
           class="md:w-[calc(405%+1.3px) relative block h-[284px] lg:w-[calc(285%+1.3px)]"
@@ -304,86 +306,87 @@
           ></path>
         </svg>
       </div>
-      <div class="px-[5vw] pt-48 pb-14">
-      <div class="flex justify-between flex-wrap gap-x-5 gap-y-10">
-        <div class="text-lg sm:text-xl lg:text-2xl w-[450px]">
-          <img
-            src="assets/images/teal-climate-white-logo.png"
-            class="h-auto w-60"
-          />
-          <p class="mt-2">
-            Start Tracking Your Emissions Today for a
-            Greener Tomorrow!
-          </p>
-        </div>
-        <div class="flex flex-wrap gap-x-20 gap-y-8">
-        <div class="">
-          <h1 class="relative font-bold">
-            About<span
-              class="absolute bottom-[-10px] left-0 h-[3px] w-8 bg-white"
-            ></span>
-          </h1>
-          <ul class="mt-6 flex flex-col gap-2">
-            <li><a href="">What we offer</a></li>
-            <li><a href="">Features</a></li>
-            <li><a href="">Pricing</a></li>
-            <li><a href="">Blogs</a></li>
-          </ul>
-        </div>
-        <div class="">
-          <h1 class="relative font-bold">
-            Resources<span
-              class="absolute bottom-[-10px] left-0 h-[3px] w-8 bg-white"
-            ></span>
-          </h1>
-          <ul class="mt-6 flex flex-col gap-2">
-            <li><a href="">Documentation</a></li>
-            <li><a href="./faqs.html">FAQ</a></li>
-            <li><a href="">Product Roadmap</a></li>
-            <li><a href="">Help Center</a></li>
-          </ul>
-        </div>
-        <div class="">
-          <h1 class="relative font-bold">
-            Contact Info<span
-              class="absolute bottom-[-10px] left-0 h-[3px] w-8 bg-white"
-            ></span>
-          </h1>
-          <div class="mt-6 flex flex-col gap-2">
-            <p>Address: 550 Brealey Dr, Peterborough,</p>
-            <p>ON K9K 2R7</p>
-            <p>Contact: +1 (438) 826-6497</p>
-            <p>Email: info@tealclimate.com</p>
+      <div class="px-[5vw] pb-14 pt-48">
+        <div class="flex flex-wrap justify-between gap-x-5 gap-y-10">
+          <div class="w-[450px] text-lg sm:text-xl lg:text-2xl">
+            <div class="flex items-center gap-2">
+              <img src="./assets/logo.svg" alt="" />
+              <img src="./assets/tealclimate-icon.svg" alt="" />
+            </div>
+            <p class="mt-2">
+              Start Tracking Your Emissions Today for a Greener Tomorrow!
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-x-20 gap-y-8">
+            <div class="">
+              <h1 class="relative font-bold">
+                Quick Links<span
+                  class="absolute bottom-[-10px] left-0 h-[3px] w-8 bg-white"
+                ></span>
+              </h1>
+              <ul class="mt-6 flex flex-col gap-2">
+                <li><a href="/">Home</a></li>
+                <li><a href="./src/products.html">Products</a></li>
+                <li><a href="./src/pricing.html">Pricing</a></li>
+                <li><a href="./src/contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="">
+              <h1 class="relative font-bold">
+                Resources<span
+                  class="absolute bottom-[-10px] left-0 h-[3px] w-8 bg-white"
+                ></span>
+              </h1>
+              <ul class="mt-6 flex flex-col gap-2">
+                <li><a href="././src/faqs.html">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="">
+              <h1 class="relative font-bold">
+                Contact Info<span
+                  class="absolute bottom-[-10px] left-0 h-[3px] w-8 bg-white"
+                ></span>
+              </h1>
+              <div class="mt-6 flex flex-col gap-2">
+                <p>Address: 550 Brealey Dr, Peterborough,</p>
+                <p>ON K9K 2R7</p>
+                <p>Contact: +1 (438) 826-6497</p>
+                <p>Email: info@tealclimate.com</p>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="mt-6 flex gap-2 sm:gap-5">
+          <!-- <div class="w-12 h-12 rounded-full border flex items-center justify-center">
+      <img src="././src/assets/twiter-icon.svg" alt="" >
+     </div>
+     <div class="w-12 h-12 rounded-full border flex items-center justify-center">
+      <img src="././src/assets/fb-icon.svg" alt="" >
+     </div>
+     <div class="w-12 h-12 rounded-full border flex items-center justify-center">
+      <img src="././src/assets/insta-icon.svg">
+     </div>
+     <div class="w-12 h-12 rounded-full border flex items-center justify-center">
+      <img src="././src/assets/youtube-icon.svg" >
+     </div> -->
+          <a
+            target="_blank"
+            href="
+https://ca.linkedin.com/company/teal-climate?trk=public_profile_experience-item_profile-section-card_subtitle-click"
+            class="flex h-12 w-12 items-center justify-center rounded-full border"
+          >
+            <img src="./assets/linkdin-icon.svg" />
+          </a>
         </div>
       </div>
-      <div class="flex gap-2  sm:gap-5 mt-6">
-     <div class="w-12 h-12 rounded-full border flex items-center justify-center">
-      <img src="./assets/twiter-icon.svg" alt="" >
-     </div>
-     <div class="w-12 h-12 rounded-full border flex items-center justify-center">
-      <img src="./assets/fb-icon.svg" alt="" >
-     </div>
-     <div class="w-12 h-12 rounded-full border flex items-center justify-center">
-      <img src="./assets/insta-icon.svg">
-     </div>
-     <div class="w-12 h-12 rounded-full border flex items-center justify-center">
-      <img src="./assets/youtube-icon.svg" >
-     </div>
-     <div class="w-12 h-12 rounded-full border flex items-center justify-center">
-      <img src="./assets/linkdin-icon.svg" >
-     </div>
-      </div>
-    </div>
       <div
-        class="border-top-white  flex flex-wrap justify-between gap-2 border-t px-6 py-3 sm:px-[9%]"
+        class="border-top-white flex flex-wrap justify-between gap-2 border-t px-6 py-3 sm:px-[9%]"
       >
         <span><span class="text-xl">©</span> 2024 Teal Climate</span>
         <div class="flex gap-y-[7px] max-sm:flex-col md:gap-8">
-          <a href="./terms&condition.html">Terms & Conditions</a>
-          <a href="./privicy&policy.html">Privacy Policy</a>
-          <a href="./security.html">Security</a>
+          <a href="././src/terms&condition.html">Terms & Conditions</a>
+          <a href="././src/privicy&policy.html">Privacy Policy</a>
+          <a href="././src/security.html">Security</a>
         </div>
       </div>
     </footer>
