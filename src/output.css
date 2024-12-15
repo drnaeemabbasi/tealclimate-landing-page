@@ -1481,18 +1481,6 @@ video {
   max-width: 80vw;
 }
 
-.line::after {
-  position: absolute;
-  bottom: 6%;
-  z-index: -1;
-  display: block;
-  height: 15%;
-  width: 100%;
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 204 156 / var(--tw-bg-opacity));
-  content: "";
-}
-
 @media not all and (min-width: 768px) {
   .mobile-nav.active {
     height: 265px;
@@ -1557,11 +1545,16 @@ video {
 
 .faq-answer {
   padding-bottom: 1.25rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(113 113 122 / var(--tw-text-opacity));
+}
+
+@media not all and (min-width: 768px) {
+  .faq-answer {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }
 
 .before\:absolute::before {
@@ -1674,6 +1667,10 @@ video {
 @media not all and (min-width: 768px) {
   .max-md\:absolute {
     position: absolute;
+  }
+
+  .max-md\:mt-3 {
+    margin-top: 0.75rem;
   }
 
   .max-md\:mt-7 {

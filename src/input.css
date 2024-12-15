@@ -5,10 +5,7 @@
 .container{
   @apply max-w-[80vw] w-[90%] mx-auto;
 }
-.line::after {
-  @apply absolute bottom-[6%] w-full h-[15%] bg-[#00cc9c] z-[-1] block;
-  content: "";
-}
+
 .mobile-nav.active {
   @apply max-md:h-[265px];
 }
@@ -45,5 +42,5 @@
 }
 
 .faq-answer {
-  @apply pb-5 text-sm font-semibold text-zinc-500;
+  @apply pb-5 max-md:text-sm font-semibold text-zinc-500;
 }
