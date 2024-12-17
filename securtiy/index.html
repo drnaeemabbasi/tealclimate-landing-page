@@ -105,17 +105,11 @@
       </div>
     </nav>
 
-    <section
-      class="mx-auto mt-12 w-[90%] max-w-[500px] text-center md:max-w-[800px]"
+    <h1
+      class="mt-12 text-center text-[5vw] font-bold leading-[1.2] sm:text-[3vw] lg:text-[2.2vmax]"
     >
-      <div class="font-bold">
-        <h1
-          class="line relative z-[1] mb-20 inline-block text-2xl leading-none sm:text-5xl"
-        >
-          Security
-        </h1>
-      </div>
-    </section>
+   Security
+    </h1>
 
     <section
       class="mx-auto my-16 w-[90%] max-w-[1400px] border border-gray-300 bg-white p-5 shadow-xl max-lg:flex-col sm:p-10 xl:p-20"
@@ -219,102 +213,137 @@
         </h1>
         <ol class="ml-[2vmax] flex list-disc flex-col gap-3">
           <li>
-            The Teal Climate CMAP consists of a multi-tier, multi-tenant SaaS
-            application hosted in AWS and is architected into four distinct
-            tiers or layers: the highly protected database tier, API tier,
-            front-end tier, and web browser (which is managed by the customer).
+          The Teal Climate CMAP consists of a multi-tier, multi-tenant SaaS application hosted in HEROKU and is architected into four distinct tiers or layers: the highly protected database tier, API tier, front-end tier, and web browser (which is managed by the customer). 
           </li>
           <li>
-            Web application firewalls, security groups, access control lists,
-            and other security detection and control mechanisms are deployed
-            between layers to provide multiple layers of protection between the
-            internet and database tier.
+          Web application firewalls, security groups, access control lists, and other security detection and control mechanisms are deployed between layers to provide multiple layers of protection between the internet and database tier. 
           </li>
         </ol>
         <h1 class="text-xl font-bold sm:text-2xl">Authentication</h1>
         <ol class="ml-[2vmax] flex list-disc flex-col gap-3">
           <li>
-            Teal Climate supports identity provider (IdP) initiated SSO via the
-            SAML protocol with IdPs such as okta, Microsoft, and ping.
+           Teal Climate supports identity provider (IdP) initiated SSO via the SAML protocol with IdPs such as okta, Microsoft, and ping. 
           </li>
           <li>
-            If SSO is not utilized, and username and password authentication is
-            chosen instead, Teal Climate supports multi-factor authentication,
-            and IP allows listing to enhance access control to the CMAP. In this
-            configuration, passwords are hashed with bcrypt and salted.
+         If SSO is not utilized, and username and password authentication is chosen instead, Teal Climate supports multi-factor authentication, and IP allows listing to enhance access control to the CMAP. In this configuration, passwords are hashed with bcrypt and salted. 
           </li>
         </ol>
         <h1 class="text-xl font-bold sm:text-2xl">Data storage and backup</h1>
         <ol class="ml-[2vmax] flex list-disc flex-col gap-3">
-          <li class="text-red-600">
-            Teal Climate's multi-tenant architecture concurrently stores data in
-            AWS us-east 2 (Ohio), us-east 1 (Virginia), EU-west 1 (Ireland), and
-            AP-Northeast 1 (Tokyo). Note: if you have specific data residency
-            needs, please ask your Teal Climate sales representative about Teal
-            Climate's single tenant architecture model.
+          <li class="">
+           Teal Climate's multi-tenant architecture concurrently stores data in HEROKU United States, Virginia, United States, Oregon, United States, Tokyo, Japan, Dublin, Ireland, Frankfurt, Germany, London, United Kingdom, Montreal, Canada, Mumbai, India, Singapore, and Sydney, Australia). Note: if you have specific data residency needs, please ask your Teal Climate sales representative about Teal Climate's single tenant architecture model.
+          </li>
+          <div class="overflow-x-auto">
+            <div class="min-w-[400px]">
+      <table class="w-full border border-gray-300 bg-white rounded-lg shadow-md">
+        <thead>
+          <tr class="text-left">
+            <th class="px-4 py-2 border-b">ID</th>
+            <th class="px-4 py-2 border-b">Location</th>
+            <th class="px-4 py-2 border-b">Runtime</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="">
+            <td class="px-4 py-2 border-b">EU</td>
+            <td class="px-4 py-2 border-b">Europe</td>
+            <td class="px-4 py-2 border-b">Common Runtime</td>
+          </tr>
+          <tr class="">
+            <td class="px-4 py-2 border-b">US</td>
+            <td class="px-4 py-2 border-b">United States</td>
+            <td class="px-4 py-2 border-b">Common Runtime</td>
+          </tr>
+          <tr class="">
+            <td class="px-4 py-2 border-b">Dublin</td>
+            <td class="px-4 py-2 border-b">Dublin, Ireland</td>
+            <td class="px-4 py-2 border-b">Private Spaces</td>
+          </tr>
+          <tr class="">
+            <td class="px-4 py-2 border-b">Frankfurt</td>
+            <td class="px-4 py-2 border-b">Frankfurt, Germany</td>
+            <td class="px-4 py-2 border-b">Private Spaces</td>
+          </tr>
+          <tr class="">
+            <td class="px-4 py-2 border-b">London</td>
+            <td class="px-4 py-2 border-b">London, United Kingdom</td>
+            <td class="px-4 py-2 border-b">Private Spaces</td>
+          </tr>
+          <tr class="">
+            <td class="px-4 py-2 border-b">Montreal</td>
+            <td class="px-4 py-2 border-b">Montreal, Canada</td>
+            <td class="px-4 py-2 border-b">Private Spaces</td>
+          </tr>
+          <tr class="">
+            <td class="px-4 py-2 border-b">Mumbai</td>
+            <td class="px-4 py-2 border-b">Mumbai, India</td>
+            <td class="px-4 py-2 border-b">Private Spaces</td>
+          </tr>
+          <tr class="">
+            <td class="px-4 py-2 border-b">Oregon</td>
+            <td class="px-4 py-2 border-b">Oregon, United States</td>
+            <td class="px-4 py-2 border-b">Private Spaces</td>
+          </tr>
+          <tr class="">
+            <td class="px-4 py-2 border-b">Singapore</td>
+            <td class="px-4 py-2 border-b">Singapore</td>
+            <td class="px-4 py-2 border-b">Private Spaces</td>
+          </tr>
+          <tr class="">
+            <td class="px-4 py-2 border-b">Sydney</td>
+            <td class="px-4 py-2 border-b">Sydney, Australia</td>
+            <td class="px-4 py-2 border-b">Private Spaces</td>
+          </tr>
+          <tr class="">
+            <td class="px-4 py-2 border-b">Tokyo</td>
+            <td class="px-4 py-2 border-b">Tokyo, Japan</td>
+            <td class="px-4 py-2 border-b">Private Spaces</td>
+          </tr>
+          <tr class="">
+            <td class="px-4 py-2">Virginia</td>
+            <td class="px-4 py-2">Virginia, United States</td>
+            <td class="px-4 py-2">Private Spaces</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+          </div>
+
+          <li>
+            	Data within the Teal Climate platform is backed up continuously and can be restored to any point every 24 hours. 
           </li>
           <li>
-            Data within the Teal Climate platform is backed up continuously and
-            can be restored to any point in the last 72 hours.
+        Additionally, backups are taken each day and maintained for at least a year. 
           </li>
           <li>
-            Additionally, backups are taken each day and maintained for at least
-            a year.
-          </li>
-          <li>
-            Backups will always be encrypted using advanced encryption standard
-            (AES) 256-bit encryption and are stored in secure, geographically
-            dispersed AWS s3 buckets.
+          	Backups will always be encrypted using advanced encryption standard (AES) 256-bit encryption and are stored in secure, Heroku offer BYOK features.
           </li>
         </ol>
         <h1 class="text-xl font-bold sm:text-2xl">Encryption</h1>
         <ol class="ml-[2vmax] flex list-disc flex-col gap-3">
           <li>
-            Teal Climate utilizes encryption at rest using advanced encryption
-            standard (AES) 256 and encryption in transit via TLS 1.2 or above.
-            Teal Climate also utilizes perfect forward secrecy (PFS) ciphers for
-            data transmission outside the CMAP.
+        Teal Climate utilizes encryption at rest using advanced encryption standard (AES) 256 and encryption in transit via TLS 1.2 or above. Teal Climate also utilizes perfect forward secrecy (PFS) ciphers for data transmission outside the CMAP.
           </li>
           <li>
-            Teal Climate's multi-tenant architecture utilizes AWS managed
-            encryption keys. <b>Note:</b> if you require customer managed
-            encryption keys, please ask your Teal Climate sales representative
-            about Teal Climate's single tenant architecture model.
+           Teal Climate's multi-tenant architecture utilizes Heroku managed encryption keys. <b>Note:</b> if you require customer managed encryption keys, please ask your Teal Climate sales representative about Teal Climate's single tenant architecture model.
           </li>
         </ol>
         <h1 class="text-xl font-bold sm:text-2xl">Monitoring & logging</h1>
         <ol class="ml-[2vmax] flex list-disc flex-col gap-3">
           <li>
-            Teal Climate maintains monitoring and logging for each level of the
-            platform's architecture, including databases, containers, load
-            balancers, firewalls, and other application components.
+           Teal Climate maintains monitoring and logging for each level of the platform's architecture, including databases, containers, load balancers, firewalls, and other application components.
           </li>
           <li>
-            Teal Climate maintains all log information for at least one year for
-            security reviews.
+           Teal Climate maintains all log information for at least one year for security reviews.
           </li>
           <li>
-            If a security event is identified to be a threat, Teal Climate
-            engineering and information security teams are notified immediately
-            to triage, classify, contain, and remediate the security event or
-            incident, including details such as the time of the event and impact
-            to the platform.
+            If a security event is identified to be a threat, Teal Climate engineering and information security teams are notified immediately to triage, classify, contain, and remediate the security event or incident, including details such as the time of the event and impact to the platform.
           </li>
         </ol>
         <h1 class="text-xl font-bold sm:text-2xl">Physical security</h1>
         <ol class="ml-[2vmax] flex list-disc flex-col gap-3">
           <li>
-            Teal Climate is hosted in amazon web services (AWS), and AWS data
-            centers maintain several physical security controls to protect Teal
-            Climate and customer data. Teal Climate reviews and validates AWS
-            security controls at least annually to affirm they are operating
-            effectively. Please navigate the
-            <a
-              href="https://aws.amazon.com/compliance/data-center/controls/"
-              class="text-blue-500 underline"
-              >AWS compliance</a
-            >
-            page for further information on its data center controls.
+           Teal Climate is hosted in Heroku (HEROKU), and HEROKU data centers maintain several physical security controls to protect Teal Climate and customer data. Teal Climate reviews and validates HEROKU security controls at least annually to affirm they are operating effectively. Please navigate the HEROKU compliance page for further information on its data center controls. 
           </li>
         </ol>
         <h1 class="text-xl font-bold sm:text-2xl">
@@ -475,7 +504,7 @@
           </li>
         </ol>
       </div>
-      <h1 class="text-xl font-bold">End of terms and conditions</h1>
+      <h1 class="text-xl font-bold">End of Security</h1>
     </section>
 
     <footer class="relative mt-12 bg-tc-blue pt-10 text-white">
@@ -574,6 +603,7 @@ https://ca.linkedin.com/company/teal-climate?trk=public_profile_experience-item_
           <a href="../terms&conditions/">Terms & Conditions</a>
           <a href="../privacy&policy/">Privacy Policy</a>
           <a href="../securtiy/">Security</a>
+          <a href="../cookie/">Cookie</a>
         </div>
       </div>
     </footer>
